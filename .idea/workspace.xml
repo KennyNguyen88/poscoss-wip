@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81c9dd69-1910-474b-863c-d2b947e6615f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/site/onhand.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/poscoss-wip.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/site/productionResult.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+    </list>
+    <ignored path="poscoss-wip.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <pharPath>$PROJECT_DIR$/composer.phar</pharPath>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="poscoss-wip" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="714">
+              <caret line="29" column="90" selection-start-line="29" selection-start-column="90" selection-end-line="29" selection-end-column="90" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6134752" vertical-offset="15206" max-vertical-offset="22236">
+              <caret line="940" column="42" selection-start-line="940" selection-start-column="42" selection-end-line="940" selection-end-column="42" />
+              <folding>
+                <element signature="e#39#73#0#PHP" expanded="true" />
+                <element signature="e#38209#38283#0#PHP" expanded="false" />
+                <marker date="1465442273531" expanded="false" signature="244:1000" placeholder="SELECT DECOD..." />
+                <marker date="1465442273531" expanded="true" signature="1036:1179" placeholder="SELECT 'MTL_..MTL_TRANSACTIONS_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="1036:3273" placeholder="SELECT 'MTL_..." />
+                <marker date="1465442273531" expanded="true" signature="1194:1339" placeholder="SELECT 'MTL_..MTL_TRANSACTIONS_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="1354:1654" placeholder="SELECT 'MTL_..MTL_TRANSACTION_LOTS_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="1476:1624" placeholder="SELECT 1 FRO..MTL_TRANSACTIONS_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="1669:1969" placeholder="SELECT 'MTL_..MTL_TRANSACTION_LOTS_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="1791:1939" placeholder="SELECT 1 FRO..MTL_TRANSACTIONS_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="1984:2134" placeholder="SELECT 'WIP_..WIP_JOB_SCHEDULE_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="2149:2296" placeholder="SELECT 'WIP_..WIP_JOB_SCHEDULE_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="2311:2457" placeholder="SELECT 'MOV_..WIP_MOVE_TXN_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="2472:2615" placeholder="SELECT 'MOV_..WIP_MOVE_TXN_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="2630:2777" placeholder="SELECT 'RESO..WIP_COST_TXN_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="2792:2936" placeholder="SELECT 'RESO..WIP_COST_TXN_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="2951:3106" placeholder="SELECT 'MTL_..MTL_MATERIAL_TRANSACTIONS_TEMP..." />
+                <marker date="1465442273531" expanded="true" signature="3121:3273" placeholder="SELECT 'MTL_..MTL_MATERIAL_TRANSACTIONS_TEMP..." />
+                <marker date="1465442273531" expanded="true" signature="3302:3618" placeholder="Select '0' a..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="3302:13783" placeholder="Select '0' a..." />
+                <marker date="1465442273531" expanded="true" signature="3629:3885" placeholder="Select '1' a..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="3896:4213" placeholder="Select '2' a..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="4224:4479" placeholder="Select '4' a..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="4490:6458" placeholder="Select '5' a..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="4859:5600" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="5696:6410" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="6469:8171" placeholder="Select '6' a..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="6858:7447" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="7537:8130" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="8182:8490" placeholder="Select '7' a..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="8501:9492" placeholder="Select '8' a..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="8830:9447" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="9503:11451" placeholder="Select '9' a..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="9852:10593" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="10689:11403" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="11462:13168" placeholder="Select '10' ..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="11855:12444" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="12534:13127" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="13179:13466" placeholder="Select '11' ..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="13477:13783" placeholder="Select '12' ..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="13817:15673" placeholder="SELECT SUM(T..TP..." />
+                <marker date="1465442273531" expanded="true" signature="13864:14037" placeholder="SELECT 'MTL_..MTL_TRANSACTIONS_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="14062:14232" placeholder="SELECT 'MTL_..MTL_TRANSACTIONS_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="14257:14597" placeholder="SELECT 'MTL_..MTL_TRANSACTION_LOTS_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="14399:14562" placeholder="SELECT 1 FRO..MTL_TRANSACTIONS_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="14622:14962" placeholder="SELECT 'MTL_..MTL_TRANSACTION_LOTS_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="14764:14927" placeholder="SELECT 1 FRO..MTL_TRANSACTIONS_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="14987:15147" placeholder="SELECT 'WIP_..WIP_JOB_SCHEDULE_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="15166:15323" placeholder="SELECT 'WIP_..WIP_JOB_SCHEDULE_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="15342:15498" placeholder="SELECT 'MOV_..WIP_MOVE_TXN_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="15517:15670" placeholder="SELECT 'MOV_..WIP_MOVE_TXN_INTERFACE..." />
+                <marker date="1465442273531" expanded="true" signature="15709:15974" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="16013:16218" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="16257:16515" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="16554:16754" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="16793:18752" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="17115:17872" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="17972:18702" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="18791:20478" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="19131:19734" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="19828:20435" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="20517:20774" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="20813:21767" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="21089:21720" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="21806:23741" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="22104:22861" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="22961:23691" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="23781:25469" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="24122:24725" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="24819:25426" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="25509:25740" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="25780:26028" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="26065:26591" placeholder="SELECT 'M20'..TB_M20_SNDIF_STL_INOUT@VINA_MESUSER..." />
+                <marker date="1465442273531" expanded="true" signature="26065:27348" placeholder="SELECT 'M20'..." />
+                <marker date="1465442273531" expanded="true" signature="26238:26531" placeholder="SELECT MAX(C..TB_M20_SNDIF_STL_INOUT@VINA_MESUSER..." />
+                <marker date="1465442273531" expanded="true" signature="26606:26807" placeholder="Select 'M30'..TB_M30_E50M30_04@VINA_MESUSER..." />
+                <marker date="1465442273531" expanded="true" signature="26822:27132" placeholder="Select 'M30'..tb_m30_opr_prd_rsl@VINA_MESUSER..." />
+                <marker date="1465442273531" expanded="true" signature="27030:27104" placeholder="Select EXT_I..TB_M30_E50M30_04@VINA_MESUSER..." />
+                <marker date="1465442273531" expanded="true" signature="27147:27348" placeholder="Select 'M60'..TB_M60_E50M60_05@VINA_MESUSER..." />
+                <marker date="1465442273531" expanded="true" signature="27390:27680" placeholder="update PSVWI..." />
+                <marker date="1465442273531" expanded="true" signature="27722:27938" placeholder="update PSVWI..." />
+                <marker date="1465442273531" expanded="true" signature="27980:28249" placeholder="update PSVWI..." />
+                <marker date="1465442273531" expanded="true" signature="28291:28502" placeholder="update PSVWI..." />
+                <marker date="1465442273531" expanded="true" signature="28544:30509" placeholder="update PSVWI..." />
+                <marker date="1465442273531" expanded="true" signature="28872:29629" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="29729:30459" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="30551:32249" placeholder="update PSVWI..." />
+                <marker date="1465442273531" expanded="true" signature="30902:31505" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="31599:32206" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="32291:32559" placeholder="update PSVWI..." />
+                <marker date="1465442273531" expanded="true" signature="32601:33567" placeholder="update PSVWI..." />
+                <marker date="1465442273531" expanded="true" signature="32889:33520" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="33609:35533" placeholder="update PSVWI..." />
+                <marker date="1465442273531" expanded="true" signature="33915:34664" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="34762:35484" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="35576:37364" placeholder="update PSVWI..." />
+                <marker date="1465442273531" expanded="true" signature="35879:35918" placeholder="-- 하위품1(재작업품..." />
+                <marker date="1465442273531" expanded="true" signature="35972:36575" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="36624:36663" placeholder="-- 하위품2(재작업품..." />
+                <marker date="1465442273531" expanded="true" signature="36714:37321" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="37407:37649" placeholder="update PSVWI..." />
+                <marker date="1465442273531" expanded="true" signature="37692:37941" placeholder="update PSVWI..." />
+                <marker date="1465442273531" expanded="true" signature="37967:38198" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+                <marker date="1465442273531" expanded="true" signature="50334:51394" placeholder="select item_..segment1..." />
+                <marker date="1465442273531" expanded="true" signature="50490:50854" placeholder="select segme..MTL_ONHAND_QUANTITIES..." />
+                <marker date="1465442273531" expanded="true" signature="50875:51302" placeholder="select compo..psvwip_mes_component_tb_all..." />
+                <marker date="1465442273531" expanded="true" signature="51054:51290" placeholder="select if_ex..psvwip_mes_result_tb_all..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="201606.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/201606.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="site.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/site.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="556" max-vertical-offset="2584">
+              <caret line="293" column="53" selection-start-line="293" selection-start-column="53" selection-end-line="293" selection-end-column="53" />
+              <folding>
+                <element signature="n#!!block;n#checkOIT#0" expanded="false" />
+                <element signature="n#!!block;n#doUpdateStep_child#0" expanded="false" />
+                <element signature="n#!!block;n#doUpdateStep#0" expanded="false" />
+                <element signature="n#!!block;n#updateStep#0" expanded="false" />
+                <element signature="n#!!block;n#dis_pe_search#0" expanded="false" />
+                <element signature="n#!!block;n#en_pe_search#0" expanded="false" />
+                <element signature="n#!!block;n#onhand#0" expanded="false" />
+                <element signature="e#9562#12268#0" expanded="false" />
+                <element signature="e#12302#13400#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wip-close.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/site/wip-close.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-22.73077" vertical-offset="1296" max-vertical-offset="4233">
+              <caret line="111" column="69" selection-start-line="111" selection-start-column="51" selection-end-line="111" selection-end-column="69" />
+              <folding>
+                <element signature="e#2336#2359#0#HTML" expanded="true" />
+                <element signature="e#2465#2488#0#HTML" expanded="true" />
+                <element signature="e#2697#2731#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/resources/views/site/wip_close.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/site/master/script.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/site/master/home_master.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/site/master/footer.blade.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/resources/views/site/test.html" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/site.scss" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/201605.xml" />
+        <option value="$PROJECT_DIR$/public/test.xml" />
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/site/master/header.blade.php" />
+        <option value="$PROJECT_DIR$/public/201605.xml" />
+        <option value="$PROJECT_DIR$/resources/views/site/master/page_master.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SQL/If_Status.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ProductionResultController.php" />
+        <option value="$PROJECT_DIR$/resources/views/site/productionResult.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/OnhandController.php" />
+        <option value="$PROJECT_DIR$/resources/views/site/onhand.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/site/wip-close.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/assets/js/site.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PageController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/classpreloader/classpreloader" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-oci8" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-pdo-via-oci8" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="LayoutCode.rearrangeEntriesBlade" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="options.lastSelected" value="reference.webide.settings.project.settings.php" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="LayoutCode.rearrangeEntriesXML" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\WIP\poscoss-wip\public" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81c9dd69-1910-474b-863c-d2b947e6615f" name="Default" comment="" />
+      <created>1464063257243</created>
+      <option name="number" value="Default" />
+      <updated>1464063257243</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21268657" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20842217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/resources/views/site/wip-close.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2669" max-vertical-offset="4590">
+          <caret line="157" column="58" selection-start-line="157" selection-start-column="58" selection-end-line="157" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/site.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3842">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#checkOIT#0" expanded="false" />
+            <element signature="n#!!block;n#doUpdateStep_child#0" expanded="false" />
+            <element signature="n#!!block;n#doUpdateStep#0" expanded="false" />
+            <element signature="n#!!block;n#updateStep#0" expanded="false" />
+            <element signature="n#!!block;n#dis_pe_search#0" expanded="false" />
+            <element signature="n#!!block;n#en_pe_search#0" expanded="false" />
+            <element signature="n#!!block;n#onhand#0" expanded="false" />
+            <element signature="e#9562#12268#0" expanded="false" />
+            <element signature="e#12302#13400#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/site.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <caret line="0" column="21" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="357">
+          <caret line="15" column="105" selection-start-line="15" selection-start-column="105" selection-end-line="15" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3060">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/wip-close.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1227" max-vertical-offset="4607">
+          <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/site.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="12" max-vertical-offset="1020">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding>
+            <element signature="n#!!block;n#checkOIT#0" expanded="false" />
+            <element signature="n#!!block;n#doUpdateStep_child#0" expanded="false" />
+            <element signature="n#!!block;n#doUpdateStep#0" expanded="false" />
+            <element signature="n#!!block;n#updateStep#0" expanded="false" />
+            <element signature="n#!!block;n#dis_pe_search#0" expanded="false" />
+            <element signature="n#!!block;n#en_pe_search#0" expanded="false" />
+            <element signature="n#!!block;n#onhand#0" expanded="false" />
+            <element signature="e#9562#12268#0" expanded="false" />
+            <element signature="e#12302#13400#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="306">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1297" max-vertical-offset="2601">
+          <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="243" max-vertical-offset="1088">
+          <caret line="50" column="57" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/wip-close.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="4607">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/site.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#checkOIT#0" expanded="false" />
+            <element signature="n#!!block;n#doUpdateStep_child#0" expanded="false" />
+            <element signature="n#!!block;n#doUpdateStep#0" expanded="false" />
+            <element signature="n#!!block;n#updateStep#0" expanded="false" />
+            <element signature="n#!!block;n#dis_pe_search#0" expanded="false" />
+            <element signature="n#!!block;n#en_pe_search#0" expanded="false" />
+            <element signature="n#!!block;n#onhand#0" expanded="false" />
+            <element signature="e#9562#12268#0" expanded="false" />
+            <element signature="e#12302#13400#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="391">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="255">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1015" max-vertical-offset="2329">
+          <caret line="82" column="50" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/wip-close.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5746">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/site.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="493">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="871">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20695652" vertical-offset="0" max-vertical-offset="575">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/master/myscript.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6035503" vertical-offset="0" max-vertical-offset="845">
+          <caret line="30" column="75" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/master/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="845">
+          <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yajra/laravel-pdo-via-oci8/src/Pdo/Oci8.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.807693" vertical-offset="7369" max-vertical-offset="8942">
+          <caret line="460" column="0" selection-start-line="460" selection-start-column="0" selection-end-line="460" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.04491726" vertical-offset="38" max-vertical-offset="884">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="872">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7789598" vertical-offset="1891" max-vertical-offset="3655">
+          <caret line="150" column="46" selection-start-line="150" selection-start-column="46" selection-end-line="150" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.427896" vertical-offset="1015" max-vertical-offset="2329">
+          <caret line="81" column="49" selection-start-line="81" selection-start-column="49" selection-end-line="81" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/materialize/components/_color.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38224852" vertical-offset="2397" max-vertical-offset="7106">
+          <caret line="160" column="24" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/shared/materialize/tooltip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3553">
+          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/imgs/POSCO-SSVINA_04.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/materialize/materialize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3927739" vertical-offset="1193" max-vertical-offset="143990">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/site.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="799">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sample.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.078071184" vertical-offset="0" max-vertical-offset="871">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/master/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.095684804" vertical-offset="0" max-vertical-offset="533">
+          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/201605.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.031135531" vertical-offset="0" max-vertical-offset="4573">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/master/page_master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.478424" vertical-offset="102" max-vertical-offset="765">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/shared/materialize/buttons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="1649">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/test.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12071006" vertical-offset="0" max-vertical-offset="845">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3964497" vertical-offset="192" max-vertical-offset="1037">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/shared/materialize/scrollspy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="4913">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductionResultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="345.26923" vertical-offset="9079" max-vertical-offset="9911">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/productionResult.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="170" max-vertical-offset="3264">
+          <caret line="18" column="136" selection-start-line="18" selection-start-column="107" selection-end-line="18" selection-end-column="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/onhand.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1343">
+          <caret line="60" column="64" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OnhandController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="189.11539" vertical-offset="5002" max-vertical-offset="7004">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT 'stkW..TB_M20_MTL_STK@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT 'stkW..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT MAX(A..TB_M20_MTL_RSL@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT MAX(S..TB_M20_MTL_STK@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT 'notW..TB_M20_MTL_RSL@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT 'whsR..TB_M20_MTL_WHS_RSL@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT MAX(A..TB_M20_MTL_RSL@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT 'trnI..TB_M20_MTL_TRN@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT MAX(A..TB_M20_MTL_RSL@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT 'tran..TB_M20_MTL_TRN@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT MAX(A..TB_M20_MTL_RSL@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT 'roll..TB_M30_E50M30_04@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT HEAT_..TB_M20_MTL_TRN@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT MAX(A..TB_M20_MTL_RSL@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT 'roll..TB_M30_E50M30_04@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT HEAT_..TB_M20_MTL_TRN@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT MAX(A..TB_M20_MTL_RSL@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT 'take..TB_M20_SNDIF_STL_INOUT@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT 'take..TB_M20_SNDIF_STL_INOUT@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT 'take..SUBSTR..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT 'take..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT SUBST..TB_M20_MTL_SCR_SWT@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="Select 'mov'..TB_M20_MTL_MOV@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select max(a..TB_M20_MTL_RSL@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select '1' a..tb_m30_prd_rsl@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select '1' a..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select '2' a..tb_m30_prd_rsl@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select '3' a..tb_m30_prd_rsl@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select '4' a..tb_m30_prd_rsl@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select '5' a..tb_m30_prd_rsl@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select max(P..tb_m30_prd_rsl@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select '6' a..tb_m30_prd_rsl@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select max(P..tb_m30_prd_rsl@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select '7' a..tb_m30_prd_rsl@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select max(P..tb_m30_prd_rsl@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select '8' a..tb_m30_prd_rsl@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select max(a..tb_m30_prd_rsl@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select '9' a..tb_m30_prd_rsl@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select max(b..tb_m30_prd_rsl@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="SELECT 1 FRO..TB_M30_OPR_PRD_RSL@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select 'tb_m..tb_m60_prdno_inv@VINA_MESUSER..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select 'tb_m..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select 'tb_m..*..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select x.* ,..." />
+            <marker date="1465380542820" expanded="true" signature="-1:-1" placeholder="select 'tb_m..tb_m60_issue_rslts@VINA_MESUSER..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/site.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="556" max-vertical-offset="2584">
+          <caret line="293" column="53" selection-start-line="293" selection-start-column="53" selection-end-line="293" selection-end-column="53" />
+          <folding>
+            <element signature="n#!!block;n#checkOIT#0" expanded="false" />
+            <element signature="n#!!block;n#doUpdateStep_child#0" expanded="false" />
+            <element signature="n#!!block;n#doUpdateStep#0" expanded="false" />
+            <element signature="n#!!block;n#updateStep#0" expanded="false" />
+            <element signature="n#!!block;n#dis_pe_search#0" expanded="false" />
+            <element signature="n#!!block;n#en_pe_search#0" expanded="false" />
+            <element signature="n#!!block;n#onhand#0" expanded="false" />
+            <element signature="e#9562#12268#0" expanded="false" />
+            <element signature="e#12302#13400#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/wip-close.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.73077" vertical-offset="1296" max-vertical-offset="4233">
+          <caret line="111" column="69" selection-start-line="111" selection-start-column="51" selection-end-line="111" selection-end-column="69" />
+          <folding>
+            <element signature="e#2336#2359#0#HTML" expanded="true" />
+            <element signature="e#2465#2488#0#HTML" expanded="true" />
+            <element signature="e#2697#2731#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="714">
+          <caret line="29" column="90" selection-start-line="29" selection-start-column="90" selection-end-line="29" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/201606.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6134752" vertical-offset="15206" max-vertical-offset="22236">
+          <caret line="940" column="42" selection-start-line="940" selection-start-column="42" selection-end-line="940" selection-end-column="42" />
+          <folding>
+            <element signature="e#39#73#0#PHP" expanded="true" />
+            <element signature="e#38209#38283#0#PHP" expanded="false" />
+            <marker date="1465442273531" expanded="false" signature="244:1000" placeholder="SELECT DECOD..." />
+            <marker date="1465442273531" expanded="true" signature="1036:1179" placeholder="SELECT 'MTL_..MTL_TRANSACTIONS_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="1036:3273" placeholder="SELECT 'MTL_..." />
+            <marker date="1465442273531" expanded="true" signature="1194:1339" placeholder="SELECT 'MTL_..MTL_TRANSACTIONS_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="1354:1654" placeholder="SELECT 'MTL_..MTL_TRANSACTION_LOTS_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="1476:1624" placeholder="SELECT 1 FRO..MTL_TRANSACTIONS_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="1669:1969" placeholder="SELECT 'MTL_..MTL_TRANSACTION_LOTS_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="1791:1939" placeholder="SELECT 1 FRO..MTL_TRANSACTIONS_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="1984:2134" placeholder="SELECT 'WIP_..WIP_JOB_SCHEDULE_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="2149:2296" placeholder="SELECT 'WIP_..WIP_JOB_SCHEDULE_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="2311:2457" placeholder="SELECT 'MOV_..WIP_MOVE_TXN_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="2472:2615" placeholder="SELECT 'MOV_..WIP_MOVE_TXN_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="2630:2777" placeholder="SELECT 'RESO..WIP_COST_TXN_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="2792:2936" placeholder="SELECT 'RESO..WIP_COST_TXN_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="2951:3106" placeholder="SELECT 'MTL_..MTL_MATERIAL_TRANSACTIONS_TEMP..." />
+            <marker date="1465442273531" expanded="true" signature="3121:3273" placeholder="SELECT 'MTL_..MTL_MATERIAL_TRANSACTIONS_TEMP..." />
+            <marker date="1465442273531" expanded="true" signature="3302:3618" placeholder="Select '0' a..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="3302:13783" placeholder="Select '0' a..." />
+            <marker date="1465442273531" expanded="true" signature="3629:3885" placeholder="Select '1' a..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="3896:4213" placeholder="Select '2' a..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="4224:4479" placeholder="Select '4' a..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="4490:6458" placeholder="Select '5' a..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="4859:5600" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="5696:6410" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="6469:8171" placeholder="Select '6' a..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="6858:7447" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="7537:8130" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="8182:8490" placeholder="Select '7' a..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="8501:9492" placeholder="Select '8' a..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="8830:9447" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="9503:11451" placeholder="Select '9' a..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="9852:10593" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="10689:11403" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="11462:13168" placeholder="Select '10' ..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="11855:12444" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="12534:13127" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="13179:13466" placeholder="Select '11' ..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="13477:13783" placeholder="Select '12' ..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="13817:15673" placeholder="SELECT SUM(T..TP..." />
+            <marker date="1465442273531" expanded="true" signature="13864:14037" placeholder="SELECT 'MTL_..MTL_TRANSACTIONS_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="14062:14232" placeholder="SELECT 'MTL_..MTL_TRANSACTIONS_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="14257:14597" placeholder="SELECT 'MTL_..MTL_TRANSACTION_LOTS_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="14399:14562" placeholder="SELECT 1 FRO..MTL_TRANSACTIONS_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="14622:14962" placeholder="SELECT 'MTL_..MTL_TRANSACTION_LOTS_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="14764:14927" placeholder="SELECT 1 FRO..MTL_TRANSACTIONS_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="14987:15147" placeholder="SELECT 'WIP_..WIP_JOB_SCHEDULE_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="15166:15323" placeholder="SELECT 'WIP_..WIP_JOB_SCHEDULE_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="15342:15498" placeholder="SELECT 'MOV_..WIP_MOVE_TXN_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="15517:15670" placeholder="SELECT 'MOV_..WIP_MOVE_TXN_INTERFACE..." />
+            <marker date="1465442273531" expanded="true" signature="15709:15974" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="16013:16218" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="16257:16515" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="16554:16754" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="16793:18752" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="17115:17872" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="17972:18702" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="18791:20478" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="19131:19734" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="19828:20435" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="20517:20774" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="20813:21767" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="21089:21720" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="21806:23741" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="22104:22861" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="22961:23691" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="23781:25469" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="24122:24725" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="24819:25426" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="25509:25740" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="25780:26028" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="26065:26591" placeholder="SELECT 'M20'..TB_M20_SNDIF_STL_INOUT@VINA_MESUSER..." />
+            <marker date="1465442273531" expanded="true" signature="26065:27348" placeholder="SELECT 'M20'..." />
+            <marker date="1465442273531" expanded="true" signature="26238:26531" placeholder="SELECT MAX(C..TB_M20_SNDIF_STL_INOUT@VINA_MESUSER..." />
+            <marker date="1465442273531" expanded="true" signature="26606:26807" placeholder="Select 'M30'..TB_M30_E50M30_04@VINA_MESUSER..." />
+            <marker date="1465442273531" expanded="true" signature="26822:27132" placeholder="Select 'M30'..tb_m30_opr_prd_rsl@VINA_MESUSER..." />
+            <marker date="1465442273531" expanded="true" signature="27030:27104" placeholder="Select EXT_I..TB_M30_E50M30_04@VINA_MESUSER..." />
+            <marker date="1465442273531" expanded="true" signature="27147:27348" placeholder="Select 'M60'..TB_M60_E50M60_05@VINA_MESUSER..." />
+            <marker date="1465442273531" expanded="true" signature="27390:27680" placeholder="update PSVWI..." />
+            <marker date="1465442273531" expanded="true" signature="27722:27938" placeholder="update PSVWI..." />
+            <marker date="1465442273531" expanded="true" signature="27980:28249" placeholder="update PSVWI..." />
+            <marker date="1465442273531" expanded="true" signature="28291:28502" placeholder="update PSVWI..." />
+            <marker date="1465442273531" expanded="true" signature="28544:30509" placeholder="update PSVWI..." />
+            <marker date="1465442273531" expanded="true" signature="28872:29629" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="29729:30459" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="30551:32249" placeholder="update PSVWI..." />
+            <marker date="1465442273531" expanded="true" signature="30902:31505" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="31599:32206" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="32291:32559" placeholder="update PSVWI..." />
+            <marker date="1465442273531" expanded="true" signature="32601:33567" placeholder="update PSVWI..." />
+            <marker date="1465442273531" expanded="true" signature="32889:33520" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="33609:35533" placeholder="update PSVWI..." />
+            <marker date="1465442273531" expanded="true" signature="33915:34664" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="34762:35484" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="35576:37364" placeholder="update PSVWI..." />
+            <marker date="1465442273531" expanded="true" signature="35879:35918" placeholder="-- 하위품1(재작업품..." />
+            <marker date="1465442273531" expanded="true" signature="35972:36575" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="36624:36663" placeholder="-- 하위품2(재작업품..." />
+            <marker date="1465442273531" expanded="true" signature="36714:37321" placeholder="select disti..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="37407:37649" placeholder="update PSVWI..." />
+            <marker date="1465442273531" expanded="true" signature="37692:37941" placeholder="update PSVWI..." />
+            <marker date="1465442273531" expanded="true" signature="37967:38198" placeholder="Select IF_EX..PSVWIP_MES_RESULT_TB_ALL..." />
+            <marker date="1465442273531" expanded="true" signature="50334:51394" placeholder="select item_..segment1..." />
+            <marker date="1465442273531" expanded="true" signature="50490:50854" placeholder="select segme..MTL_ONHAND_QUANTITIES..." />
+            <marker date="1465442273531" expanded="true" signature="50875:51302" placeholder="select compo..psvwip_mes_component_tb_all..." />
+            <marker date="1465442273531" expanded="true" signature="51054:51290" placeholder="select if_ex..psvwip_mes_result_tb_all..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,37 @@
+header {
+  padding: 10px 0 0 0; }
+
+footer {
+  padding: 30px 0; }
+
+a {
+  color: #23afff !important; }
+  a:hover {
+    color: #005789 !important; }
+
+.row {
+  margin-bottom: 0; }
+
+.right-title {
+  position: relative;
+  min-height: 32px; }
+  .right-title span {
+    padding: 5px 10px;
+    background: #37474f;
+    color: #f5f5f5;
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+.bignum {
+  font-size: 2rem;
+  font-weight: bold; }
+
+.statusCode {
+  min-height: 50px;
+  word-wrap: break-word; }
+
+.hand {
+  cursor: pointer; }
+
+/*# sourceMappingURL=site.css.map */

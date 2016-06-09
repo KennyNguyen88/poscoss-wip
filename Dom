@@ -1,0 +1,4 @@
+
+Warning: PHP Startup: Unable to load dynamic library 'D:\soft\xampp\php\ext\php_oci8_11g.dll' - The specified procedure could not be found.
+ in Unknown on line 0
+Could not open input file: phpinfo()
