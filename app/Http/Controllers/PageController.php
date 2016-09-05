@@ -123,7 +123,7 @@ class PageController extends Controller
 	public $sql_step =
 		"Select
     '0' as step
-    , 'WIP to NEW' as step_description
+    , 'To WIP_READY' as step_description
     , count(*) as total
 from PSVWIP_MES_RESULT_TB_ALL
 where 1=1
@@ -924,8 +924,8 @@ where 1=1
 		//set default value for control box
 		$fromDate = date('Y-m-01'); //begin of month
 		$toDate = date('Y-m-t'); //end of month
-		//$filename = substr(str_replace("-","",$fromDate),0,6).".xml";
-		$filename = "201606.xml";
+		$filename = substr(str_replace("-","",$fromDate),0,6).".xml";
+		//$filename = "201608.xml";
 		$data = array(
 			'pageID' => 'wip-close',
 			'fromDate' => $fromDate,
@@ -1301,7 +1301,7 @@ where 1=1
 											select if_ext_id
 											from psvwip_mes_result_tb_all
 											where 1=1
-												and transaction_Date like :fromDate||'%'
+												and transaction_Date like substr(:fromDate,0,6)||'%'
 												and department_code like '11130'
 												and process_status_code in ('NEW', 'WIP_READY')
 										)
@@ -1313,5 +1313,77 @@ where 1=1
 		$fromDate = $this->fmDate($fromDate);
 		$results = DB::select($sql,['fromDate' => $fromDate]);
 		return response()->json($results);
+	}
+
+	public function ifNotSendDetail($chain, $fromDate, $toDate)
+	{
+		$sqlm20 =
+			"
+			SELECT
+			    EXT_ID
+			    , PRD_DT
+			    , TCT_TP_CD
+			    , TRANRET
+			FROM
+			    TB_M20_SNDIF_STL_INOUT@VINA_MESUSER  A
+			WHERE
+			    CREATION_TIMESTAMP = (SELECT MAX(CREATION_TIMESTAMP)
+			                           FROM TB_M20_SNDIF_STL_INOUT@VINA_MESUSER X
+			                           WHERE X.PRD_LOT_NO = A.PRD_LOT_NO
+			                             AND X.PRD_DT BETWEEN :fromDate AND :toDate
+			                             AND X.TCT_TP_CD = '02'
+			                         )
+			    AND TRANRET in ('B','C')
+			";
+		$sqlm30 =
+			"
+			Select
+			    EXT_ID
+			    , PRD_DT
+			    , TCT_TP_CD
+			    , TRANRET
+			from TB_M30_E50M30_04@VINA_MESUSER
+			where 1=1
+			and PRD_DT between :fromDate AND :toDate
+			and TRANRET in ('B','C')
+			union all
+			Select
+			    IF_EXT_ID as EXT_ID
+			    , PRD_DT
+			    , TCT_TP_CD
+			    , 'NOT' AS TRANRET
+			from tb_m30_opr_prd_rsl@VINA_MESUSER
+			where 1=1
+			and PRD_DT between :fromDate AND :toDate
+			and IF_EXT_ID not in ( Select EXT_ID
+			                        from TB_M30_E50M30_04@VINA_MESUSER
+			                        )
+			";
+		$sqlm60 =
+			"
+			Select
+			    EXT_ID
+			    , PRD_DT
+			    , TCT_TP_CD
+			    , TRANRET
+			from TB_M60_E50M60_05@VINA_MESUSER
+			where 1=1
+			and PRD_DT between :fromDate AND :toDate
+			and TRANRET in ('B','C')
+			";
+		$fromDate = $this->fmDate($fromDate);
+		$toDate = $this->fmDate($toDate);
+//		$sql = "";
+		switch ($chain) {
+			case 'M20':
+				$if_not_send_detail_results = DB::select($sqlm20,['fromDate' => $fromDate, 'toDate' => $toDate]);
+				return response()->json($if_not_send_detail_results);
+			case 'M30':
+				$if_not_send_detail_results = DB::select($sqlm30,['fromDate' => $fromDate, 'toDate' => $toDate]);
+				return response()->json($if_not_send_detail_results);
+			default:
+				$if_not_send_detail_results = DB::select($sqlm60,['fromDate' => $fromDate, 'toDate' => $toDate]);
+				return response()->json($if_not_send_detail_results);
+		}
 	}
 }

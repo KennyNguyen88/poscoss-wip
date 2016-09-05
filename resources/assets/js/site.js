@@ -216,6 +216,37 @@ function onhand(chain)
         $('#onHandResult').html(result);
     });
 }
+
+function ifDetail(chain)
+{
+    var url = "/public/ifNotSend/" + chain;
+    var fromDate = $('#fromDate').val();
+    var toDate = $('#toDate').val();
+    $.get(url + '/' + fromDate + '/' + toDate, function (data) {
+        var result = '';
+        var x;
+        for (x in data)
+        {
+            result += '<tr>';
+            result += '<td>';
+            result += data[x]["ext_id"];
+            result += '</td>';
+            result += '<td>';
+            result += data[x]["prd_dt"];
+            result += '</td>';
+
+            result += '<td>';
+            result += data[x]["tct_tp_cd"];
+            result += '</td>';
+            result += '<td>';
+            result += data[x]["tranret"];
+            result += '</td>';
+            result += '</tr>';
+        }
+        $('#if_not_send_detail_result').empty();
+        $('#if_not_send_detail_result').html(result);
+    });
+}
 $(document).ready(function () {
     //materialize init
     $('select').material_select();
@@ -257,15 +288,15 @@ $(document).ready(function () {
                     result += data[x]["tp"];
                     result += '</td>';
                     switch (data[x]["total"]){
-                        case 0:
-                            result += '<td class="red">';
+                        case '0':
+                            result += '<td>';
                             break;
                         default :
-                            result += '<td>';
+                            result += '<td> <a onclick="ifDetail(' + "'" +  data[x]["chain"] + "'" +  ')">';
                             break;
                     }
                     result += data[x]["total"];
-                    result += '</td>';
+                    result += '</a></td>';
                     result += '</tr>';
                 }
                 $('#if_not_send_result').empty();
@@ -274,6 +305,9 @@ $(document).ready(function () {
 
             $('#modal_IF').openModal();
         });
+
+
+
 
         $('#modal_minus_trigger').click(function(){
             var url = "/public/minus";

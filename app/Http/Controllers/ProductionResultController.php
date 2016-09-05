@@ -41,7 +41,7 @@ class ProductionResultController extends Controller
 			            GROUP BY PRD.DIV_ROL_LOT_NO
 			            UNION ALL
 			            SELECT
-			                 PRD.ADD_PCS_LOT_NO AS DIV_ROL_LOT_NO
+			                 SUBSTR(PRD.ADD_PCS_LOT_NO,1,9) || '0' AS ROL_LOT_NO
 			                , SUM(ADD_PCS_WGT) AS PRD_WGT
 			                , MAX(SUB.INST_TP) AS INST_TP
 			            FROM TB_M30_PRD_RSL@VINA_MESUSER PRD
@@ -52,14 +52,14 @@ class ProductionResultController extends Controller
 			                AND CMN.ROL_LOT_NO = SUB.ROL_LOT_NO
 			                AND SUB.PROC_SEQ_TP IN ('F','A')
 			                AND PRD.INSP_PSV_DT like SUBSTR(:fromDate,0,6)||'%'
-			                AND (SELECT MAX(INSP_PSV_DT) FROM TB_M30_PRD_RSL@VINA_MESUSER RSL WHERE RSL.ROL_LOT_NO = PRD.ADD_PCS_LOT_NO) like SUBSTR(:fromDate,0,6)||'%'
+			                AND (SELECT MAX(INSP_PSV_DT) FROM TB_M30_PRD_RSL@VINA_MESUSER RSL WHERE RSL.DIV_ROL_LOT_NO = PRD.ADD_PCS_LOT_NO) like SUBSTR(:fromDate,0,6)||'%'
 			                AND PRD.FAC_TP = :FAC_TP
 			                AND PRD.ADD_PCS_LOT_NO IS NOT NULL
 			                AND SUB.INST_TP LIKE :INST_TP||'%'
 			                GROUP BY PRD.ADD_PCS_LOT_NO
 			            UNION ALL
 			            SELECT
-			                 PRD.ADD_PCS_LOT_NO AS DIV_ROL_LOT_NO
+			                 SUBSTR(PRD.ADD_PCS_LOT_NO,1,9) || '0' AS ROL_LOT_NO
 			                , SUM(ADD_PCS_WGT) AS PRD_WGT
 			                , MAX(SUB.INST_TP) AS INST_TP
 			            FROM TB_M30_PRD_RSL@VINA_MESUSER PRD

@@ -163,7 +163,7 @@
             </div>
         </div>
         <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-            <a class="btn-floating btn-large blue">
+            <a class="btn-floating btn-large blue" href="{{route('wip-close')}}">
                 <i class="large material-icons">mode_edit</i>
             </a>
             <ul>
@@ -173,8 +173,8 @@
                     </a>
                 </li>
                 <li>
-                    <a class="btn-floating red" href="{{route('wip-close')}}">
-                        <i class="fa fa-home"></i>
+                    <a class="btn-floating red" href="{{route('wip-close-prdRsl-index')}}">
+                        <i class="large material-icons">info_outline</i>
                     </a>
                 </li>
             </ul>

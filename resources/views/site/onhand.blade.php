@@ -30,12 +30,12 @@
                         <button id="btnSearchOnHandM60" type="button" class="waves-effect waves-light btn">M60</button>
                     </div>
                     <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-                        <a class="btn-floating btn-large blue" >
+                        <a class="btn-floating btn-large blue" href="{{route('wip-close')}}">
                             <i class="large material-icons">mode_edit</i>
                         </a>
                         <ul>
                             <li>
-                                <a class="btn-floating red" href="{{route('wip-close')}}">
+                                <a class="btn-floating red" href="{{route('onhand')}}">
                                     <i class="large material-icons">list</i>
                                 </a>
                             </li>

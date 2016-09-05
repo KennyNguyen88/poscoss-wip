@@ -27,6 +27,8 @@ Route::get('/step/{id}/{fromDate}/{toDate}/{update}', ['as' => 'wip-close-step-i
 
 Route::get('/ifNotSend/{fromDate}/{toDate}', ['as' => 'wip-close-ifNotSend','uses' => 'PageController@ifNotSend']);
 
+Route::get('/ifNotSend/{chain}/{fromDate}/{toDate}', ['as' => 'wip-close-ifNotSend-detail','uses' => 'PageController@ifNotSendDetail']);
+
 Route::get('/minus/{fromDate}', ['as' => 'wip-close-minus','uses' => 'PageController@minus']);
 
 //Route::get('/prdRsl/{fromDate}', ['as' => 'wip-close-prdRsl','uses' => 'ProductionResultController@index']);

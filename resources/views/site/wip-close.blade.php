@@ -52,7 +52,7 @@
                     </div>
 
                     <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-                        <a class="btn-floating btn-large blue" >
+                        <a class="btn-floating btn-large blue" href="{{route('wip-close')}}">
                             <i class="large material-icons">mode_edit</i>
                         </a>
                         <ul>
@@ -86,8 +86,30 @@
 
                                         </tbody>
                                     </table>
+
+
+
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col m6 offset-m3">
+                                    <table class="bordered">
+                                        <thead>
+                                        <tr>
+                                            <th class="">EXT_ID</th>
+                                            <th class="">PRD_DT</th>
+                                            <th class="">TCT_TP_CD</th>
+                                            <th class="">TRANRET</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="if_not_send_detail_result">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
 
                         </div>
                         <div class="modal-footer">

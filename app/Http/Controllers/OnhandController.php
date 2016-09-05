@@ -34,7 +34,7 @@ class OnhandController extends Controller
 		WHERE INSP_PSV_DT <= :dateCheck
 		  AND CFM_YN = 'Y'
 		  AND NVL(SCR_YN, 'N') = 'N'
-		  AND NVL(MTL_WHS_DT, SYSDATE) > :dateCheck
+		  AND NVL(MTL_WHS_DT, TO_CHAR(SYSDATE,'YYYYMMDD')) > :dateCheck
 		  AND HEAT_NO = :lotno
 		union all
 		SELECT
