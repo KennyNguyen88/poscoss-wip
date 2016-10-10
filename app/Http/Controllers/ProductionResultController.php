@@ -8,137 +8,7 @@ use App\Http\Requests;
 
 class ProductionResultController extends Controller
 {
-	public $sql_m30 =
-		"
-			SELECT
-			    SUM(PRD_WGT) AS PRD_WGT
-			    , SUM (INP_WGT) AS INP_WGT
-			FROM
-			(
-			    SELECT
-			         RSL.PRD_WGT AS PRD_WGT
-			         ,OPR.INP_WGT AS INP_WGT
-			    FROM (
-			        SELECT
-			             DIV_ROL_LOT_NO
-			            , SUM(PRD_WGT) AS PRD_WGT
-			            , MAX(INST_TP) AS INST_TP
-			        FROM (
-			            SELECT
-			                 PRD.DIV_ROL_LOT_NO
-			                , SUM(NVL(PRD.PRD_WGT,0)-NVL(ADD_PCS_WGT,0)) AS PRD_WGT
-			                , MAX(SUB.INST_TP) AS INST_TP
-			            FROM TB_M30_PRD_RSL@VINA_MESUSER PRD
-			                , TB_K40_ROL_INST_CMN@VINA_MESUSER CMN
-			                , TB_K40_ROL_INST_SUB_ORD@VINA_MESUSER SUB
-			            WHERE PRD.FAC_TP = CMN.FAC_TP
-			                AND PRD.ROL_LOT_NO = CMN.ROL_LOT_NO
-			                AND CMN.ROL_LOT_NO = SUB.ROL_LOT_NO
-			                AND SUB.PROC_SEQ_TP IN ('F','A')
-			                AND PRD.INSP_PSV_DT like SUBSTR(:fromDate,0,6)||'%'
-			                AND PRD.FAC_TP = :FAC_TP
-			                AND SUB.INST_TP LIKE :INST_TP||'%'
-			            GROUP BY PRD.DIV_ROL_LOT_NO
-			            UNION ALL
-			            SELECT
-			                 SUBSTR(PRD.ADD_PCS_LOT_NO,1,9) || '0' AS ROL_LOT_NO
-			                , SUM(ADD_PCS_WGT) AS PRD_WGT
-			                , MAX(SUB.INST_TP) AS INST_TP
-			            FROM TB_M30_PRD_RSL@VINA_MESUSER PRD
-			                ,TB_K40_ROL_INST_CMN@VINA_MESUSER CMN
-			                ,TB_K40_ROL_INST_SUB_ORD@VINA_MESUSER SUB
-			            WHERE PRD.FAC_TP = CMN.FAC_TP
-			                AND PRD.ADD_PCS_LOT_NO = CMN.ROL_LOT_NO
-			                AND CMN.ROL_LOT_NO = SUB.ROL_LOT_NO
-			                AND SUB.PROC_SEQ_TP IN ('F','A')
-			                AND PRD.INSP_PSV_DT like SUBSTR(:fromDate,0,6)||'%'
-			                AND (SELECT MAX(INSP_PSV_DT) FROM TB_M30_PRD_RSL@VINA_MESUSER RSL WHERE RSL.DIV_ROL_LOT_NO = PRD.ADD_PCS_LOT_NO) like SUBSTR(:fromDate,0,6)||'%'
-			                AND PRD.FAC_TP = :FAC_TP
-			                AND PRD.ADD_PCS_LOT_NO IS NOT NULL
-			                AND SUB.INST_TP LIKE :INST_TP||'%'
-			                GROUP BY PRD.ADD_PCS_LOT_NO
-			            UNION ALL
-			            SELECT
-			                 SUBSTR(PRD.ADD_PCS_LOT_NO,1,9) || '0' AS ROL_LOT_NO
-			                , SUM(ADD_PCS_WGT) AS PRD_WGT
-			                , MAX(SUB.INST_TP) AS INST_TP
-			            FROM TB_M30_PRD_RSL@VINA_MESUSER PRD
-			                ,TB_K40_ROL_INST_CMN@VINA_MESUSER CMN
-			                ,TB_K40_ROL_INST_SUB_ORD@VINA_MESUSER SUB
-			            WHERE PRD.FAC_TP = CMN.FAC_TP
-			                AND PRD.ADD_PCS_LOT_NO = CMN.ROL_LOT_NO
-			                AND CMN.ROL_LOT_NO = SUB.ROL_LOT_NO
-			                AND SUB.PROC_SEQ_TP IN ('F','A')
-			                AND SUBSTR(PRD.INSP_PSV_DT,0,6) > SUBSTR(:fromDate,0,6)
-			                AND PRD.FAC_TP = :FAC_TP
-			                AND PRD.ADD_PCS_LOT_NO IS NOT NULL
-			                AND SUB.INST_TP LIKE :INST_TP||'%'
-			                AND EXISTS (SELECT 1 FROM TB_M30_OPR_PRD_RSL@VINA_MESUSER OPR WHERE OPR.ROL_LOT_NO = PRD.ADD_PCS_LOT_NO AND OPR.FAC_TP = :FAC_TP AND OPR.PRD_DT like SUBSTR(:fromDate,0,6)||'%')
-			              GROUP BY PRD.ADD_PCS_LOT_NO
-			        )
-			            GROUP BY DIV_ROL_LOT_NO
-			        ) RSL
-			        ,(
-			        SELECT
-			            ROL_LOT_NO
-			            ,DECODE(TCT_TP_CD,'04','G','21','E','Z') AS INST_TP
-			            ,MAX(PRD_DT) AS PRD_DT
-			            ,MAX(PRD_WGT) KEEP(DENSE_RANK LAST ORDER BY PRD_DT) AS PRD_WGT
-			            ,MAX(INP_WGT) KEEP(DENSE_RANK LAST ORDER BY PRD_DT) AS INP_WGT
-			        FROM TB_M30_OPR_PRD_RSL@VINA_MESUSER OPR
-			        WHERE TCT_TP_CD <> '13'
-			        AND FAC_TP = :FAC_TP
 
-			            GROUP BY ROL_LOT_NO,TCT_TP_CD
-			        ) OPR
-			    WHERE 1=1
-
-			        AND RSL.DIV_ROL_LOT_NO = OPR.ROL_LOT_NO
-			        AND RSL.INST_TP = OPR.INST_TP
-
-			    UNION ALL
-			    SELECT
-			         0 AS PRD_WGT
-			        , SUM(SCR.INP_WGT) AS INP_WGT
-			    FROM TB_M30_OPR_PRD_RSL@VINA_MESUSER SCR
-			        ,TB_K40_ROL_INST_CMN@VINA_MESUSER CMN
-			    WHERE SCR.FAC_TP = CMN.FAC_TP
-			        AND SCR.ROL_LOT_NO = CMN.ROL_LOT_NO
-			        AND SCR.FAC_TP = :FAC_TP
-			        AND SCR.PRD_DT like SUBSTR(:fromDate,0,6)||'%'
-			        AND NVL(:INST_TP,'%') IN ('%','G')
-			        AND SCR.TCT_TP_CD = '13'
-			)
-			";
-	public $sql_erp =
-		"select xx1c.rule_desc prod_group_desc ,
-		  sum(decode(xawl.yield_dest_flag, 'Y', xawl.act_issue_qty, 0)) iss_qty ,
-		  sum(decode(xawl.yield_dest_flag, 'Y', xawl.receipt_qty, 0)) prod_qty ,
-		  sum(decode(xawl.yield_dest_flag, 'Y', xawl.fail_qty, 0)) fail_qty,
-		  case
-    		when sum(decode(xawl.yield_dest_flag, 'Y', xawl.act_issue_qty, 0)) = 0 then 0
-    		else round(sum(decode(xawl.yield_dest_flag, 'Y', xawl.receipt_qty, 0)) / sum(decode(xawl.yield_dest_flag, 'Y', xawl.act_issue_qty, 0)) * 100,2)
-  			end yield
-		from
-		      psvbom_act_wip_lot_all xawl ,
-		      (
-		      select
-		        segment1 rule_code ,
-		        segment2 rule_desc
-		      from psvbom_com_lookup_code_all
-		      where lookup_type_code = 'ITEM_RULE_PRDGRP_CODE'
-		      group by
-		          segment1 ,
-		          segment2
-		  ) xx1c
-		where xawl.organization_id = 87
-		  and to_char(xawl.trx_date,'YYYYMM') like substr(:fromDate,0,6)
-		  and xawl.actual_item_code like :ITEM_CODE||'%'
-		  and xawl.rework_yn = nvl(:rework_yn, xawl.rework_yn)
-		  and xx1c.rule_code (+)= psvcm_com_get_pkg.get_item_rule_fnc(xawl.actual_item_code, 'ITEM_RULE_PRDGRP_CODE')
-		group by xx1c.rule_desc
-		order by 1
-		";
 
 	public function fmDate($Date) {
 		return str_replace( "-", "", $Date );
@@ -169,7 +39,7 @@ class ProductionResultController extends Controller
     }
 	public function get_SMP_Normal_Semi_ERP($fromDate)
 	{
-		$results = DB::select($this->sql_erp,['fromDate' => $fromDate, 'item_code' => 'E', 'rework_yn' => 'N']);
+		$results = DB::select(queryIF::$sql_erp,['fromDate' => $fromDate, 'item_code' => 'E', 'rework_yn' => 'N']);
 		return $results;
 	}
 	public function get_SMP_Normal_Semi_ERP_Input($fromDate){
@@ -394,7 +264,7 @@ class ProductionResultController extends Controller
 		return $results;
 	}
 	public function get_Section_Normal_Semi_MES($fromDate){
-		$results = DB::select($this->sql_m30,['fromDate' => $fromDate, 'fac_tp' => '2', 'INST_TP' => 'G']);
+		$results = DB::select(queryIF::$sql_m30,['fromDate' => $fromDate, 'fac_tp' => '2', 'INST_TP' => 'G']);
 		return $results;
 	}
 	public function get_FG_Shipping_ERP($fromDate){
@@ -557,19 +427,19 @@ class ProductionResultController extends Controller
 		return $results;
 	}
 	public function get_Section_Rework_Semi_ERP($fromDate){
-		$results = DB::select($this->sql_erp,['fromDate' => $fromDate, 'item_code' => 'E', 'rework_yn' => 'Y']);
+		$results = DB::select(queryIF::$sql_erp,['fromDate' => $fromDate, 'item_code' => 'E', 'rework_yn' => 'Y']);
 		return $results;
 	}
 	public function get_Section_Rework_Semi_MES($fromDate){
-		$results = DB::select($this->sql_m30,['fromDate' => $fromDate, 'fac_tp' => '2', 'INST_TP' => 'E']);
+		$results = DB::select(queryIF::$sql_m30,['fromDate' => $fromDate, 'fac_tp' => '2', 'INST_TP' => 'E']);
 		return $results;
 	}
 	public function get_Rebar_Normal_Semi_MES($fromDate){
-		$results = DB::select($this->sql_m30,['fromDate' => $fromDate, 'fac_tp' => '3', 'INST_TP' => 'G']);
+		$results = DB::select(queryIF::$sql_m30,['fromDate' => $fromDate, 'fac_tp' => '3', 'INST_TP' => 'G']);
 		return $results;
 	}
 	public function get_Rebar_Rework_Semi_MES($fromDate){
-		$results = DB::select($this->sql_m30,['fromDate' => $fromDate, 'fac_tp' => '3', 'INST_TP' => 'E']);
+		$results = DB::select(queryIF::$sql_m30,['fromDate' => $fromDate, 'fac_tp' => '3', 'INST_TP' => 'E']);
 		return $results;
 	}
 
