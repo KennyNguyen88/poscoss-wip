@@ -10,7 +10,6 @@ use App\Http\Requests;
 
 class PageController extends Controller
 {
-	
 	public function fmDate($Date) {
 		return str_replace( "-", "", $Date );
 	}
@@ -177,49 +176,6 @@ class PageController extends Controller
 			}
 			return response()->json($rows);
 		}
-	}
-	public function search(Request $request)
-	{
-		$fromDate = $this->fmDate($request->input('fromDate'));
-		$toDate = $this->fmDate($request->input('toDate'));
-		$if_status_results = DB::select(queryIF::$sql_if_status,['fromDate' => $fromDate, 'toDate' => $toDate]);
-//		$oit_mtl_trx_pending_results = DB::select($this->sql_oit_mtl_trx_pending);
-//		$oit_mtl_trx_error_results = DB::select($this->sql_oit_mtl_trx_error);
-//		$oit_mtl_lot_trx_pending_results = DB::select($this->sql_oit_mtl_lot_trx_pending);
-//		$oit_mtl_lot_trx_error_results = DB::select($this->sql_oit_mtl_lot_trx_error);
-//		$oit_wip_job_pending_results = DB::select($this->sql_oit_wip_job_pending);
-//		$oit_wip_job_error_results = DB::select($this->sql_oit_wip_job_error);
-//		$oit_mov_trx_pending_results = DB::select($this->sql_oit_mov_trx_pending);
-//		$oit_mov_trx_error_results = DB::select($this->sql_oit_mov_trx_error);
-//		$oit_resource_pending_results = DB::select($this->sql_oit_resource_pending);
-//		$oit_resource_error_results = DB::select($this->sql_oit_resource_error);
-//		$oit_mtl_temp_pending_results = DB::select($this->sql_oit_mtl_temp_pending);
-//		$oit_mtl_temp_error_results = DB::select($this->sql_oit_mtl_temp_error);
-
-		$data = array(
-			'pageID' => 'wip-close',
-			'fromDate' => $request->input('fromDate'),
-			'toDate' => $request->input('toDate')
-		);
-
-		return view('site.wip-close',
-						[
-							'if_status_results' => $if_status_results,
-//							'oit_mtl_trx_pending_results' => $oit_mtl_trx_pending_results,
-//							'oit_mtl_trx_error_results' => $oit_mtl_trx_error_results,
-//							'oit_mtl_lot_trx_pending_results' => $oit_mtl_lot_trx_pending_results,
-//							'oit_mtl_lot_trx_error_results' => $oit_mtl_lot_trx_error_results,
-//							'oit_wip_job_pending_results' => $oit_wip_job_pending_results,
-//							'oit_wip_job_error_results' => $oit_wip_job_error_results,
-//							'oit_mov_trx_pending_results' => $oit_mov_trx_pending_results,
-//							'oit_mov_trx_error_results' => $oit_mov_trx_error_results,
-//							'oit_resource_pending_results' => $oit_resource_pending_results,
-//							'oit_resource_error_results' => $oit_resource_error_results,
-//							'oit_mtl_temp_pending_results' => $oit_mtl_temp_pending_results,
-//							'oit_mtl_temp_error_results' => $oit_mtl_temp_error_results,
-							'data' => $data
-						]
-		);
 	}
 	public function step($fromDate, $toDate)
 	{

@@ -18,7 +18,6 @@
                                 {{--From Date --}}
                                 <label for="fromDate">From Date</label>
                                 <input type="date" class="datepicker" id="fromDate" name="fromDate" value="<?php echo $data['fromDate']; ?>">
-
                             </div>
                             <div class="col m3 s6">
                                 <label for="toDate">To Date</label>
@@ -50,7 +49,6 @@
                         <a class="modal-trigger hide-on-small-and-down" id="modal_minus_trigger" style="cursor: pointer">Minus Stock</a>
                         <button id="btnSearch" type="button" class="waves-effect waves-light btn">Search</button>
                     </div>
-
                     <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
                         <a class="btn-floating btn-large blue" href="{{route('wip-close')}}">
                             <i class="large material-icons">mode_edit</i>
@@ -68,7 +66,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <div id="modal_IF" class="modal bottom-sheet">
                         <div class="modal-content">
                             <h4>I/F</h4>
@@ -86,9 +83,6 @@
 
                                         </tbody>
                                     </table>
-
-
-
                                 </div>
                             </div>
 

@@ -1152,5 +1152,99 @@ WHERE  a.INSP_PSV_DT > :dateCheck
 		  and xx.proc_dt > :dateCheck
 		  and substr(prd_no, 1, length(prd_no)-3) like :lotno
 		group by zz.itm_cd , zz.prd_no
-		";	
+		";
+
+	public static $sql_mobile_onhand =
+		"
+			SELECT  
+			    MSI.SEGMENT1 ITEM_CD,    
+			    MSI.INVENTORY_ITEM_ID,  
+			    MSI.DESCRIPTION DESCRIPTION, 
+			    MSI.PRIMARY_UOM_CODE, 
+			    MOQ.SUBINVENTORY_CODE, 
+			    SUM(NVL(TRANSACTION_QUANTITY, 0)) QUANTITY 
+			FROM  
+			    MTL_ONHAND_QUANTITIES MOQ, 
+			    MTL_SYSTEM_ITEMS MSI, 
+			    MTL_ITEM_LOCATIONS MIL 
+			WHERE  
+			    MOQ.INVENTORY_ITEM_ID = MSI.INVENTORY_ITEM_ID 
+			    AND MOQ.ORGANIZATION_ID = MSI.ORGANIZATION_ID 
+			    AND MOQ.LOCATOR_ID = MIL.INVENTORY_LOCATION_ID(+) 
+			    AND ( MSI.DESCRIPTION LIKE '%'||:itemCd||'%' 
+			        OR MSI.SEGMENT1 LIKE '%'||:itemCd||'%' ) 
+			    AND NVL(TRANSACTION_QUANTITY, 0) <> 0 
+			GROUP BY  
+			    MSI.SEGMENT1,  
+			    MOQ.SUBINVENTORY_CODE,  
+			    MSI.INVENTORY_ITEM_ID,  
+			    MSI.DESCRIPTION,  
+			    MSI.PRIMARY_UOM_CODE, 
+			    DECODE(MOQ.LOCATOR_ID, NULL, NULL, MIL.SEGMENT1) 
+			ORDER BY 1, 2
+		";
+
+	public static $sql_mobile_subInventoryList =
+		"
+		SELECT 
+		    SECONDARY_INVENTORY_NAME
+		    , DESCRIPTION
+		FROM MTL_SECONDARY_INVENTORIES
+		WHERE 
+		    SECONDARY_INVENTORY_NAME LIKE '%'||:SUBINVENTORY_CODE||'%' 
+		    AND SECONDARY_INVENTORY_NAME IN (
+		                                        SELECT SUBINVENTORY_CODE
+		                                        FROM PSVWIP_CYCLE_COUNT_TRX_ALL
+		                                        GROUP BY SUBINVENTORY_CODE 
+		                                    )
+		ORDER BY SECONDARY_INVENTORY_NAME
+		";
+	
+	public static $sql_mobile_cycleCntDetail =
+		"
+		SELECT MSI.SEGMENT1 ITEM_CODE ,
+		  MSI.DESCRIPTION ITEM_DESC ,
+		  CCT.ONHAND_QTY ONHAND_QTY ,
+		  CCT.TRX_QTY ACTUAL_QTY
+		FROM PSVWIP_CYCLE_COUNT_TRX_ALL CCT ,
+		  MTL_SYSTEM_ITEMS MSI
+		WHERE CCT.ITEM_ID = MSI.INVENTORY_ITEM_ID
+		  AND CCT.ORGANIZATION_ID = MSI.ORGANIZATION_ID
+		  AND CCT.SUBINVENTORY_CODE = :SUBINVENTORY_CODE
+		"
+	;
+	
+	public static $sql_mobile_transaction_history_detail =
+		"
+		SELECT 
+		    TRANSACTION_DATE TRX_DATE ,
+		    SUBINVENTORY_CODE SUBINVENTORY_CODE ,
+		    TRANSACTION_TYPE_DESC TRX_TYPE_DESC ,   
+		    PRIMARY_QUANTITY TRX_QTY ,
+		    (
+		        SELECT SUM(NVL(TRANSACTION_QUANTITY, 0))
+		        FROM MTL_ONHAND_QUANTITIES
+		        WHERE INVENTORY_ITEM_ID = :inventory_item_id) + SUM(PERIVIOUS_PRIMARY_QUANTITY) OVER (
+		        ORDER BY TRANSACTION_DATE DESC, TRANSACTION_ID
+		    ) DUE_QTY
+		FROM 
+		    (
+		        SELECT 
+		            A.SUBINVENTORY_CODE SUBINVENTORY_CODE ,
+		            A.TRANSACTION_DATE TRANSACTION_DATE ,
+		            A.PRIMARY_QUANTITY PRIMARY_QUANTITY ,
+		            NVL(LAG(-A.PRIMARY_QUANTITY) OVER (
+		                ORDER BY A.TRANSACTION_DATE DESC , A.TRANSACTION_ID), 0) PERIVIOUS_PRIMARY_QUANTITY ,
+		            C.DESCRIPTION TRANSACTION_TYPE_DESC ,
+		            A.CREATION_DATE CREATION_DATE ,
+		            A.TRANSACTION_ID TRANSACTION_ID
+		        FROM 
+		            MTL_MATERIAL_TRANSACTIONS A ,
+		            MTL_TRANSACTION_TYPES C
+		        WHERE A.INVENTORY_ITEM_ID = :inventory_item_id
+		        AND A.TRANSACTION_TYPE_ID = C.TRANSACTION_TYPE_ID
+		        AND A.TRANSACTION_DATE >= SYSDATE - 600
+		        AND A.TRANSACTION_DATE < SYSDATE 
+		    )
+		";
 }

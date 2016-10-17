@@ -54,7 +54,6 @@ function doUpdateStep_child(step)
         });
     }
 }
-
 function doUpdateStep(step)
 {
 
@@ -98,7 +97,6 @@ function dis_pe_search()
     $('#period').prop("disabled",'disabled');
     $('#btnSearch').prop("disabled",'disabled');
 }
-
 function en_pe_search()
 {
     $('#period').prop("disabled",'');
@@ -216,7 +214,6 @@ function onhand(chain)
         $('#onHandResult').html(result);
     });
 }
-
 function ifDetail(chain)
 {
     var url = "/public/ifNotSend/" + chain;
@@ -305,10 +302,7 @@ $(document).ready(function () {
 
             $('#modal_IF').openModal();
         });
-
-
-
-
+    
         $('#modal_minus_trigger').click(function(){
             var url = "/public/minus";
             var fromDate = $('#fromDate').val();
@@ -384,9 +378,6 @@ $(document).ready(function () {
                     result += '<p class="bignum">'+ data[x]["count"] + '</p>';
                     result += '<p class="statusCode">'+ data[x]["process_status_code"] + '</p>';
                     result += '</div>';
-                    //result += '<div class="card-action right-align">';
-                    //result += '<a href="#" onclick="joblist();" style="color: #005789 !important;" >JOB LIST</a>';
-                    //result += '</div>';
                     result += '</div>';
                     result += '</div>';
                 }
@@ -444,12 +435,6 @@ $(document).ready(function () {
         $('#btnSearchOnHandM60').click(function(){
             onhand('M60');
         });
-
-
-
-
-
-
 });
 
 

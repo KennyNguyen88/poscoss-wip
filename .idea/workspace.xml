@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81c9dd69-1910-474b-863c-d2b947e6615f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/queryIF.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/OnhandController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/OnhandController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductionResultController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductionResultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/queryIF.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/queryIF.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/site.js" afterPath="$PROJECT_DIR$/resources/assets/js/site.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/wip-close.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/wip-close.blade.php" />
     </list>
     <ignored path="poscoss-wip.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,223 +34,173 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductionResultController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductionResultController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="345" column="5" selection-start-line="345" selection-start-column="5" selection-end-line="345" selection-end-column="5" />
+            <state relative-caret-position="640">
+              <caret line="47" column="106" selection-start-line="47" selection-start-column="106" selection-end-line="47" selection-end-column="106" />
               <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-                <element signature="e#334#1906#0#PHP" expanded="false" />
-                <element signature="e#1908#2093#0#PHP" expanded="false" />
-                <element signature="e#2095#4935#0#PHP" expanded="false" />
-                <element signature="e#4937#5551#0#PHP" expanded="false" />
-                <element signature="e#5553#6801#0#PHP" expanded="false" />
-                <element signature="e#6803#8049#0#PHP" expanded="false" />
-                <element signature="e#8051#9294#0#PHP" expanded="false" />
-                <element signature="e#9296#10402#0#PHP" expanded="false" />
-                <element signature="e#10404#10586#0#PHP" expanded="false" />
-                <element signature="e#10588#14144#0#PHP" expanded="false" />
-                <element signature="e#14146#17668#0#PHP" expanded="false" />
-                <element signature="e#17670#17857#0#PHP" expanded="false" />
-                <element signature="e#17859#18041#0#PHP" expanded="false" />
-                <element signature="e#18043#18223#0#PHP" expanded="false" />
-                <element signature="e#18225#18405#0#PHP" expanded="false" />
-                <marker date="1476070366583" expanded="true" signature="2170:4850" placeholder="SELECT DECOD... ORGANIZATION_ID" />
-                <marker date="1476070366583" expanded="true" signature="2284:2907" placeholder="SELECT PRI.O... PSVCM_ACTG_RAW_IODOC_ALL" />
-                <marker date="1476070366583" expanded="true" signature="2940:3631" placeholder="SELECT PRI.O... PSVCM_ACTG_RAW_IODOC_ALL" />
-                <marker date="1476070366583" expanded="true" signature="3664:4287" placeholder="SELECT PRI.O... PSVCM_ACTG_RAW_IODOC_ALL" />
-                <marker date="1476070366583" expanded="true" signature="5010:5466" placeholder="SELECT SUM(I... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="5139:5436" placeholder="SELECT MAX(C... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="5630:6716" placeholder="SELECT SUM(C... HEAT_NO" />
-                <marker date="1476070366583" expanded="true" signature="5683:5856" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="5881:6065" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="6090:6287" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="6358:6608" placeholder="SELECT PRD_L... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="6880:7968" placeholder="SELECT SUM(C... HEAT_NO" />
-                <marker date="1476070366583" expanded="true" signature="6934:7107" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="7132:7316" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="7341:7538" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="7609:7859" placeholder="SELECT PRD_L... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="8125:9213" placeholder="SELECT SUM(C... HEAT_NO" />
-                <marker date="1476070366583" expanded="true" signature="8179:8352" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="8377:8561" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="8586:8783" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="8854:9104" placeholder="SELECT PRD_L... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="9371:10317" placeholder="SELECT SUM(M... TB_M20_MTL_WHS_RSL@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="9511:10296" placeholder="SELECT HEAT_... TB_M20_HEAT_COMM@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="9759:10251" placeholder="SELECT PUR_P... TB_M10_RAW_MTL_PORD_INF@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="10649:14059" placeholder="SELECT DECOD... SUBINVENTORY_CODE" />
-                <marker date="1476070366583" expanded="true" signature="10902:13557" placeholder="SELECT B.SUB... PSVWIP_TXNSUM_IODOC_DTL" />
-                <marker date="1476070366583" expanded="true" signature="11355:12776" placeholder="SELECT TAB.I... TRX_ITEM_ID" />
-                <marker date="1476070366583" expanded="true" signature="11407:12360" placeholder="SELECT PTI.T... PSVWIP_TXNSUM_IODOC" />
-                <marker date="1476070366583" expanded="true" signature="12392:12687" placeholder="SELECT SEGME... PSVBOM_COM_LOOKUP_CODE_ALL" />
-                <marker date="1476070366583" expanded="true" signature="13054:13438" placeholder="SELECT SEGME... PSVWIP_COM_LOOKUP_CODE_ALL" />
-                <marker date="1476070366583" expanded="true" signature="13578:13702" placeholder="SELECT 'F110... DUAL" />
-                <marker date="1476070366583" expanded="true" signature="13723:13847" placeholder="SELECT 'F110... DUAL" />
-                <marker date="1476070366583" expanded="true" signature="13868:13992" placeholder="SELECT 'F110... DUAL" />
-                <marker date="1476070366583" expanded="true" signature="14211:17583" placeholder="SELECT PRD_G... PRD_GRP_CD" />
-                <marker date="1476070366583" expanded="true" signature="14370:17378" placeholder="SELECT WHS_W... PRD_GRP_CD" />
-                <marker date="1476070366583" expanded="true" signature="14626:15117" placeholder="SELECT A.PRD... TB_M60_RECEIPT@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="14851:14927" placeholder="SELECT MAX(W... TB_M60_RECEIPT@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="15157:15796" placeholder="SELECT B.PRD... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="15561:15656" placeholder="SELECT ISS_N... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="15836:16482" placeholder="SELECT B.PRD... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="16247:16342" placeholder="SELECT ISS_N... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="16529:17174" placeholder="SELECT B.PRD... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="16939:17034" placeholder="SELECT ISS_N... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-                <marker date="1476070366583" expanded="true" signature="17399:17541" placeholder="SELECT 'S' a... DUAL" />
+                <element signature="e#7#392#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="queryIF.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MobileController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="34" />
+              <folding>
+                <element signature="e#39#72#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queryIF.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/queryIF.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-428">
-              <caret line="695" column="46" selection-start-line="695" selection-start-column="46" selection-end-line="695" selection-end-column="46" />
+            <state relative-caret-position="334">
+              <caret line="1160" column="27" selection-start-line="1160" selection-start-column="27" selection-end-line="1160" selection-end-column="27" />
               <folding>
-                <marker date="1476070465413" expanded="false" signature="206:962" placeholder="SELECT DECOD... " />
-                <marker date="1476070465413" expanded="true" signature="1005:1148" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="1005:3242" placeholder="SELECT 'MTL_... " />
-                <marker date="1476070465413" expanded="true" signature="1163:1308" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="1323:1623" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="1445:1593" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="1638:1938" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="1760:1908" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="1953:2103" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="2118:2265" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="2280:2426" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="2441:2584" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="2599:2746" placeholder="SELECT 'RESO... WIP_COST_TXN_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="2761:2905" placeholder="SELECT 'RESO... WIP_COST_TXN_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="2920:3075" placeholder="SELECT 'MTL_... MTL_MATERIAL_TRANSACTIONS_TEMP" />
-                <marker date="1476070465413" expanded="true" signature="3090:3242" placeholder="SELECT 'MTL_... MTL_MATERIAL_TRANSACTIONS_TEMP" />
-                <marker date="1476070465413" expanded="true" signature="3278:3596" placeholder="Select '0' a... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="3278:7020" placeholder="Select '0' a... " />
-                <marker date="1476070465413" expanded="true" signature="3607:3863" placeholder="Select '1' a... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="3874:4191" placeholder="Select '2' a... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="4202:4457" placeholder="Select '4' a... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="4468:4787" placeholder="Select '5' a... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="4798:5135" placeholder="Select '6' a... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="5146:5454" placeholder="Select '7' a... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="5465:5744" placeholder="Select '8' a... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="5755:6054" placeholder="Select '9' a... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="6065:6405" placeholder="Select '10' PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="6416:6703" placeholder="Select '11' PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="6714:7020" placeholder="Select '12' PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="7061:8917" placeholder="SELECT SUM(T... TP" />
-                <marker date="1476070465413" expanded="true" signature="7108:7281" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="7306:7476" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="7501:7841" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="7643:7806" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="7866:8206" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="8008:8171" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="8231:8391" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="8410:8567" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="8586:8742" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="8761:8914" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-                <marker date="1476070465413" expanded="true" signature="8960:9225" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="9271:9476" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="9522:9780" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="9826:10026" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="10072:10342" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="10388:10674" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="10720:10977" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="11023:11247" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="11023:11248" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="11294:11540" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="11587:11873" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="11920:12151" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="12198:12446" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="12490:13016" placeholder="SELECT 'M20'... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="true" signature="12490:13773" placeholder="SELECT 'M20'... " />
-                <marker date="1476070465413" expanded="true" signature="12663:12956" placeholder="SELECT MAX(C... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="true" signature="13031:13232" placeholder="Select 'M30'... TB_M30_E50M30_04@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="true" signature="13247:13557" placeholder="Select 'M30'... tb_m30_opr_prd_rsl@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="true" signature="13455:13529" placeholder="Select EXT_I... TB_M30_E50M30_04@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="true" signature="13572:13773" placeholder="Select 'M60'... TB_M60_E50M60_05@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="true" signature="13822:14112" placeholder="update PSVWI... " />
-                <marker date="1476070465413" expanded="true" signature="14161:14377" placeholder="update PSVWI... " />
-                <marker date="1476070465413" expanded="true" signature="14426:14695" placeholder="update PSVWI... " />
-                <marker date="1476070465413" expanded="true" signature="14744:14955" placeholder="update PSVWI... " />
-                <marker date="1476070465413" expanded="true" signature="15004:15280" placeholder="update PSVWI... " />
-                <marker date="1476070465413" expanded="true" signature="15329:15626" placeholder="update PSVWI... " />
-                <marker date="1476070465413" expanded="true" signature="15675:15943" placeholder="update PSVWI... " />
-                <marker date="1476070465413" expanded="true" signature="15992:16228" placeholder="update PSVWI... " />
-                <marker date="1476070465413" expanded="true" signature="16277:16532" placeholder="update PSVWI... " />
-                <marker date="1476070465413" expanded="true" signature="16582:16879" placeholder="update PSVWI... " />
-                <marker date="1476070465413" expanded="true" signature="16929:17171" placeholder="update PSVWI... " />
-                <marker date="1476070465413" expanded="true" signature="17221:17470" placeholder="update PSVWI... " />
-                <marker date="1476070465413" expanded="true" signature="17496:17727" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1476070465413" expanded="true" signature="17771:22117" placeholder="SELECT SUM(P... PRD_WGT" />
-                <marker date="1476070465413" expanded="true" signature="17863:21657" placeholder="SELECT RSL.P... DIV_ROL_LOT_NO" />
-                <marker date="1476070465413" expanded="true" signature="17966:21029" placeholder="SELECT DIV_R... DIV_ROL_LOT_NO" />
-                <marker date="1476070465413" expanded="true" signature="18119:18879" placeholder="SELECT PRD.D... TB_M30_PRD_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="true" signature="18920:19911" placeholder="SELECT SUBST... TB_M30_PRD_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="true" signature="19573:19679" placeholder="SELECT MAX(I... TB_M30_PRD_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="true" signature="19952:20977" placeholder="SELECT SUBST... TB_M30_PRD_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="true" signature="20768:20931" placeholder="SELECT 1 FRO... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="true" signature="21072:21530" placeholder="SELECT ROL_L... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="true" signature="21683:22112" placeholder="SELECT 0 AS TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="22153:23331" placeholder="select xx1c.... psvbom_act_wip_lot_all" />
-                <marker date="1476070465413" expanded="false" signature="22736:22960" placeholder="select segme... psvbom_com_lookup_code_all" />
-                <marker date="1476070465413" expanded="false" signature="23377:23762" placeholder="SELECT 'stkW... TB_M20_MTL_STK@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="23377:27866" placeholder="SELECT 'stkW... " />
-                <marker date="1476070465413" expanded="false" signature="23445:23579" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="23677:23734" placeholder="SELECT MAX(S... TB_M20_MTL_STK@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="23777:24096" placeholder="SELECT 'notW... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="24111:24468" placeholder="SELECT 'whsR... TB_M20_MTL_WHS_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="24186:24320" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="24483:24887" placeholder="SELECT 'trnI... TB_M20_MTL_TRN@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="24550:24672" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="24902:25374" placeholder="SELECT 'tran... TB_M20_MTL_TRN@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="24972:25094" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="25389:26266" placeholder="SELECT 'roll... TB_M30_E50M30_04@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="25806:26197" placeholder="SELECT HEAT_... TB_M20_MTL_TRN@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="25842:25990" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="26281:27160" placeholder="SELECT 'roll... TB_M30_E50M30_04@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="26698:27089" placeholder="SELECT HEAT_... TB_M20_MTL_TRN@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="26734:26882" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="27175:27747" placeholder="SELECT 'take... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="27869:28560" placeholder="SELECT 'take... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="28563:29758" placeholder="SELECT 'take... SUBSTR" />
-                <marker date="1476070465413" expanded="false" signature="28563:30046" placeholder="SELECT 'take... " />
-                <marker date="1476070465413" expanded="false" signature="28787:29697" placeholder="SELECT SUBST... TB_M20_MTL_SCR_SWT@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="29774:30046" placeholder="Select 'mov'... TB_M20_MTL_MOV@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="29824:29946" placeholder="select max(a... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="30097:30779" placeholder="select '1' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="30097:37144" placeholder="select '1' a... " />
-                <marker date="1476070465413" expanded="false" signature="30790:31527" placeholder="select '2' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="31538:32214" placeholder="select '3' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="32225:33064" placeholder="select '4' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="33075:33901" placeholder="select '5' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="33103:33204" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="33912:34803" placeholder="select '6' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="33940:34041" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="34814:35601" placeholder="select '7' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="34842:34943" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="35612:36603" placeholder="select '8' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="35640:35743" placeholder="select max(a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="36614:37144" placeholder="select '9' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="36642:36745" placeholder="select max(b... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="36999:37143" placeholder="SELECT 1 FRO... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="37190:37372" placeholder="select 'tb_m... tb_m60_prdno_inv@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="37190:38323" placeholder="select 'tb_m... " />
-                <marker date="1476070465413" expanded="false" signature="37387:37920" placeholder="select 'tb_m... *" />
-                <marker date="1476070465413" expanded="false" signature="37517:37657" placeholder="select x.* ,... tb_m60_receipt@VINA_MESUSER" />
-                <marker date="1476070465413" expanded="false" signature="37935:38323" placeholder="select 'tb_m... tb_m60_issue_rslts@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="true" signature="206:962" placeholder="SELECT DECOD... " />
+                <marker date="1476700855949" expanded="false" signature="1005:1148" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
+                <marker date="1476700855949" expanded="true" signature="1005:3242" placeholder="SELECT 'MTL_... " />
+                <marker date="1476700855949" expanded="false" signature="1163:1308" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
+                <marker date="1476700855949" expanded="false" signature="1323:1623" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
+                <marker date="1476700855949" expanded="false" signature="1445:1593" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
+                <marker date="1476700855949" expanded="false" signature="1638:1938" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
+                <marker date="1476700855949" expanded="false" signature="1760:1908" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
+                <marker date="1476700855949" expanded="false" signature="1953:2103" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
+                <marker date="1476700855949" expanded="false" signature="2118:2265" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
+                <marker date="1476700855949" expanded="false" signature="2280:2426" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
+                <marker date="1476700855949" expanded="false" signature="2441:2584" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
+                <marker date="1476700855949" expanded="false" signature="2599:2746" placeholder="SELECT 'RESO... WIP_COST_TXN_INTERFACE" />
+                <marker date="1476700855949" expanded="false" signature="2761:2905" placeholder="SELECT 'RESO... WIP_COST_TXN_INTERFACE" />
+                <marker date="1476700855949" expanded="false" signature="2920:3075" placeholder="SELECT 'MTL_... MTL_MATERIAL_TRANSACTIONS_TEMP" />
+                <marker date="1476700855949" expanded="false" signature="3090:3242" placeholder="SELECT 'MTL_... MTL_MATERIAL_TRANSACTIONS_TEMP" />
+                <marker date="1476700855949" expanded="false" signature="3278:3596" placeholder="Select '0' a... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="false" signature="3278:7020" placeholder="Select '0' a... " />
+                <marker date="1476700855949" expanded="false" signature="3607:3863" placeholder="Select '1' a... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="false" signature="3874:4191" placeholder="Select '2' a... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="false" signature="4202:4457" placeholder="Select '4' a... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="false" signature="4468:4787" placeholder="Select '5' a... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="false" signature="4798:5135" placeholder="Select '6' a... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="false" signature="5146:5454" placeholder="Select '7' a... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="false" signature="5465:5744" placeholder="Select '8' a... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="false" signature="5755:6054" placeholder="Select '9' a... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="false" signature="6065:6405" placeholder="Select '10' PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="false" signature="6416:6703" placeholder="Select '11' PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="false" signature="6714:7020" placeholder="Select '12' PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="true" signature="7061:8917" placeholder="SELECT SUM(T... TP" />
+                <marker date="1476700855949" expanded="true" signature="7108:7281" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
+                <marker date="1476700855949" expanded="true" signature="7306:7476" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
+                <marker date="1476700855949" expanded="true" signature="7501:7841" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
+                <marker date="1476700855949" expanded="true" signature="7643:7806" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
+                <marker date="1476700855949" expanded="true" signature="7866:8206" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
+                <marker date="1476700855949" expanded="true" signature="8008:8171" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
+                <marker date="1476700855949" expanded="true" signature="8231:8391" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
+                <marker date="1476700855949" expanded="true" signature="8410:8567" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
+                <marker date="1476700855949" expanded="true" signature="8586:8742" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
+                <marker date="1476700855949" expanded="true" signature="8761:8914" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
+                <marker date="1476700855949" expanded="true" signature="8960:9225" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="true" signature="9271:9476" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="true" signature="9522:9780" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="true" signature="9826:10026" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="true" signature="10072:10342" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="true" signature="10388:10674" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="true" signature="10720:10977" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="true" signature="11023:11247" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="true" signature="11023:11248" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="true" signature="11294:11540" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="true" signature="11587:11873" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="true" signature="11920:12151" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="true" signature="12198:12446" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="true" signature="12490:13016" placeholder="SELECT 'M20'... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="true" signature="12490:13773" placeholder="SELECT 'M20'... " />
+                <marker date="1476700855949" expanded="true" signature="12663:12956" placeholder="SELECT MAX(C... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="true" signature="13031:13232" placeholder="Select 'M30'... TB_M30_E50M30_04@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="true" signature="13247:13557" placeholder="Select 'M30'... tb_m30_opr_prd_rsl@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="true" signature="13455:13529" placeholder="Select EXT_I... TB_M30_E50M30_04@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="true" signature="13572:13773" placeholder="Select 'M60'... TB_M60_E50M60_05@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="true" signature="13822:14112" placeholder="update PSVWI... " />
+                <marker date="1476700855949" expanded="true" signature="14161:14377" placeholder="update PSVWI... " />
+                <marker date="1476700855949" expanded="true" signature="14426:14695" placeholder="update PSVWI... " />
+                <marker date="1476700855949" expanded="true" signature="14744:14955" placeholder="update PSVWI... " />
+                <marker date="1476700855949" expanded="true" signature="15004:15280" placeholder="update PSVWI... " />
+                <marker date="1476700855949" expanded="true" signature="15329:15626" placeholder="update PSVWI... " />
+                <marker date="1476700855949" expanded="true" signature="15675:15943" placeholder="update PSVWI... " />
+                <marker date="1476700855949" expanded="true" signature="15992:16228" placeholder="update PSVWI... " />
+                <marker date="1476700855949" expanded="true" signature="16277:16532" placeholder="update PSVWI... " />
+                <marker date="1476700855949" expanded="true" signature="16582:16879" placeholder="update PSVWI... " />
+                <marker date="1476700855949" expanded="true" signature="16929:17171" placeholder="update PSVWI... " />
+                <marker date="1476700855949" expanded="true" signature="17221:17470" placeholder="update PSVWI... " />
+                <marker date="1476700855949" expanded="true" signature="17496:17727" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+                <marker date="1476700855949" expanded="true" signature="17771:22117" placeholder="SELECT SUM(P... PRD_WGT" />
+                <marker date="1476700855949" expanded="true" signature="17863:21657" placeholder="SELECT RSL.P... DIV_ROL_LOT_NO" />
+                <marker date="1476700855949" expanded="true" signature="17966:21029" placeholder="SELECT DIV_R... DIV_ROL_LOT_NO" />
+                <marker date="1476700855949" expanded="true" signature="18119:18879" placeholder="SELECT PRD.D... TB_M30_PRD_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="true" signature="18920:19911" placeholder="SELECT SUBST... TB_M30_PRD_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="true" signature="19573:19679" placeholder="SELECT MAX(I... TB_M30_PRD_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="true" signature="19952:20977" placeholder="SELECT SUBST... TB_M30_PRD_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="true" signature="20768:20931" placeholder="SELECT 1 FRO... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="true" signature="21072:21530" placeholder="SELECT ROL_L... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="true" signature="21683:22112" placeholder="SELECT 0 AS TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="22153:23331" placeholder="select xx1c.... psvbom_act_wip_lot_all" />
+                <marker date="1476700855949" expanded="false" signature="22736:22960" placeholder="select segme... psvbom_com_lookup_code_all" />
+                <marker date="1476700855949" expanded="false" signature="23377:23762" placeholder="SELECT 'stkW... TB_M20_MTL_STK@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="23377:27866" placeholder="SELECT 'stkW... " />
+                <marker date="1476700855949" expanded="false" signature="23445:23579" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="23677:23734" placeholder="SELECT MAX(S... TB_M20_MTL_STK@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="23777:24096" placeholder="SELECT 'notW... TB_M20_MTL_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="24111:24468" placeholder="SELECT 'whsR... TB_M20_MTL_WHS_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="24186:24320" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="24483:24887" placeholder="SELECT 'trnI... TB_M20_MTL_TRN@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="24550:24672" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="24902:25374" placeholder="SELECT 'tran... TB_M20_MTL_TRN@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="24972:25094" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="25389:26266" placeholder="SELECT 'roll... TB_M30_E50M30_04@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="25806:26197" placeholder="SELECT HEAT_... TB_M20_MTL_TRN@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="25842:25990" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="26281:27160" placeholder="SELECT 'roll... TB_M30_E50M30_04@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="26698:27089" placeholder="SELECT HEAT_... TB_M20_MTL_TRN@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="26734:26882" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="27175:27747" placeholder="SELECT 'take... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="27869:28560" placeholder="SELECT 'take... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="28563:29758" placeholder="SELECT 'take... SUBSTR" />
+                <marker date="1476700855949" expanded="false" signature="28563:30046" placeholder="SELECT 'take... " />
+                <marker date="1476700855949" expanded="false" signature="28787:29697" placeholder="SELECT SUBST... TB_M20_MTL_SCR_SWT@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="29774:30046" placeholder="Select 'mov'... TB_M20_MTL_MOV@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="29824:29946" placeholder="select max(a... TB_M20_MTL_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="30097:30779" placeholder="select '1' a... tb_m30_prd_rsl@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="30097:37144" placeholder="select '1' a... " />
+                <marker date="1476700855949" expanded="false" signature="30790:31527" placeholder="select '2' a... tb_m30_prd_rsl@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="31538:32214" placeholder="select '3' a... tb_m30_prd_rsl@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="32225:33064" placeholder="select '4' a... tb_m30_prd_rsl@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="33075:33901" placeholder="select '5' a... tb_m30_prd_rsl@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="33103:33204" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="33912:34803" placeholder="select '6' a... tb_m30_prd_rsl@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="33940:34041" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="34814:35601" placeholder="select '7' a... tb_m30_prd_rsl@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="34842:34943" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="35612:36603" placeholder="select '8' a... tb_m30_prd_rsl@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="35640:35743" placeholder="select max(a... tb_m30_prd_rsl@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="36614:37144" placeholder="select '9' a... tb_m30_prd_rsl@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="36642:36745" placeholder="select max(b... tb_m30_prd_rsl@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="36999:37143" placeholder="SELECT 1 FRO... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="37190:37372" placeholder="select 'tb_m... tb_m60_prdno_inv@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="37190:38323" placeholder="select 'tb_m... " />
+                <marker date="1476700855949" expanded="false" signature="37387:37920" placeholder="select 'tb_m... *" />
+                <marker date="1476700855949" expanded="false" signature="37517:37657" placeholder="select x.* ,... tb_m60_receipt@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="false" signature="37935:38323" placeholder="select 'tb_m... tb_m60_issue_rslts@VINA_MESUSER" />
+                <marker date="1476700855949" expanded="true" signature="38373:39261" placeholder="SELECT MSI.S... MTL_ONHAND_QUANTITIES" />
+                <marker date="1476700855949" expanded="true" signature="39320:39813" placeholder="SELECT SECON... MTL_SECONDARY_INVENTORIES" />
+                <marker date="1476700855949" expanded="true" signature="39569:39736" placeholder="SELECT SUBIN... PSVWIP_CYCLE_COUNT_TRX_ALL" />
+                <marker date="1476700855949" expanded="true" signature="39871:40203" placeholder="SELECT MSI.S... PSVWIP_CYCLE_COUNT_TRX_ALL" />
+                <marker date="1476700855949" expanded="true" signature="40275:41513" placeholder="SELECT TRANS... SUBINVENTORY_CODE" />
+                <marker date="1476700855949" expanded="true" signature="40459:40591" placeholder="SELECT SUM(N... MTL_ONHAND_QUANTITIES" />
+                <marker date="1476700855949" expanded="true" signature="40733:41504" placeholder="SELECT A.SUB... MTL_MATERIAL_TRANSACTIONS" />
               </folding>
             </state>
           </provider>
@@ -285,13 +233,15 @@
         <option value="$PROJECT_DIR$/public/201606.xml" />
         <option value="$PROJECT_DIR$/resources/views/site/productionResult.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/site/onhand.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ProductionResultController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/OnhandController.php" />
         <option value="$PROJECT_DIR$/resources/views/site/wip-close.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/site/master/myscript.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/js/site.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PageController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ProductionResultController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/queryIF.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/OnhandController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -301,6 +251,9 @@
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5">
     <include_path>
@@ -393,7 +346,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -422,7 +374,213 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="about" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -477,44 +635,18 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poscoss-wip" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poscoss-wip" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Auth" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="LayoutCode.rearrangeEntriesBlade" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.lastSelected" value="reference.webide.settings.project.settings.php" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -529,6 +661,9 @@
     <property name="js-jscs-nodeInterpreter" value="D:\soft\Installed\Node\node.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\WIP\poscoss-wip\app\Http\Controllers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Workspace\WIP\poscoss-wip\public" />
     </key>
@@ -585,37 +720,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1464063257243</updated>
-      <workItem from="1476066228651" duration="4996000" />
+      <workItem from="1476066228651" duration="5056000" />
+      <workItem from="1476083291224" duration="3734000" />
+      <workItem from="1476695538932" duration="5263000" />
     </task>
+    <task id="LOCAL-00001" summary="query update&#10;- M30 Production Result&#10;- Closing Transaction don't need to check input">
+      <created>1476071303748</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1476071303748</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4996000" />
+    <option name="totallyTimeSpent" value="14053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22547974" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23027718" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -653,6 +798,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="query update&#10;- M30 Production Result&#10;- Closing Transaction don't need to check input" />
+    <option name="LAST_COMMIT_MESSAGE" value="query update&#10;- M30 Production Result&#10;- Closing Transaction don't need to check input" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -667,28 +816,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/site.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="105" selection-start-line="15" selection-start-column="105" selection-end-line="15" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/site/wip-close.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -701,15 +828,14 @@
         <state relative-caret-position="0">
           <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
           <folding>
-            <element signature="n#!!block;n#checkOIT#0" expanded="false" />
+            <element signature="n#!!block;n#joblist#0" expanded="false" />
+            <element signature="n#!!block;n#getStatus#0" expanded="false" />
             <element signature="n#!!block;n#doUpdateStep_child#0" expanded="false" />
             <element signature="n#!!block;n#doUpdateStep#0" expanded="false" />
             <element signature="n#!!block;n#updateStep#0" expanded="false" />
             <element signature="n#!!block;n#dis_pe_search#0" expanded="false" />
             <element signature="n#!!block;n#en_pe_search#0" expanded="false" />
-            <element signature="n#!!block;n#onhand#0" expanded="false" />
-            <element signature="e#10508#13214#0" expanded="false" />
-            <element signature="e#13248#14346#0" expanded="false" />
+            <element signature="n#!!block;n#ifDetail#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -718,7 +844,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#7#392#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -748,15 +876,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#checkOIT#0" expanded="false" />
+            <element signature="n#!!block;n#joblist#0" expanded="false" />
+            <element signature="n#!!block;n#getStatus#0" expanded="false" />
             <element signature="n#!!block;n#doUpdateStep_child#0" expanded="false" />
             <element signature="n#!!block;n#doUpdateStep#0" expanded="false" />
             <element signature="n#!!block;n#updateStep#0" expanded="false" />
             <element signature="n#!!block;n#dis_pe_search#0" expanded="false" />
             <element signature="n#!!block;n#en_pe_search#0" expanded="false" />
-            <element signature="n#!!block;n#onhand#0" expanded="false" />
-            <element signature="e#10508#13214#0" expanded="false" />
-            <element signature="e#13248#14346#0" expanded="false" />
+            <element signature="n#!!block;n#ifDetail#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -779,7 +906,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#7#392#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -804,13 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -822,13 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/master/myscript.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="30" column="75" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -921,13 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/master/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/201605.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -991,90 +1099,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/site.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="273" column="20" selection-start-line="273" selection-start-column="20" selection-end-line="273" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!block;n#checkOIT#0" expanded="false" />
-            <element signature="n#!!block;n#doUpdateStep_child#0" expanded="false" />
-            <element signature="n#!!block;n#doUpdateStep#0" expanded="false" />
-            <element signature="n#!!block;n#updateStep#0" expanded="false" />
-            <element signature="n#!!block;n#dis_pe_search#0" expanded="false" />
-            <element signature="n#!!block;n#en_pe_search#0" expanded="false" />
-            <element signature="n#!!block;n#onhand#0" expanded="false" />
-            <element signature="e#10508#13214#0" expanded="false" />
-            <element signature="e#13248#14346#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="341" column="5" selection-start-line="341" selection-start-column="5" selection-end-line="341" selection-end-column="5" />
-          <folding>
-            <element signature="e#39#72#0#PHP" expanded="true" />
-            <element signature="e#240#314#0#PHP" expanded="false" />
-            <element signature="e#316#767#0#PHP" expanded="false" />
-            <element signature="e#769#1056#0#PHP" expanded="false" />
-            <element signature="e#1058#1180#0#PHP" expanded="false" />
-            <element signature="e#1182#1327#0#PHP" expanded="false" />
-            <element signature="e#1329#6993#0#PHP" expanded="false" />
-            <element signature="e#6995#9337#0#PHP" expanded="false" />
-            <element signature="e#9339#9600#0#PHP" expanded="false" />
-            <element signature="e#9602#11196#0#PHP" expanded="false" />
-            <element signature="e#11198#11801#0#PHP" expanded="false" />
-            <element signature="e#11803#12090#0#PHP" expanded="false" />
-            <element signature="e#12092#12162#0#PHP" expanded="false" />
-            <element signature="e#12164#13432#0#PHP" expanded="false" />
-            <element signature="e#13434#15470#0#PHP" expanded="false" />
-            <marker date="1476069808648" expanded="true" signature="12217:13289" placeholder="select item_... segment1" />
-            <marker date="1476069808648" expanded="true" signature="12373:12737" placeholder="select segme... MTL_ONHAND_QUANTITIES" />
-            <marker date="1476069808648" expanded="true" signature="12758:13197" placeholder="select compo... psvwip_mes_component_tb_all" />
-            <marker date="1476069808648" expanded="true" signature="12937:13185" placeholder="select if_ex... psvwip_mes_result_tb_all" />
-            <marker date="1476069808648" expanded="true" signature="13517:14041" placeholder="SELECT EXT_I... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-            <marker date="1476069808648" expanded="true" signature="13682:13979" placeholder="SELECT MAX(C... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-            <marker date="1476069808648" expanded="true" signature="14068:14263" placeholder="Select EXT_I... TB_M30_E50M30_04@VINA_MESUSER" />
-            <marker date="1476069808648" expanded="true" signature="14068:14602" placeholder="Select EXT_I... " />
-            <marker date="1476069808648" expanded="true" signature="14280:14602" placeholder="Select IF_EX... tb_m30_opr_prd_rsl@VINA_MESUSER" />
-            <marker date="1476069808648" expanded="true" signature="14498:14573" placeholder="Select EXT_I... TB_M30_E50M30_04@VINA_MESUSER" />
-            <marker date="1476069808648" expanded="true" signature="14629:14824" placeholder="Select EXT_I... TB_M60_E50M60_05@VINA_MESUSER" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OnhandController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/wip-close.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="237" column="58" selection-start-line="237" selection-start-column="51" selection-end-line="237" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1083,7 +1111,7 @@
         <state relative-caret-position="476">
           <caret line="345" column="5" selection-start-line="345" selection-start-column="5" selection-end-line="345" selection-end-column="5" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#40#68#0#PHP" expanded="false" />
             <element signature="e#334#1906#0#PHP" expanded="false" />
             <element signature="e#1908#2093#0#PHP" expanded="false" />
             <element signature="e#2095#4935#0#PHP" expanded="false" />
@@ -1147,141 +1175,274 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/master/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/shared/pageService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2512">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/shared/pageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/master/myscript.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/wip-close.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="49" column="45" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/site.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="344" column="48" selection-start-line="344" selection-start-column="48" selection-end-line="344" selection-end-column="48" />
+          <folding>
+            <element signature="n#!!block;n#joblist#0" expanded="false" />
+            <element signature="n#!!block;n#getStatus#0" expanded="false" />
+            <element signature="n#!!block;n#doUpdateStep_child#0" expanded="false" />
+            <element signature="n#!!block;n#doUpdateStep#0" expanded="false" />
+            <element signature="n#!!block;n#updateStep#0" expanded="false" />
+            <element signature="n#!!block;n#dis_pe_search#0" expanded="false" />
+            <element signature="n#!!block;n#en_pe_search#0" expanded="false" />
+            <element signature="n#!!block;n#ifDetail#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OnhandController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="35" column="52" selection-start-line="32" selection-start-column="8" selection-end-line="35" selection-end-column="52" />
+          <folding>
+            <element signature="e#39#72#0#PHP" expanded="true" />
+            <element signature="e#238#312#0#PHP" expanded="false" />
+            <element signature="e#314#765#0#PHP" expanded="false" />
+            <element signature="e#1056#1178#0#PHP" expanded="false" />
+            <element signature="e#1180#1325#0#PHP" expanded="false" />
+            <element signature="e#1327#6991#0#PHP" expanded="false" />
+            <element signature="e#6993#7254#0#PHP" expanded="false" />
+            <element signature="e#7256#8850#0#PHP" expanded="false" />
+            <element signature="e#8852#9455#0#PHP" expanded="false" />
+            <element signature="e#9457#9744#0#PHP" expanded="false" />
+            <element signature="e#9746#9816#0#PHP" expanded="false" />
+            <element signature="e#9818#11086#0#PHP" expanded="false" />
+            <element signature="e#11088#13124#0#PHP" expanded="false" />
+            <marker date="1476696599344" expanded="true" signature="9871:10943" placeholder="select item_... segment1" />
+            <marker date="1476696599344" expanded="true" signature="10027:10391" placeholder="select segme... MTL_ONHAND_QUANTITIES" />
+            <marker date="1476696599344" expanded="true" signature="10412:10851" placeholder="select compo... psvwip_mes_component_tb_all" />
+            <marker date="1476696599344" expanded="true" signature="10591:10839" placeholder="select if_ex... psvwip_mes_result_tb_all" />
+            <marker date="1476696599344" expanded="true" signature="11171:11695" placeholder="SELECT EXT_I... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
+            <marker date="1476696599344" expanded="true" signature="11336:11633" placeholder="SELECT MAX(C... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
+            <marker date="1476696599344" expanded="true" signature="11722:11917" placeholder="Select EXT_I... TB_M30_E50M30_04@VINA_MESUSER" />
+            <marker date="1476696599344" expanded="true" signature="11722:12256" placeholder="Select EXT_I... " />
+            <marker date="1476696599344" expanded="true" signature="11934:12256" placeholder="Select IF_EX... tb_m30_opr_prd_rsl@VINA_MESUSER" />
+            <marker date="1476696599344" expanded="true" signature="12152:12227" placeholder="Select EXT_I... TB_M30_E50M30_04@VINA_MESUSER" />
+            <marker date="1476696599344" expanded="true" signature="12283:12478" placeholder="Select EXT_I... TB_M60_E50M60_05@VINA_MESUSER" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/queryIF.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-428">
-          <caret line="695" column="46" selection-start-line="695" selection-start-column="46" selection-end-line="695" selection-end-column="46" />
+        <state relative-caret-position="334">
+          <caret line="1160" column="27" selection-start-line="1160" selection-start-column="27" selection-end-line="1160" selection-end-column="27" />
           <folding>
-            <marker date="1476070465413" expanded="false" signature="206:962" placeholder="SELECT DECOD... " />
-            <marker date="1476070465413" expanded="true" signature="1005:1148" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="1005:3242" placeholder="SELECT 'MTL_... " />
-            <marker date="1476070465413" expanded="true" signature="1163:1308" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="1323:1623" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="1445:1593" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="1638:1938" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="1760:1908" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="1953:2103" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="2118:2265" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="2280:2426" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="2441:2584" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="2599:2746" placeholder="SELECT 'RESO... WIP_COST_TXN_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="2761:2905" placeholder="SELECT 'RESO... WIP_COST_TXN_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="2920:3075" placeholder="SELECT 'MTL_... MTL_MATERIAL_TRANSACTIONS_TEMP" />
-            <marker date="1476070465413" expanded="true" signature="3090:3242" placeholder="SELECT 'MTL_... MTL_MATERIAL_TRANSACTIONS_TEMP" />
-            <marker date="1476070465413" expanded="true" signature="3278:3596" placeholder="Select '0' a... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="3278:7020" placeholder="Select '0' a... " />
-            <marker date="1476070465413" expanded="true" signature="3607:3863" placeholder="Select '1' a... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="3874:4191" placeholder="Select '2' a... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="4202:4457" placeholder="Select '4' a... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="4468:4787" placeholder="Select '5' a... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="4798:5135" placeholder="Select '6' a... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="5146:5454" placeholder="Select '7' a... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="5465:5744" placeholder="Select '8' a... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="5755:6054" placeholder="Select '9' a... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="6065:6405" placeholder="Select '10' PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="6416:6703" placeholder="Select '11' PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="6714:7020" placeholder="Select '12' PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="7061:8917" placeholder="SELECT SUM(T... TP" />
-            <marker date="1476070465413" expanded="true" signature="7108:7281" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="7306:7476" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="7501:7841" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="7643:7806" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="7866:8206" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="8008:8171" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="8231:8391" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="8410:8567" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="8586:8742" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="8761:8914" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-            <marker date="1476070465413" expanded="true" signature="8960:9225" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="9271:9476" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="9522:9780" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="9826:10026" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="10072:10342" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="10388:10674" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="10720:10977" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="11023:11247" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="11023:11248" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="11294:11540" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="11587:11873" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="11920:12151" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="12198:12446" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="12490:13016" placeholder="SELECT 'M20'... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="true" signature="12490:13773" placeholder="SELECT 'M20'... " />
-            <marker date="1476070465413" expanded="true" signature="12663:12956" placeholder="SELECT MAX(C... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="true" signature="13031:13232" placeholder="Select 'M30'... TB_M30_E50M30_04@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="true" signature="13247:13557" placeholder="Select 'M30'... tb_m30_opr_prd_rsl@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="true" signature="13455:13529" placeholder="Select EXT_I... TB_M30_E50M30_04@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="true" signature="13572:13773" placeholder="Select 'M60'... TB_M60_E50M60_05@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="true" signature="13822:14112" placeholder="update PSVWI... " />
-            <marker date="1476070465413" expanded="true" signature="14161:14377" placeholder="update PSVWI... " />
-            <marker date="1476070465413" expanded="true" signature="14426:14695" placeholder="update PSVWI... " />
-            <marker date="1476070465413" expanded="true" signature="14744:14955" placeholder="update PSVWI... " />
-            <marker date="1476070465413" expanded="true" signature="15004:15280" placeholder="update PSVWI... " />
-            <marker date="1476070465413" expanded="true" signature="15329:15626" placeholder="update PSVWI... " />
-            <marker date="1476070465413" expanded="true" signature="15675:15943" placeholder="update PSVWI... " />
-            <marker date="1476070465413" expanded="true" signature="15992:16228" placeholder="update PSVWI... " />
-            <marker date="1476070465413" expanded="true" signature="16277:16532" placeholder="update PSVWI... " />
-            <marker date="1476070465413" expanded="true" signature="16582:16879" placeholder="update PSVWI... " />
-            <marker date="1476070465413" expanded="true" signature="16929:17171" placeholder="update PSVWI... " />
-            <marker date="1476070465413" expanded="true" signature="17221:17470" placeholder="update PSVWI... " />
-            <marker date="1476070465413" expanded="true" signature="17496:17727" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1476070465413" expanded="true" signature="17771:22117" placeholder="SELECT SUM(P... PRD_WGT" />
-            <marker date="1476070465413" expanded="true" signature="17863:21657" placeholder="SELECT RSL.P... DIV_ROL_LOT_NO" />
-            <marker date="1476070465413" expanded="true" signature="17966:21029" placeholder="SELECT DIV_R... DIV_ROL_LOT_NO" />
-            <marker date="1476070465413" expanded="true" signature="18119:18879" placeholder="SELECT PRD.D... TB_M30_PRD_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="true" signature="18920:19911" placeholder="SELECT SUBST... TB_M30_PRD_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="true" signature="19573:19679" placeholder="SELECT MAX(I... TB_M30_PRD_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="true" signature="19952:20977" placeholder="SELECT SUBST... TB_M30_PRD_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="true" signature="20768:20931" placeholder="SELECT 1 FRO... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="true" signature="21072:21530" placeholder="SELECT ROL_L... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="true" signature="21683:22112" placeholder="SELECT 0 AS TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="22153:23331" placeholder="select xx1c.... psvbom_act_wip_lot_all" />
-            <marker date="1476070465413" expanded="false" signature="22736:22960" placeholder="select segme... psvbom_com_lookup_code_all" />
-            <marker date="1476070465413" expanded="false" signature="23377:23762" placeholder="SELECT 'stkW... TB_M20_MTL_STK@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="23377:27866" placeholder="SELECT 'stkW... " />
-            <marker date="1476070465413" expanded="false" signature="23445:23579" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="23677:23734" placeholder="SELECT MAX(S... TB_M20_MTL_STK@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="23777:24096" placeholder="SELECT 'notW... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="24111:24468" placeholder="SELECT 'whsR... TB_M20_MTL_WHS_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="24186:24320" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="24483:24887" placeholder="SELECT 'trnI... TB_M20_MTL_TRN@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="24550:24672" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="24902:25374" placeholder="SELECT 'tran... TB_M20_MTL_TRN@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="24972:25094" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="25389:26266" placeholder="SELECT 'roll... TB_M30_E50M30_04@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="25806:26197" placeholder="SELECT HEAT_... TB_M20_MTL_TRN@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="25842:25990" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="26281:27160" placeholder="SELECT 'roll... TB_M30_E50M30_04@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="26698:27089" placeholder="SELECT HEAT_... TB_M20_MTL_TRN@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="26734:26882" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="27175:27747" placeholder="SELECT 'take... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="27869:28560" placeholder="SELECT 'take... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="28563:29758" placeholder="SELECT 'take... SUBSTR" />
-            <marker date="1476070465413" expanded="false" signature="28563:30046" placeholder="SELECT 'take... " />
-            <marker date="1476070465413" expanded="false" signature="28787:29697" placeholder="SELECT SUBST... TB_M20_MTL_SCR_SWT@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="29774:30046" placeholder="Select 'mov'... TB_M20_MTL_MOV@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="29824:29946" placeholder="select max(a... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="30097:30779" placeholder="select '1' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="30097:37144" placeholder="select '1' a... " />
-            <marker date="1476070465413" expanded="false" signature="30790:31527" placeholder="select '2' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="31538:32214" placeholder="select '3' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="32225:33064" placeholder="select '4' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="33075:33901" placeholder="select '5' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="33103:33204" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="33912:34803" placeholder="select '6' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="33940:34041" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="34814:35601" placeholder="select '7' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="34842:34943" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="35612:36603" placeholder="select '8' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="35640:35743" placeholder="select max(a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="36614:37144" placeholder="select '9' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="36642:36745" placeholder="select max(b... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="36999:37143" placeholder="SELECT 1 FRO... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="37190:37372" placeholder="select 'tb_m... tb_m60_prdno_inv@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="37190:38323" placeholder="select 'tb_m... " />
-            <marker date="1476070465413" expanded="false" signature="37387:37920" placeholder="select 'tb_m... *" />
-            <marker date="1476070465413" expanded="false" signature="37517:37657" placeholder="select x.* ,... tb_m60_receipt@VINA_MESUSER" />
-            <marker date="1476070465413" expanded="false" signature="37935:38323" placeholder="select 'tb_m... tb_m60_issue_rslts@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="true" signature="206:962" placeholder="SELECT DECOD... " />
+            <marker date="1476700855949" expanded="false" signature="1005:1148" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
+            <marker date="1476700855949" expanded="true" signature="1005:3242" placeholder="SELECT 'MTL_... " />
+            <marker date="1476700855949" expanded="false" signature="1163:1308" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
+            <marker date="1476700855949" expanded="false" signature="1323:1623" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
+            <marker date="1476700855949" expanded="false" signature="1445:1593" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
+            <marker date="1476700855949" expanded="false" signature="1638:1938" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
+            <marker date="1476700855949" expanded="false" signature="1760:1908" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
+            <marker date="1476700855949" expanded="false" signature="1953:2103" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
+            <marker date="1476700855949" expanded="false" signature="2118:2265" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
+            <marker date="1476700855949" expanded="false" signature="2280:2426" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
+            <marker date="1476700855949" expanded="false" signature="2441:2584" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
+            <marker date="1476700855949" expanded="false" signature="2599:2746" placeholder="SELECT 'RESO... WIP_COST_TXN_INTERFACE" />
+            <marker date="1476700855949" expanded="false" signature="2761:2905" placeholder="SELECT 'RESO... WIP_COST_TXN_INTERFACE" />
+            <marker date="1476700855949" expanded="false" signature="2920:3075" placeholder="SELECT 'MTL_... MTL_MATERIAL_TRANSACTIONS_TEMP" />
+            <marker date="1476700855949" expanded="false" signature="3090:3242" placeholder="SELECT 'MTL_... MTL_MATERIAL_TRANSACTIONS_TEMP" />
+            <marker date="1476700855949" expanded="false" signature="3278:3596" placeholder="Select '0' a... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="false" signature="3278:7020" placeholder="Select '0' a... " />
+            <marker date="1476700855949" expanded="false" signature="3607:3863" placeholder="Select '1' a... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="false" signature="3874:4191" placeholder="Select '2' a... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="false" signature="4202:4457" placeholder="Select '4' a... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="false" signature="4468:4787" placeholder="Select '5' a... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="false" signature="4798:5135" placeholder="Select '6' a... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="false" signature="5146:5454" placeholder="Select '7' a... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="false" signature="5465:5744" placeholder="Select '8' a... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="false" signature="5755:6054" placeholder="Select '9' a... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="false" signature="6065:6405" placeholder="Select '10' PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="false" signature="6416:6703" placeholder="Select '11' PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="false" signature="6714:7020" placeholder="Select '12' PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="true" signature="7061:8917" placeholder="SELECT SUM(T... TP" />
+            <marker date="1476700855949" expanded="true" signature="7108:7281" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
+            <marker date="1476700855949" expanded="true" signature="7306:7476" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
+            <marker date="1476700855949" expanded="true" signature="7501:7841" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
+            <marker date="1476700855949" expanded="true" signature="7643:7806" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
+            <marker date="1476700855949" expanded="true" signature="7866:8206" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
+            <marker date="1476700855949" expanded="true" signature="8008:8171" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
+            <marker date="1476700855949" expanded="true" signature="8231:8391" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
+            <marker date="1476700855949" expanded="true" signature="8410:8567" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
+            <marker date="1476700855949" expanded="true" signature="8586:8742" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
+            <marker date="1476700855949" expanded="true" signature="8761:8914" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
+            <marker date="1476700855949" expanded="true" signature="8960:9225" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="true" signature="9271:9476" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="true" signature="9522:9780" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="true" signature="9826:10026" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="true" signature="10072:10342" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="true" signature="10388:10674" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="true" signature="10720:10977" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="true" signature="11023:11247" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="true" signature="11023:11248" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="true" signature="11294:11540" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="true" signature="11587:11873" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="true" signature="11920:12151" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="true" signature="12198:12446" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="true" signature="12490:13016" placeholder="SELECT 'M20'... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="true" signature="12490:13773" placeholder="SELECT 'M20'... " />
+            <marker date="1476700855949" expanded="true" signature="12663:12956" placeholder="SELECT MAX(C... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="true" signature="13031:13232" placeholder="Select 'M30'... TB_M30_E50M30_04@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="true" signature="13247:13557" placeholder="Select 'M30'... tb_m30_opr_prd_rsl@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="true" signature="13455:13529" placeholder="Select EXT_I... TB_M30_E50M30_04@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="true" signature="13572:13773" placeholder="Select 'M60'... TB_M60_E50M60_05@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="true" signature="13822:14112" placeholder="update PSVWI... " />
+            <marker date="1476700855949" expanded="true" signature="14161:14377" placeholder="update PSVWI... " />
+            <marker date="1476700855949" expanded="true" signature="14426:14695" placeholder="update PSVWI... " />
+            <marker date="1476700855949" expanded="true" signature="14744:14955" placeholder="update PSVWI... " />
+            <marker date="1476700855949" expanded="true" signature="15004:15280" placeholder="update PSVWI... " />
+            <marker date="1476700855949" expanded="true" signature="15329:15626" placeholder="update PSVWI... " />
+            <marker date="1476700855949" expanded="true" signature="15675:15943" placeholder="update PSVWI... " />
+            <marker date="1476700855949" expanded="true" signature="15992:16228" placeholder="update PSVWI... " />
+            <marker date="1476700855949" expanded="true" signature="16277:16532" placeholder="update PSVWI... " />
+            <marker date="1476700855949" expanded="true" signature="16582:16879" placeholder="update PSVWI... " />
+            <marker date="1476700855949" expanded="true" signature="16929:17171" placeholder="update PSVWI... " />
+            <marker date="1476700855949" expanded="true" signature="17221:17470" placeholder="update PSVWI... " />
+            <marker date="1476700855949" expanded="true" signature="17496:17727" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
+            <marker date="1476700855949" expanded="true" signature="17771:22117" placeholder="SELECT SUM(P... PRD_WGT" />
+            <marker date="1476700855949" expanded="true" signature="17863:21657" placeholder="SELECT RSL.P... DIV_ROL_LOT_NO" />
+            <marker date="1476700855949" expanded="true" signature="17966:21029" placeholder="SELECT DIV_R... DIV_ROL_LOT_NO" />
+            <marker date="1476700855949" expanded="true" signature="18119:18879" placeholder="SELECT PRD.D... TB_M30_PRD_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="true" signature="18920:19911" placeholder="SELECT SUBST... TB_M30_PRD_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="true" signature="19573:19679" placeholder="SELECT MAX(I... TB_M30_PRD_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="true" signature="19952:20977" placeholder="SELECT SUBST... TB_M30_PRD_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="true" signature="20768:20931" placeholder="SELECT 1 FRO... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="true" signature="21072:21530" placeholder="SELECT ROL_L... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="true" signature="21683:22112" placeholder="SELECT 0 AS TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="22153:23331" placeholder="select xx1c.... psvbom_act_wip_lot_all" />
+            <marker date="1476700855949" expanded="false" signature="22736:22960" placeholder="select segme... psvbom_com_lookup_code_all" />
+            <marker date="1476700855949" expanded="false" signature="23377:23762" placeholder="SELECT 'stkW... TB_M20_MTL_STK@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="23377:27866" placeholder="SELECT 'stkW... " />
+            <marker date="1476700855949" expanded="false" signature="23445:23579" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="23677:23734" placeholder="SELECT MAX(S... TB_M20_MTL_STK@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="23777:24096" placeholder="SELECT 'notW... TB_M20_MTL_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="24111:24468" placeholder="SELECT 'whsR... TB_M20_MTL_WHS_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="24186:24320" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="24483:24887" placeholder="SELECT 'trnI... TB_M20_MTL_TRN@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="24550:24672" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="24902:25374" placeholder="SELECT 'tran... TB_M20_MTL_TRN@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="24972:25094" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="25389:26266" placeholder="SELECT 'roll... TB_M30_E50M30_04@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="25806:26197" placeholder="SELECT HEAT_... TB_M20_MTL_TRN@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="25842:25990" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="26281:27160" placeholder="SELECT 'roll... TB_M30_E50M30_04@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="26698:27089" placeholder="SELECT HEAT_... TB_M20_MTL_TRN@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="26734:26882" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="27175:27747" placeholder="SELECT 'take... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="27869:28560" placeholder="SELECT 'take... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="28563:29758" placeholder="SELECT 'take... SUBSTR" />
+            <marker date="1476700855949" expanded="false" signature="28563:30046" placeholder="SELECT 'take... " />
+            <marker date="1476700855949" expanded="false" signature="28787:29697" placeholder="SELECT SUBST... TB_M20_MTL_SCR_SWT@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="29774:30046" placeholder="Select 'mov'... TB_M20_MTL_MOV@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="29824:29946" placeholder="select max(a... TB_M20_MTL_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="30097:30779" placeholder="select '1' a... tb_m30_prd_rsl@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="30097:37144" placeholder="select '1' a... " />
+            <marker date="1476700855949" expanded="false" signature="30790:31527" placeholder="select '2' a... tb_m30_prd_rsl@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="31538:32214" placeholder="select '3' a... tb_m30_prd_rsl@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="32225:33064" placeholder="select '4' a... tb_m30_prd_rsl@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="33075:33901" placeholder="select '5' a... tb_m30_prd_rsl@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="33103:33204" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="33912:34803" placeholder="select '6' a... tb_m30_prd_rsl@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="33940:34041" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="34814:35601" placeholder="select '7' a... tb_m30_prd_rsl@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="34842:34943" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="35612:36603" placeholder="select '8' a... tb_m30_prd_rsl@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="35640:35743" placeholder="select max(a... tb_m30_prd_rsl@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="36614:37144" placeholder="select '9' a... tb_m30_prd_rsl@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="36642:36745" placeholder="select max(b... tb_m30_prd_rsl@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="36999:37143" placeholder="SELECT 1 FRO... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="37190:37372" placeholder="select 'tb_m... tb_m60_prdno_inv@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="37190:38323" placeholder="select 'tb_m... " />
+            <marker date="1476700855949" expanded="false" signature="37387:37920" placeholder="select 'tb_m... *" />
+            <marker date="1476700855949" expanded="false" signature="37517:37657" placeholder="select x.* ,... tb_m60_receipt@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="false" signature="37935:38323" placeholder="select 'tb_m... tb_m60_issue_rslts@VINA_MESUSER" />
+            <marker date="1476700855949" expanded="true" signature="38373:39261" placeholder="SELECT MSI.S... MTL_ONHAND_QUANTITIES" />
+            <marker date="1476700855949" expanded="true" signature="39320:39813" placeholder="SELECT SECON... MTL_SECONDARY_INVENTORIES" />
+            <marker date="1476700855949" expanded="true" signature="39569:39736" placeholder="SELECT SUBIN... PSVWIP_CYCLE_COUNT_TRX_ALL" />
+            <marker date="1476700855949" expanded="true" signature="39871:40203" placeholder="SELECT MSI.S... PSVWIP_CYCLE_COUNT_TRX_ALL" />
+            <marker date="1476700855949" expanded="true" signature="40275:41513" placeholder="SELECT TRANS... SUBINVENTORY_CODE" />
+            <marker date="1476700855949" expanded="true" signature="40459:40591" placeholder="SELECT SUM(N... MTL_ONHAND_QUANTITIES" />
+            <marker date="1476700855949" expanded="true" signature="40733:41504" placeholder="SELECT A.SUB... MTL_MATERIAL_TRANSACTIONS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="34" />
+          <folding>
+            <element signature="e#39#72#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="47" column="106" selection-start-line="47" selection-start-column="106" selection-end-line="47" selection-end-column="106" />
+          <folding>
+            <element signature="e#7#392#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
