@@ -110,17 +110,21 @@ class ProductionResultController extends Controller
 	}
 	public function get_SMP_Normal_Semi_MES_ProdQty($fromDate){
 		$sql =
-			"SELECT
-			     SUM(INP_WGT) AS TOTAL
-			FROM
-			    TB_M20_SNDIF_STL_INOUT@VINA_MESUSER  A
-			WHERE
-			    CREATION_TIMESTAMP = (SELECT MAX(CREATION_TIMESTAMP)
-			                           FROM TB_M20_SNDIF_STL_INOUT@VINA_MESUSER X
-			                           WHERE X.PRD_LOT_NO = A.PRD_LOT_NO
-			                             AND PRD_DT LIKE SUBSTR(:fromDate,0,6)||'%'
-			                             AND X.TCT_TP_CD = '02'
-			                         )
+			"
+			SELECT ROUND(SUM(CASE WHEN MTL.INSP_RSL_TP <> 'B' OR MTL.SCR_OCC_CAU_CD <> 'B' THEN MTL.MTL_WGT END)/1000) AS TOTAL
+			FROM TB_M20_MTL_RSL MTL
+			WHERE 1=1 
+    		AND EXISTS (
+                SELECT 
+                    1
+                FROM
+                    TB_M20_HEAT_COMM COMM
+                WHERE
+                    1=1
+                    AND COMM.PSV_DT LIKE SUBSTR(:FROMDATE,0,6)||'%'
+                    AND MTL.HEAT_NO = COMM.HEAT_NO
+                )
+    		AND HEAT_NO LIKE 'V%'
 			";
 		$results = DB::select($sql,['fromDate' => $fromDate]);
 		return $results;
