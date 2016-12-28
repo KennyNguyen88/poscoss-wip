@@ -112,13 +112,13 @@ class ProductionResultController extends Controller
 		$sql =
 			"
 			SELECT ROUND(SUM(CASE WHEN MTL.INSP_RSL_TP <> 'B' OR MTL.SCR_OCC_CAU_CD <> 'B' THEN MTL.MTL_WGT END)/1000) AS TOTAL
-			FROM TB_M20_MTL_RSL MTL
+			FROM TB_M20_MTL_RSL@VINA_MESUSER MTL
 			WHERE 1=1 
     		AND EXISTS (
                 SELECT 
                     1
                 FROM
-                    TB_M20_HEAT_COMM COMM
+                    TB_M20_HEAT_COMM@VINA_MESUSER COMM
                 WHERE
                     1=1
                     AND COMM.PSV_DT LIKE SUBSTR(:FROMDATE,0,6)||'%'

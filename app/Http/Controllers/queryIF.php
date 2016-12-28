@@ -185,11 +185,29 @@ Select
     , count(*) as total
 from PSVWIP_MES_RESULT_TB_ALL
 where 1=1
-   and transaction_date  between :fromDate
-                             and :toDate
-   and department_code      like '13190'
-   and assembly_item_code   like 'F_D%'
-   and process_status_code  =    'WIP_READY'
+		   and transaction_date  between :fromDate
+		                             and :toDate
+		   and department_code      like '13190'
+		   and assembly_item_code   like 'F_D%'
+		   and process_status_code  =    'WIP_READY'   
+		   and nvl(component_lot_number1, '0')  not in (   select distinct assembly_lot_number
+		                                         from PSVWIP_MES_RESULT_TB_ALL
+		                                        where transaction_date      like substr(:fromDate,1,6)||'%'
+		                                          and assembly_item_code    like 'EDD%'
+		                                          and (    process_status_code =    'NEW'
+		                                               or  process_status_code like 'WIP_READY%'
+		                                               or  process_status_code like 'PSV%'
+		                                               )
+		                                       )   
+		   and nvl(component_lot_number2, '0')  not in (select distinct assembly_lot_number
+		                                          from PSVWIP_MES_RESULT_TB_ALL
+		                                         where transaction_date      like substr(:fromDate,1,6)||'%'
+		                                           and assembly_item_code    like 'EDD%'
+		                                           and (    process_status_code =    'NEW'
+		                                               or  process_status_code like 'WIP_READY%'
+		                                               or  process_status_code like 'PSV%'
+		                                               )
+		                                       )
 union all
 Select
     '7' as step
@@ -383,17 +401,45 @@ where 1=1
 		and process_status_code = 'WIP_READY'
 		";
 
+//	public static $sql_step_6_search =
+//		"Select
+//		    IF_EXT_ID
+//		from PSVWIP_MES_RESULT_TB_ALL
+//		where 1=1
+//		   and transaction_date  between :fromDate
+//		                             and :toDate
+//		   and department_code      like '13190'
+//		   and assembly_item_code   like 'F_D%'
+//		   and process_status_code  =    'WIP_READY'
+//		";
+
 	public static $sql_step_6_search =
-		"Select
-		    IF_EXT_ID
+		"Select IF_EXT_ID    
 		from PSVWIP_MES_RESULT_TB_ALL
 		where 1=1
 		   and transaction_date  between :fromDate
 		                             and :toDate
 		   and department_code      like '13190'
 		   and assembly_item_code   like 'F_D%'
-		   and process_status_code  =    'WIP_READY'
-		";
+		   and process_status_code  =    'WIP_READY'   
+		   and nvl(component_lot_number1, '0')  not in (   select distinct assembly_lot_number
+		                                         from PSVWIP_MES_RESULT_TB_ALL
+		                                        where transaction_date      like substr(:fromDate,1,6)||'%'
+		                                          and assembly_item_code    like 'EDD%'
+		                                          and (    process_status_code =    'NEW'
+		                                               or  process_status_code like 'WIP_READY%'
+		                                               or  process_status_code like 'PSV%'
+		                                               )
+		                                       )   
+		   and nvl(component_lot_number2, '0')  not in (select distinct assembly_lot_number
+		                                          from PSVWIP_MES_RESULT_TB_ALL
+		                                         where transaction_date      like substr(:fromDate,1,6)||'%'
+		                                           and assembly_item_code    like 'EDD%'
+		                                           and (    process_status_code =    'NEW'
+		                                               or  process_status_code like 'WIP_READY%'
+		                                               or  process_status_code like 'PSV%'
+		                                               )
+		                                       )";
 
 	public static $sql_step_7_search =
 		"Select
@@ -576,8 +622,25 @@ where 1=1
 		                             and :toDate
 		   and department_code      like '13190'
 		   and assembly_item_code   like 'F_D%'
-		   and process_status_code  =    'WIP_READY'
-		";
+		   and process_status_code  =    'WIP_READY'   
+		   and nvl(component_lot_number1, '0')  not in (   select distinct assembly_lot_number
+		                                         from PSVWIP_MES_RESULT_TB_ALL
+		                                        where transaction_date      like substr(:fromDate,1,6)||'%'
+		                                          and assembly_item_code    like 'EDD%'
+		                                          and (    process_status_code =    'NEW'
+		                                               or  process_status_code like 'WIP_READY%'
+		                                               or  process_status_code like 'PSV%'
+		                                               )
+		                                       )   
+		   and nvl(component_lot_number2, '0')  not in (select distinct assembly_lot_number
+		                                          from PSVWIP_MES_RESULT_TB_ALL
+		                                         where transaction_date      like substr(:fromDate,1,6)||'%'
+		                                           and assembly_item_code    like 'EDD%'
+		                                           and (    process_status_code =    'NEW'
+		                                               or  process_status_code like 'WIP_READY%'
+		                                               or  process_status_code like 'PSV%'
+		                                               )
+		                                       )";
 
 	public static $sql_step_7_update =
 		"
