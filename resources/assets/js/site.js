@@ -246,7 +246,10 @@ function ifDetail(chain)
 }
 $(document).ready(function () {
     //materialize init
-    $('select').material_select();
+    if ($('select')){
+        $('select').material_select();
+    }
+
     //site
         $('#refresh').change(function(){
             if($(this).is(":checked")) {
@@ -446,8 +449,6 @@ $(document).ready(function () {
         $('#btnSearchOnHandM60').click(function(){
             onhand('M60');
         });
-        
-    
     
 });
 

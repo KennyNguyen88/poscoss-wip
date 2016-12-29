@@ -55,7 +55,7 @@
                         </a>
                         <ul>
                             <li>
-                                <a class="btn-floating red" href="{{route('onhand')}}">
+                                <a class="btn-floating red" href="{{route('kpi')}}">
                                     <i class="large material-icons">list</i>
                                 </a>
                             </li>

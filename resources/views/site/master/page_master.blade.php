@@ -27,14 +27,10 @@
 @section('script')
     {{--JQUERY--}}
     <script type="text/javascript" src="/resources/assets/js/jquery-2.2.1.min.js"></script>
+    {{--MATERIALIZE--}}
     <script type="text/javascript" src="/resources/assets/js/shared/materialize/bin/materialize.min.js"></script>
-    <script type="text/javascript" src="/resources/assets/js/jquery.flot.min.js"></script>
-    <script type="text/javascript" src="/resources/assets/js/jquery.flot.categories.min.js"></script>
-    <script type="text/javascript" src="/resources/assets/js/jquery.flot.pie.min.js"></script>
-    <script type="text/javascript" src="/resources/assets/js/site.js"></script>
-    {{--@include('site.master.myscript')--}}
-
 @show
+    <script type="text/javascript" src="/resources/assets/js/site.js"></script>
 </body>
 </html>
 

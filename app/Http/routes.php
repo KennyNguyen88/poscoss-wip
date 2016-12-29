@@ -24,10 +24,15 @@ Route::get('/prdRsl', ['as' => 'wip-close-prdRsl-index','uses' => 'ProductionRes
 
 Route::get('/prdRsl/search/', ['as' => 'wip-close-prdRsl-search','uses' => 'ProductionResultController@search']);
 
-Route::get('/onhand', ['as' => 'onhand','uses' => 'OnhandController@index']);
+//KPI
 
-Route::get('/onhand/search/{chain}/{dateCheck}/{lotno}', ['as' => 'onhand-search','uses' => 'OnhandController@search']);
+Route::get('/kpi', ['as' => 'kpi','uses' => 'KpiController@index']);
 
+Route::get('/kpi/production/{chain}/{year}', ['as' => 'kpi-production','uses' => 'KpiController@production_result']);
+
+Route::get('/kpi/material/{chain}/{year}', ['as' => 'kpi-material','uses' => 'KpiController@material_result']);
+
+Route::get('/kpi/rework/{chain}/{year}', ['as' => 'kpi-rework','uses' => 'KpiController@rework_result']);
 //ext id detail
 
 Route::get('/test', ['as' => 'test','uses' => 'PageController@test']);
