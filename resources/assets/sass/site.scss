@@ -40,3 +40,11 @@ a{
 .hand{
   cursor:pointer;
 }
+
+.diagram{
+  height: 300px;
+  &.pie{
+      height: 400px;
+  }
+
+}

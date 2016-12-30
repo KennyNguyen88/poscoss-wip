@@ -134,4 +134,179 @@ class KpiController extends Controller
 		}
 		return null;
 	}
+	/* TONG SO HEAT */
+	public function smp_heat_comm_01($year){
+		$sql =
+			"
+				SELECT COUNT(*) AS TOTAL
+				FROM TB_M20_HEAT_COMM@VINA_MESUSER
+				WHERE HEAT_NO LIKE 'V%'
+				AND PSV_DT LIKE :P_YEAR||'%'
+			"
+		;
+		if(!is_null($sql))
+		{
+			$results = DB::select($sql,['P_YEAR' => $year]);
+			return response()->json($results);
+		}
+		return null;
+	}
+
+	//TONG SO HEAT THEO STEEL GRD
+	public function smp_heat_comm_02($year){
+		$sql =
+			"
+				SELECT 
+				    RSL_INCO_STL_GRD
+				    , COUNT(*) AS TOTAL
+				FROM TB_M20_HEAT_COMM@VINA_MESUSER
+				WHERE HEAT_NO LIKE 'V%'
+				AND PSV_DT LIKE :P_YEAR||'%'
+				GROUP BY RSL_INCO_STL_GRD
+				ORDER BY 1
+			"
+		;
+		if(!is_null($sql))
+		{
+			$results = DB::select($sql,['P_YEAR' => $year]);
+			return response()->json($results);
+		}
+		return null;
+	}
+
+	/* TONG SO HEAT THEO THANG, STEELGRADE */
+	public function smp_heat_comm_03($year){
+		$sql =
+			"
+				SELECT 
+				    SUBSTR(PSV_DT,0,6) AS MON
+				    , RSL_INCO_STL_GRD
+				    , COUNT(*) AS TOTAL
+				FROM TB_M20_HEAT_COMM@VINA_MESUSER
+				WHERE HEAT_NO LIKE 'V%'
+				AND PSV_DT LIKE :P_YEAR||'%'
+				GROUP BY 
+				    SUBSTR(PSV_DT,0,6)
+				    , RSL_INCO_STL_GRD
+				ORDER BY 1,2
+			"
+		;
+		if(!is_null($sql))
+		{
+			$results = DB::select($sql,['P_YEAR' => $year]);
+			return response()->json($results);
+		}
+		return null;
+	}
+
+	/* HEAT CO KHOI LUONG NHO NHAT, LON NHAT */
+	public function smp_mtl_rsl_01($year){
+		$sql =
+			"
+				WITH HEAT_WGT AS (
+				SELECT
+				    HEAT_NO
+				    , SUM(MTL_WGT) AS TOTAL    
+				FROM TB_M20_MTL_RSL@VINA_MESUSER
+				WHERE HEAT_NO IN ( SELECT HEAT_NO
+				                    FROM TB_M20_HEAT_COMM@VINA_MESUSER
+				                    WHERE HEAT_NO LIKE 'V%'
+				                    AND PSV_DT LIKE :P_YEAR||'%'
+				                  )
+				GROUP BY HEAT_NO                  
+				)
+				
+				SELECT 
+				    'MAX' as TP
+				    , A.*    
+				FROM HEAT_WGT A
+				WHERE A.TOTAL = (SELECT MAX(TOTAL) FROM HEAT_WGT B)
+				UNION ALL
+				SELECT 
+				    'MIN' as TP
+				    , A.*    
+				FROM HEAT_WGT A
+				WHERE A.TOTAL = (SELECT MIN(TOTAL) FROM HEAT_WGT B)
+			"
+		;
+		if(!is_null($sql))
+		{
+			$results = DB::select($sql,['P_YEAR' => $year]);
+			return response()->json($results);
+		}
+		return null;
+	}
+
+	/* HEAT CO SO LUONG CAY NHO NHAT, LON NHAT */
+	public function smp_mtl_rsl_02($year){
+		$sql =
+			"
+				WITH HEAT_WGT AS (
+				SELECT
+				    HEAT_NO
+				    , COUNT(*) AS TOTAL    
+				FROM TB_M20_MTL_RSL@VINA_MESUSER
+				WHERE HEAT_NO IN ( SELECT HEAT_NO
+				                    FROM TB_M20_HEAT_COMM@VINA_MESUSER
+				                    WHERE HEAT_NO LIKE 'V%'
+				                    AND PSV_DT LIKE :P_YEAR||'%'
+				                  )
+				GROUP BY HEAT_NO                  
+				)
+				
+				SELECT 
+				    'MAX' as TP
+				    , A.*    
+				FROM HEAT_WGT A
+				WHERE A.TOTAL = (SELECT MAX(TOTAL) FROM HEAT_WGT B)
+				UNION ALL
+				SELECT 
+				    'MIN' as TP
+				    , A.*    
+				FROM HEAT_WGT A
+				WHERE A.TOTAL = (SELECT MIN(TOTAL) FROM HEAT_WGT B)
+			"
+		;
+		if(!is_null($sql))
+		{
+			$results = DB::select($sql,['P_YEAR' => $year]);
+			return response()->json($results);
+		}
+		return null;
+	}
+
+	/* TONG KHOI LUONG TINH THEO DIMENSION */
+	public function smp_mtl_rsl_03($year){
+		$sql =
+			"
+				WITH HEAT_WGT AS (
+				SELECT
+				    HEAT_NO
+				    , MTL_DIMS_CD
+				    , SUM(MTL_WGT) AS TOTAL_WGT
+				    , COUNT(*) AS TOTAL_PCS
+				FROM TB_M20_MTL_RSL@VINA_MESUSER
+				WHERE HEAT_NO IN ( SELECT HEAT_NO
+				                    FROM TB_M20_HEAT_COMM@VINA_MESUSER
+				                    WHERE HEAT_NO LIKE 'V%'
+				                    AND PSV_DT LIKE :P_YEAR||'%'
+				                  )
+				GROUP BY HEAT_NO, MTL_DIMS_CD                  
+				)
+				SELECT 
+				    MTL_DIMS_CD
+				    , SUM(TOTAL_WGT) AS TOTAL_WGT
+				    , SUM(TOTAL_PCS) AS TOTAL_PCS
+				FROM HEAT_WGT
+				GROUP BY MTL_DIMS_CD
+				ORDER BY 1
+			"
+		;
+		if(!is_null($sql))
+		{
+			$results = DB::select($sql,['P_YEAR' => $year]);
+			return response()->json($results);
+		}
+		return null;
+	}
 }

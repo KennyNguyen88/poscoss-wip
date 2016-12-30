@@ -34,4 +34,9 @@ a {
 .hand {
   cursor: pointer; }
 
+.diagram {
+  height: 300px; }
+  .diagram.pie {
+    height: 400px; }
+
 /*# sourceMappingURL=site.css.map */

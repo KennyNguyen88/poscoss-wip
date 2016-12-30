@@ -2,125 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81c9dd69-1910-474b-863c-d2b947e6615f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/image/hs-2004-27-a-large-web.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/navigate/arrow-down.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/navigate/arrow-left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/navigate/arrow-right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/navigate/arrow-up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/API.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/FAQ.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/NEWS.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/PLUGINS.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/ajax/data-eu-gdp-growth-1.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/ajax/data-eu-gdp-growth-2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/ajax/data-eu-gdp-growth-3.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/ajax/data-eu-gdp-growth-4.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/ajax/data-eu-gdp-growth-5.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/ajax/data-eu-gdp-growth.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/ajax/data-japan-gdp-growth.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/ajax/data-usa-gdp-growth.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/ajax/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/annotating/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-interacting/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-multiple/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/date.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/africa" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/antarctica" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/asia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/australasia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/backward" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/etcetera" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/europe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/factory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/iso3166.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/leapseconds" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/northamerica" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/pacificnew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/solar87" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/solar88" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/solar89" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/southamerica" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/systemv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/yearistype.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time-zones/tz/zone.tab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/axes-time/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/basic-options/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/basic-usage/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/canvas/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/categories/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/examples.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/image/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/interacting/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/navigate/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/percentiles/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/realtime/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/resize/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/selection/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/series-errorbars/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/series-pie/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/series-toggle/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/series-types/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/shared/jquery-ui/jquery-ui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/shared/jquery-ui/jquery-ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/stacking/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/symbols/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/threshold/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/tracking/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/visitors/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/examples/zooming/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/excanvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/excanvas.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.colorhelpers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.colorhelpers.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.canvas.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.categories.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.crosshair.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.crosshair.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.errorbars.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.errorbars.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.fillbetween.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.fillbetween.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.image.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.image.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.navigate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.navigate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.pie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.resize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.resize.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.selection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.selection.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.stack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.stack.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.symbol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.symbol.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.threshold.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.threshold.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.time.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.time.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/imgs/shutterstock_149459636.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/kpi.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/KpiController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/KpiController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/site.js" afterPath="$PROJECT_DIR$/resources/assets/js/site.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/site.css" afterPath="$PROJECT_DIR$/resources/assets/sass/site.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/site.css.map" afterPath="$PROJECT_DIR$/resources/assets/sass/site.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/site.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/site.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/kpi.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/kpi.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/master/header.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/master/header.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/master/myscript.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/master/myscript.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/master/page_master.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/master/page_master.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/productionResult.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/productionResult.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/wip-close.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/wip-close.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/OnhandController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/KpiController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/assets/js/jquery.flot.categories.min.js" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.categories.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/assets/js/jquery.flot.min.js" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/assets/js/jquery.flot.pie.min.js" afterPath="$PROJECT_DIR$/resources/assets/js/shared/flot/jquery.flot.pie.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/site/onhand.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/kpi.blade.php" />
     </list>
     <ignored path="poscoss-wip.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -146,66 +37,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <file leaf-file-name="kpi.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/site/kpi.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="68" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductionResultController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductionResultController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="163" column="42" selection-start-line="133" selection-start-column="13" selection-end-line="163" selection-end-column="42" />
+            <state relative-caret-position="691">
+              <caret line="212" column="47" selection-start-line="212" selection-start-column="47" selection-end-line="212" selection-end-column="47" />
               <folding>
-                <marker date="1479691000594" expanded="true" signature="2170:4850" placeholder="SELECT DECOD... ORGANIZATION_ID" />
-                <marker date="1479691000594" expanded="true" signature="2284:2907" placeholder="SELECT PRI.O... PSVCM_ACTG_RAW_IODOC_ALL" />
-                <marker date="1479691000594" expanded="true" signature="2940:3631" placeholder="SELECT PRI.O... PSVCM_ACTG_RAW_IODOC_ALL" />
-                <marker date="1479691000594" expanded="true" signature="3664:4287" placeholder="SELECT PRI.O... PSVCM_ACTG_RAW_IODOC_ALL" />
-                <marker date="1479691000594" expanded="true" signature="5014:5535" placeholder="SELECT ROUND... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="5219:5489" placeholder="SELECT 1 FRO... TB_M20_HEAT_COMM@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="5699:6785" placeholder="SELECT SUM(C... HEAT_NO" />
-                <marker date="1479691000594" expanded="true" signature="5752:5925" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="5950:6134" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="6159:6356" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="6427:6677" placeholder="SELECT PRD_L... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="6949:8037" placeholder="SELECT SUM(C... HEAT_NO" />
-                <marker date="1479691000594" expanded="true" signature="7003:7176" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="7201:7385" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="7410:7607" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="7678:7928" placeholder="SELECT PRD_L... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="8194:9282" placeholder="SELECT SUM(C... HEAT_NO" />
-                <marker date="1479691000594" expanded="true" signature="8248:8421" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="8446:8630" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="8655:8852" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="8923:9173" placeholder="SELECT PRD_L... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="9440:10386" placeholder="SELECT SUM(M... TB_M20_MTL_WHS_RSL@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="9580:10365" placeholder="SELECT HEAT_... TB_M20_HEAT_COMM@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="9828:10320" placeholder="SELECT PUR_P... TB_M10_RAW_MTL_PORD_INF@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="10718:14128" placeholder="SELECT DECOD... SUBINVENTORY_CODE" />
-                <marker date="1479691000594" expanded="true" signature="10971:13626" placeholder="SELECT B.SUB... PSVWIP_TXNSUM_IODOC_DTL" />
-                <marker date="1479691000594" expanded="true" signature="11424:12845" placeholder="SELECT TAB.I... TRX_ITEM_ID" />
-                <marker date="1479691000594" expanded="true" signature="11476:12429" placeholder="SELECT PTI.T... PSVWIP_TXNSUM_IODOC" />
-                <marker date="1479691000594" expanded="true" signature="12461:12756" placeholder="SELECT SEGME... PSVBOM_COM_LOOKUP_CODE_ALL" />
-                <marker date="1479691000594" expanded="true" signature="13123:13507" placeholder="SELECT SEGME... PSVWIP_COM_LOOKUP_CODE_ALL" />
-                <marker date="1479691000594" expanded="true" signature="13647:13771" placeholder="SELECT 'F110... DUAL" />
-                <marker date="1479691000594" expanded="true" signature="13792:13916" placeholder="SELECT 'F110... DUAL" />
-                <marker date="1479691000594" expanded="true" signature="13937:14061" placeholder="SELECT 'F110... DUAL" />
-                <marker date="1479691000594" expanded="true" signature="14280:17652" placeholder="SELECT PRD_G... PRD_GRP_CD" />
-                <marker date="1479691000594" expanded="true" signature="14439:17447" placeholder="SELECT WHS_W... PRD_GRP_CD" />
-                <marker date="1479691000594" expanded="true" signature="14695:15186" placeholder="SELECT A.PRD... TB_M60_RECEIPT@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="14920:14996" placeholder="SELECT MAX(W... TB_M60_RECEIPT@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="15226:15865" placeholder="SELECT B.PRD... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="15630:15725" placeholder="SELECT ISS_N... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="15905:16551" placeholder="SELECT B.PRD... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="16316:16411" placeholder="SELECT ISS_N... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="16598:17243" placeholder="SELECT B.PRD... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="17008:17103" placeholder="SELECT ISS_N... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-                <marker date="1479691000594" expanded="true" signature="17468:17610" placeholder="SELECT 'S' a... DUAL" />
+                <element signature="e#6947#6972#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -214,7 +52,7 @@
       <file leaf-file-name="KpiController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/KpiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="15">
               <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
@@ -222,201 +60,42 @@
                 <element signature="e#304#1342#0#PHP" expanded="false" />
                 <element signature="e#1344#2813#0#PHP" expanded="false" />
                 <element signature="e#2815#3557#0#PHP" expanded="false" />
-                <marker date="1483001529046" expanded="false" signature="446:1161" placeholder="SELECT SUBST... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1483001529046" expanded="true" signature="840:1061" placeholder="SELECT 1 FRO... TB_M20_HEAT_COMM@VINA_MESUSER" />
-                <marker date="1483001529046" expanded="false" signature="1484:2632" placeholder="SELECT SUBST... HEAT_NO" />
-                <marker date="1483001529046" expanded="true" signature="1620:1817" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
-                <marker date="1483001529046" expanded="true" signature="1858:2066" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
-                <marker date="1483001529046" expanded="true" signature="2107:2328" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
-                <marker date="1483001529046" expanded="false" signature="2953:3376" placeholder="SELECT SUBST... TB_M20_MTL_MOD_RSL@VINA_MESUSER" />
+                <marker date="1483079508598" expanded="true" signature="446:1161" placeholder="SELECT SUBST... TB_M20_MTL_RSL@VINA_MESUSER" />
+                <marker date="1483079508598" expanded="true" signature="840:1061" placeholder="SELECT 1 FRO... TB_M20_HEAT_COMM@VINA_MESUSER" />
+                <marker date="1483079508598" expanded="false" signature="1484:2632" placeholder="SELECT SUBST... HEAT_NO" />
+                <marker date="1483079508598" expanded="true" signature="1620:1817" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
+                <marker date="1483079508598" expanded="true" signature="1858:2066" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
+                <marker date="1483079508598" expanded="true" signature="2107:2328" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
+                <marker date="1483079508598" expanded="false" signature="2953:3376" placeholder="SELECT SUBST... TB_M20_MTL_MOD_RSL@VINA_MESUSER" />
+                <marker date="1483079508598" expanded="true" signature="3638:3762" placeholder="SELECT COUNT... TB_M20_HEAT_COMM@VINA_MESUSER" />
+                <marker date="1483079508598" expanded="true" signature="4001:4206" placeholder="SELECT RSL_I... TB_M20_HEAT_COMM@VINA_MESUSER" />
+                <marker date="1483079508598" expanded="true" signature="4457:4738" placeholder="SELECT SUBST... TB_M20_HEAT_COMM@VINA_MESUSER" />
+                <marker date="1483079508598" expanded="true" signature="4989:5645" placeholder="SELECT SUBST... TB_M20_HEAT_COMM@VINA_MESUSER" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="productionResult.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/site/productionResult.blade.php">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="68" column="145" selection-start-line="68" selection-start-column="145" selection-end-line="68" selection-end-column="145" />
+            <state relative-caret-position="640">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="queryIF.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/queryIF.php">
+      <file leaf-file-name="kpi.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/kpi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="1021" column="13" selection-start-line="923" selection-start-column="12" selection-end-line="1021" selection-end-column="13" />
+            <state relative-caret-position="191">
+              <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
               <folding>
-                <marker date="1482975907250" expanded="false" signature="206:962" placeholder="SELECT DECOD... " />
-                <marker date="1482975907250" expanded="true" signature="1005:1148" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1482975907250" expanded="true" signature="1005:3242" placeholder="SELECT 'MTL_... " />
-                <marker date="1482975907250" expanded="false" signature="1163:1308" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1482975907250" expanded="true" signature="1323:1623" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="1445:1593" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="1638:1938" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="1760:1908" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="1953:2103" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="2118:2265" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="2280:2426" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="2441:2584" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="2599:2746" placeholder="SELECT 'RESO... WIP_COST_TXN_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="2761:2905" placeholder="SELECT 'RESO... WIP_COST_TXN_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="2920:3075" placeholder="SELECT 'MTL_... MTL_MATERIAL_TRANSACTIONS_TEMP" />
-                <marker date="1482975907250" expanded="false" signature="3090:3242" placeholder="SELECT 'MTL_... MTL_MATERIAL_TRANSACTIONS_TEMP" />
-                <marker date="1482975907250" expanded="true" signature="14320:16176" placeholder="SELECT SUM(T... TP" />
-                <marker date="1482975907250" expanded="false" signature="14367:14540" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="14565:14735" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="14760:15100" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-                <marker date="1482975907250" expanded="true" signature="14902:15065" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="15125:15465" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-                <marker date="1482975907250" expanded="true" signature="15267:15430" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="15490:15650" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="15669:15826" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="15845:16001" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="16020:16173" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-                <marker date="1482975907250" expanded="false" signature="16219:16484" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="false" signature="16530:16735" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="false" signature="16781:17039" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="false" signature="17085:17285" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="17333:19265" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="17647:18396" placeholder="SELECT DISTI... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="18494:19216" placeholder="SELECT DISTI... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="19315:19617" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="19665:21356" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="20006:20609" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="20706:21313" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="false" signature="21399:21656" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="false" signature="21702:21926" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="21702:21927" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="21975:23965" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="22290:23063" placeholder="SELECT DISTI... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="23167:23913" placeholder="SELECT DISTI... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="24014:25690" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="24353:24949" placeholder="SELECT DISTI... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="25048:25648" placeholder="SELECT DISTI... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="false" signature="25737:25968" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="false" signature="26015:26263" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="false" signature="26307:26833" placeholder="SELECT 'M20'... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="true" signature="26307:27590" placeholder="SELECT 'M20'... " />
-                <marker date="1482975907250" expanded="true" signature="26480:26773" placeholder="SELECT MAX(C... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="true" signature="26848:27049" placeholder="Select 'M30'... TB_M30_E50M30_04@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="true" signature="27064:27374" placeholder="Select 'M30'... tb_m30_opr_prd_rsl@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="true" signature="27272:27346" placeholder="Select EXT_I... TB_M30_E50M30_04@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="true" signature="27389:27590" placeholder="Select 'M60'... TB_M60_E50M60_05@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="27639:27929" placeholder="update PSVWI... " />
-                <marker date="1482975907250" expanded="false" signature="27978:28194" placeholder="update PSVWI... " />
-                <marker date="1482975907250" expanded="false" signature="28243:28512" placeholder="update PSVWI... " />
-                <marker date="1482975907250" expanded="false" signature="28561:28772" placeholder="update PSVWI... " />
-                <marker date="1482975907250" expanded="true" signature="28821:30760" placeholder="update PSVWI... " />
-                <marker date="1482975907250" expanded="true" signature="29123:29880" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="29980:30710" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="30809:31106" placeholder="update PSVWI... " />
-                <marker date="1482975907250" expanded="true" signature="30809:32513" placeholder="update PSVWI... " />
-                <marker date="1482975907250" expanded="true" signature="30809:32552" placeholder="update PSVWI... " />
-                <marker date="1482975907250" expanded="true" signature="31163:31766" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="31863:32470" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="false" signature="32559:32827" placeholder="update PSVWI... " />
-                <marker date="1482975907250" expanded="false" signature="32876:33112" placeholder="update PSVWI... " />
-                <marker date="1482975907250" expanded="true" signature="33161:35085" placeholder="update PSVWI... " />
-                <marker date="1482975907250" expanded="true" signature="33467:34216" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="34314:35036" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="35135:36808" placeholder="update PSVWI... " />
-                <marker date="1482975907250" expanded="true" signature="35458:36061" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="36158:36765" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="false" signature="36858:37100" placeholder="update PSVWI... " />
-                <marker date="1482975907250" expanded="false" signature="37150:37399" placeholder="update PSVWI... " />
-                <marker date="1482975907250" expanded="true" signature="37425:37656" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-                <marker date="1482975907250" expanded="true" signature="37700:42046" placeholder="SELECT SUM(P... PRD_WGT" />
-                <marker date="1482975907250" expanded="true" signature="37792:41586" placeholder="SELECT RSL.P... DIV_ROL_LOT_NO" />
-                <marker date="1482975907250" expanded="true" signature="37895:40958" placeholder="SELECT DIV_R... DIV_ROL_LOT_NO" />
-                <marker date="1482975907250" expanded="true" signature="38048:38808" placeholder="SELECT PRD.D... TB_M30_PRD_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="true" signature="38849:39840" placeholder="SELECT SUBST... TB_M30_PRD_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="true" signature="39502:39608" placeholder="SELECT MAX(I... TB_M30_PRD_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="true" signature="39881:40906" placeholder="SELECT SUBST... TB_M30_PRD_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="true" signature="40697:40860" placeholder="SELECT 1 FRO... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="true" signature="41001:41459" placeholder="SELECT ROL_L... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="true" signature="41612:42041" placeholder="SELECT 0 AS TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="true" signature="42082:43260" placeholder="select xx1c.... psvbom_act_wip_lot_all" />
-                <marker date="1482975907250" expanded="true" signature="42665:42889" placeholder="select segme... psvbom_com_lookup_code_all" />
-                <marker date="1482975907250" expanded="false" signature="43306:43691" placeholder="SELECT 'stkW... TB_M20_MTL_STK@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="true" signature="43306:47795" placeholder="SELECT 'stkW... " />
-                <marker date="1482975907250" expanded="false" signature="43374:43508" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="43606:43663" placeholder="SELECT MAX(S... TB_M20_MTL_STK@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="43706:44025" placeholder="SELECT 'notW... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="44040:44397" placeholder="SELECT 'whsR... TB_M20_MTL_WHS_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="44115:44249" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="44412:44816" placeholder="SELECT 'trnI... TB_M20_MTL_TRN@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="44479:44601" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="44831:45303" placeholder="SELECT 'tran... TB_M20_MTL_TRN@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="44901:45023" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="45318:46195" placeholder="SELECT 'roll... TB_M30_E50M30_04@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="45735:46126" placeholder="SELECT HEAT_... TB_M20_MTL_TRN@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="45771:45919" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="46210:47089" placeholder="SELECT 'roll... TB_M30_E50M30_04@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="46627:47018" placeholder="SELECT HEAT_... TB_M20_MTL_TRN@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="46663:46811" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="47104:47676" placeholder="SELECT 'take... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="47798:48489" placeholder="SELECT 'take... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="48492:49687" placeholder="SELECT 'take... SUBSTR" />
-                <marker date="1482975907250" expanded="false" signature="48492:49975" placeholder="SELECT 'take... " />
-                <marker date="1482975907250" expanded="false" signature="48716:49626" placeholder="SELECT SUBST... TB_M20_MTL_SCR_SWT@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="49703:49975" placeholder="Select 'mov'... TB_M20_MTL_MOV@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="49753:49875" placeholder="select max(a... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="50026:50708" placeholder="select '1' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="50026:57073" placeholder="select '1' a... " />
-                <marker date="1482975907250" expanded="false" signature="50719:51456" placeholder="select '2' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="51467:52143" placeholder="select '3' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="52154:52993" placeholder="select '4' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="53004:53830" placeholder="select '5' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="53032:53133" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="53841:54732" placeholder="select '6' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="53869:53970" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="54743:55530" placeholder="select '7' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="54771:54872" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="55541:56532" placeholder="select '8' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="55569:55672" placeholder="select max(a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="56543:57073" placeholder="select '9' a... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="56571:56674" placeholder="select max(b... tb_m30_prd_rsl@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="56928:57072" placeholder="SELECT 1 FRO... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="57119:57301" placeholder="select 'tb_m... tb_m60_prdno_inv@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="57119:58252" placeholder="select 'tb_m... " />
-                <marker date="1482975907250" expanded="false" signature="57316:57849" placeholder="select 'tb_m... *" />
-                <marker date="1482975907250" expanded="false" signature="57446:57586" placeholder="select x.* ,... tb_m60_receipt@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="false" signature="57864:58252" placeholder="select 'tb_m... tb_m60_issue_rslts@VINA_MESUSER" />
-                <marker date="1482975907250" expanded="true" signature="58302:59190" placeholder="SELECT MSI.S... MTL_ONHAND_QUANTITIES" />
-                <marker date="1482975907250" expanded="true" signature="59249:59742" placeholder="SELECT SECON... MTL_SECONDARY_INVENTORIES" />
-                <marker date="1482975907250" expanded="true" signature="59498:59665" placeholder="SELECT SUBIN... PSVWIP_CYCLE_COUNT_TRX_ALL" />
-                <marker date="1482975907250" expanded="true" signature="59800:60132" placeholder="SELECT MSI.S... PSVWIP_CYCLE_COUNT_TRX_ALL" />
-                <marker date="1482975907250" expanded="true" signature="60204:61442" placeholder="SELECT TRANS... SUBINVENTORY_CODE" />
-                <marker date="1482975907250" expanded="true" signature="60388:60520" placeholder="SELECT SUM(N... MTL_ONHAND_QUANTITIES" />
-                <marker date="1482975907250" expanded="true" signature="60662:61433" placeholder="SELECT A.SUB... MTL_MATERIAL_TRANSACTIONS" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kpi.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/site/kpi.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2749">
-              <caret line="319" column="122" selection-start-line="319" selection-start-column="122" selection-end-line="319" selection-end-column="122" />
-              <folding>
-                <element signature="e#5169#5194#0#HTML" expanded="true" />
-                <element signature="e#5487#5508#0#HTML" expanded="true" />
-                <element signature="e#5698#5719#0#HTML" expanded="true" />
-                <element signature="e#5982#6003#0#HTML" expanded="true" />
-                <element signature="e#6200#6221#0#HTML" expanded="true" />
-                <element signature="e#7363#7397#0#HTML" expanded="false" />
-                <element signature="e#7999#8087#0#HTML" expanded="false" />
-                <element signature="e#8415#8495#0#HTML" expanded="false" />
-                <element signature="e#9084#9543#0#HTML" expanded="false" />
-                <element signature="e#9590#10081#0#HTML" expanded="false" />
-                <element signature="e#10126#10615#0#HTML" expanded="false" />
-                <element signature="e#11665#12066#0#HTML" expanded="false" />
-                <element signature="e#13736#14065#0#HTML" expanded="false" />
+                <element signature="n#!!block;n#showMaterialResult#0" expanded="false" />
+                <element signature="n#!!block;n#showReworkResult#0" expanded="false" />
+                <element signature="n#!!block;n#monNumtoCh#0" expanded="false" />
+                <marker date="1483081016510" expanded="true" signature="5989:5996" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -443,7 +122,6 @@
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/site/test.html" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/site.scss" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/201605.xml" />
         <option value="$PROJECT_DIR$/public/test.xml" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
@@ -458,13 +136,15 @@
         <option value="$PROJECT_DIR$/resources/views/site/master/page_master.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/js/site.js" />
         <option value="$PROJECT_DIR$/resources/views/site/onhand.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/site/master/header.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/OnhandController.php" />
         <option value="$PROJECT_DIR$/resources/views/site/wip-close.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/site/productionResult.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/site/kpi.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/site/master/header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/site.scss" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/KpiController.php" />
+        <option value="$PROJECT_DIR$/resources/assets/js/kpi.js" />
+        <option value="$PROJECT_DIR$/resources/views/site/kpi.blade.php" />
       </list>
     </option>
   </component>
@@ -705,7 +385,77 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site.scss" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poscoss-wip" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imgs" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -800,14 +550,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\WIP\poscoss-wip\public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\WIP\poscoss-wip\resources\assets\imgs" />
       <recent name="D:\Workspace\WIP\poscoss-wip\resources\assets\js\shared" />
       <recent name="D:\Workspace\WIP\poscoss-wip\resources\assets\js" />
       <recent name="D:\Workspace\WIP\poscoss-wip\public" />
       <recent name="D:\Workspace\WIP\poscoss-wip\app\Http\Controllers" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Workspace\WIP\poscoss-wip\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -870,7 +621,8 @@
       <workItem from="1480565162984" duration="1577000" />
       <workItem from="1482388983485" duration="29000" />
       <workItem from="1482889593461" duration="14901000" />
-      <workItem from="1482974279618" duration="21136000" />
+      <workItem from="1482974279618" duration="24512000" />
+      <workItem from="1483060964081" duration="13135000" />
     </task>
     <task id="LOCAL-00001" summary="query update&#10;- M30 Production Result&#10;- Closing Transaction don't need to check input">
       <created>1476071303748</created>
@@ -907,38 +659,45 @@
       <option name="project" value="LOCAL" />
       <updated>1482976014037</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="KPI - SMP Production Result">
+      <created>1483003591002</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1483003591002</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54437000" />
+    <option name="totallyTimeSpent" value="70948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24200426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36971048" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2553305" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24466951" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2553305" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -975,12 +734,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="query update&#10;- M30 Production Result&#10;- Closing Transaction don't need to check input" />
     <MESSAGE value="return result for mobile project" />
     <MESSAGE value="Update SMP Normal Product" />
     <MESSAGE value="Sync" />
     <MESSAGE value="update sql 5,9,10" />
-    <option name="LAST_COMMIT_MESSAGE" value="update sql 5,9,10" />
+    <MESSAGE value="KPI - SMP Production Result" />
+    <option name="LAST_COMMIT_MESSAGE" value="KPI - SMP Production Result" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -996,33 +758,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/site.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!block;n#joblist#0" expanded="false" />
-            <element signature="n#!!block;n#getStatus#0" expanded="false" />
-            <element signature="n#!!block;n#doUpdateStep_child#0" expanded="false" />
-            <element signature="n#!!block;n#doUpdateStep#0" expanded="false" />
-            <element signature="n#!!block;n#updateStep#0" expanded="false" />
-            <element signature="n#!!block;n#dis_pe_search#0" expanded="false" />
-            <element signature="n#!!block;n#en_pe_search#0" expanded="false" />
-            <element signature="n#!!block;n#onhand#0" expanded="false" />
-            <element signature="n#!!block;n#ifDetail#0" expanded="false" />
-            <marker date="1482977229087" expanded="true" signature="8822:8837" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1181,13 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/site.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/sample.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1276,7 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1284,9 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2958">
           <caret line="179" column="20" selection-start-line="179" selection-start-column="20" selection-end-line="179" selection-end-column="20" />
-          <folding>
-            <element signature="e#9818#11086#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1301,7 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1309,23 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="105" selection-start-line="33" selection-start-column="105" selection-end-line="33" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/master/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="151" selection-start-line="3" selection-start-column="151" selection-end-line="3" selection-end-column="151" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/master/page_master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1333,7 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="67" column="26" selection-start-line="51" selection-start-column="20" selection-end-line="67" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1360,173 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="1021" column="13" selection-start-line="923" selection-start-column="12" selection-end-line="1021" selection-end-column="13" />
-          <folding>
-            <marker date="1482975907250" expanded="false" signature="206:962" placeholder="SELECT DECOD... " />
-            <marker date="1482975907250" expanded="true" signature="1005:1148" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1482975907250" expanded="true" signature="1005:3242" placeholder="SELECT 'MTL_... " />
-            <marker date="1482975907250" expanded="false" signature="1163:1308" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1482975907250" expanded="true" signature="1323:1623" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="1445:1593" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="1638:1938" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="1760:1908" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="1953:2103" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="2118:2265" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="2280:2426" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="2441:2584" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="2599:2746" placeholder="SELECT 'RESO... WIP_COST_TXN_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="2761:2905" placeholder="SELECT 'RESO... WIP_COST_TXN_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="2920:3075" placeholder="SELECT 'MTL_... MTL_MATERIAL_TRANSACTIONS_TEMP" />
-            <marker date="1482975907250" expanded="false" signature="3090:3242" placeholder="SELECT 'MTL_... MTL_MATERIAL_TRANSACTIONS_TEMP" />
-            <marker date="1482975907250" expanded="true" signature="14320:16176" placeholder="SELECT SUM(T... TP" />
-            <marker date="1482975907250" expanded="false" signature="14367:14540" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="14565:14735" placeholder="SELECT 'MTL_... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="14760:15100" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-            <marker date="1482975907250" expanded="true" signature="14902:15065" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="15125:15465" placeholder="SELECT 'MTL_... MTL_TRANSACTION_LOTS_INTERFACE" />
-            <marker date="1482975907250" expanded="true" signature="15267:15430" placeholder="SELECT 1 FRO... MTL_TRANSACTIONS_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="15490:15650" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="15669:15826" placeholder="SELECT 'WIP_... WIP_JOB_SCHEDULE_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="15845:16001" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="16020:16173" placeholder="SELECT 'MOV_... WIP_MOVE_TXN_INTERFACE" />
-            <marker date="1482975907250" expanded="false" signature="16219:16484" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="false" signature="16530:16735" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="false" signature="16781:17039" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="false" signature="17085:17285" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="17333:19265" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="17647:18396" placeholder="SELECT DISTI... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="18494:19216" placeholder="SELECT DISTI... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="19315:19617" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="19665:21356" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="20006:20609" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="20706:21313" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="false" signature="21399:21656" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="false" signature="21702:21926" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="21702:21927" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="21975:23965" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="22290:23063" placeholder="SELECT DISTI... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="23167:23913" placeholder="SELECT DISTI... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="24014:25690" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="24353:24949" placeholder="SELECT DISTI... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="25048:25648" placeholder="SELECT DISTI... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="false" signature="25737:25968" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="false" signature="26015:26263" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="false" signature="26307:26833" placeholder="SELECT 'M20'... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="true" signature="26307:27590" placeholder="SELECT 'M20'... " />
-            <marker date="1482975907250" expanded="true" signature="26480:26773" placeholder="SELECT MAX(C... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="true" signature="26848:27049" placeholder="Select 'M30'... TB_M30_E50M30_04@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="true" signature="27064:27374" placeholder="Select 'M30'... tb_m30_opr_prd_rsl@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="true" signature="27272:27346" placeholder="Select EXT_I... TB_M30_E50M30_04@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="true" signature="27389:27590" placeholder="Select 'M60'... TB_M60_E50M60_05@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="27639:27929" placeholder="update PSVWI... " />
-            <marker date="1482975907250" expanded="false" signature="27978:28194" placeholder="update PSVWI... " />
-            <marker date="1482975907250" expanded="false" signature="28243:28512" placeholder="update PSVWI... " />
-            <marker date="1482975907250" expanded="false" signature="28561:28772" placeholder="update PSVWI... " />
-            <marker date="1482975907250" expanded="true" signature="28821:30760" placeholder="update PSVWI... " />
-            <marker date="1482975907250" expanded="true" signature="29123:29880" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="29980:30710" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="30809:31106" placeholder="update PSVWI... " />
-            <marker date="1482975907250" expanded="true" signature="30809:32513" placeholder="update PSVWI... " />
-            <marker date="1482975907250" expanded="true" signature="30809:32552" placeholder="update PSVWI... " />
-            <marker date="1482975907250" expanded="true" signature="31163:31766" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="31863:32470" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="false" signature="32559:32827" placeholder="update PSVWI... " />
-            <marker date="1482975907250" expanded="false" signature="32876:33112" placeholder="update PSVWI... " />
-            <marker date="1482975907250" expanded="true" signature="33161:35085" placeholder="update PSVWI... " />
-            <marker date="1482975907250" expanded="true" signature="33467:34216" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="34314:35036" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="35135:36808" placeholder="update PSVWI... " />
-            <marker date="1482975907250" expanded="true" signature="35458:36061" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="36158:36765" placeholder="select disti... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="false" signature="36858:37100" placeholder="update PSVWI... " />
-            <marker date="1482975907250" expanded="false" signature="37150:37399" placeholder="update PSVWI... " />
-            <marker date="1482975907250" expanded="true" signature="37425:37656" placeholder="Select IF_EX... PSVWIP_MES_RESULT_TB_ALL" />
-            <marker date="1482975907250" expanded="true" signature="37700:42046" placeholder="SELECT SUM(P... PRD_WGT" />
-            <marker date="1482975907250" expanded="true" signature="37792:41586" placeholder="SELECT RSL.P... DIV_ROL_LOT_NO" />
-            <marker date="1482975907250" expanded="true" signature="37895:40958" placeholder="SELECT DIV_R... DIV_ROL_LOT_NO" />
-            <marker date="1482975907250" expanded="true" signature="38048:38808" placeholder="SELECT PRD.D... TB_M30_PRD_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="true" signature="38849:39840" placeholder="SELECT SUBST... TB_M30_PRD_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="true" signature="39502:39608" placeholder="SELECT MAX(I... TB_M30_PRD_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="true" signature="39881:40906" placeholder="SELECT SUBST... TB_M30_PRD_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="true" signature="40697:40860" placeholder="SELECT 1 FRO... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="true" signature="41001:41459" placeholder="SELECT ROL_L... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="true" signature="41612:42041" placeholder="SELECT 0 AS TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="true" signature="42082:43260" placeholder="select xx1c.... psvbom_act_wip_lot_all" />
-            <marker date="1482975907250" expanded="true" signature="42665:42889" placeholder="select segme... psvbom_com_lookup_code_all" />
-            <marker date="1482975907250" expanded="false" signature="43306:43691" placeholder="SELECT 'stkW... TB_M20_MTL_STK@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="true" signature="43306:47795" placeholder="SELECT 'stkW... " />
-            <marker date="1482975907250" expanded="false" signature="43374:43508" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="43606:43663" placeholder="SELECT MAX(S... TB_M20_MTL_STK@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="43706:44025" placeholder="SELECT 'notW... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="44040:44397" placeholder="SELECT 'whsR... TB_M20_MTL_WHS_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="44115:44249" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="44412:44816" placeholder="SELECT 'trnI... TB_M20_MTL_TRN@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="44479:44601" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="44831:45303" placeholder="SELECT 'tran... TB_M20_MTL_TRN@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="44901:45023" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="45318:46195" placeholder="SELECT 'roll... TB_M30_E50M30_04@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="45735:46126" placeholder="SELECT HEAT_... TB_M20_MTL_TRN@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="45771:45919" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="46210:47089" placeholder="SELECT 'roll... TB_M30_E50M30_04@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="46627:47018" placeholder="SELECT HEAT_... TB_M20_MTL_TRN@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="46663:46811" placeholder="SELECT MAX(A... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="47104:47676" placeholder="SELECT 'take... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="47798:48489" placeholder="SELECT 'take... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="48492:49687" placeholder="SELECT 'take... SUBSTR" />
-            <marker date="1482975907250" expanded="false" signature="48492:49975" placeholder="SELECT 'take... " />
-            <marker date="1482975907250" expanded="false" signature="48716:49626" placeholder="SELECT SUBST... TB_M20_MTL_SCR_SWT@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="49703:49975" placeholder="Select 'mov'... TB_M20_MTL_MOV@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="49753:49875" placeholder="select max(a... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="50026:50708" placeholder="select '1' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="50026:57073" placeholder="select '1' a... " />
-            <marker date="1482975907250" expanded="false" signature="50719:51456" placeholder="select '2' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="51467:52143" placeholder="select '3' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="52154:52993" placeholder="select '4' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="53004:53830" placeholder="select '5' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="53032:53133" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="53841:54732" placeholder="select '6' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="53869:53970" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="54743:55530" placeholder="select '7' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="54771:54872" placeholder="select max(P... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="55541:56532" placeholder="select '8' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="55569:55672" placeholder="select max(a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="56543:57073" placeholder="select '9' a... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="56571:56674" placeholder="select max(b... tb_m30_prd_rsl@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="56928:57072" placeholder="SELECT 1 FRO... TB_M30_OPR_PRD_RSL@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="57119:57301" placeholder="select 'tb_m... tb_m60_prdno_inv@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="57119:58252" placeholder="select 'tb_m... " />
-            <marker date="1482975907250" expanded="false" signature="57316:57849" placeholder="select 'tb_m... *" />
-            <marker date="1482975907250" expanded="false" signature="57446:57586" placeholder="select x.* ,... tb_m60_receipt@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="false" signature="57864:58252" placeholder="select 'tb_m... tb_m60_issue_rslts@VINA_MESUSER" />
-            <marker date="1482975907250" expanded="true" signature="58302:59190" placeholder="SELECT MSI.S... MTL_ONHAND_QUANTITIES" />
-            <marker date="1482975907250" expanded="true" signature="59249:59742" placeholder="SELECT SECON... MTL_SECONDARY_INVENTORIES" />
-            <marker date="1482975907250" expanded="true" signature="59498:59665" placeholder="SELECT SUBIN... PSVWIP_CYCLE_COUNT_TRX_ALL" />
-            <marker date="1482975907250" expanded="true" signature="59800:60132" placeholder="SELECT MSI.S... PSVWIP_CYCLE_COUNT_TRX_ALL" />
-            <marker date="1482975907250" expanded="true" signature="60204:61442" placeholder="SELECT TRANS... SUBINVENTORY_CODE" />
-            <marker date="1482975907250" expanded="true" signature="60388:60520" placeholder="SELECT SUM(N... MTL_ONHAND_QUANTITIES" />
-            <marker date="1482975907250" expanded="true" signature="60662:61433" placeholder="SELECT A.SUB... MTL_MATERIAL_TRANSACTIONS" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/kpi.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2749">
-          <caret line="319" column="122" selection-start-line="319" selection-start-column="122" selection-end-line="319" selection-end-column="122" />
-          <folding>
-            <element signature="e#5169#5194#0#HTML" expanded="true" />
-            <element signature="e#5487#5508#0#HTML" expanded="true" />
-            <element signature="e#5698#5719#0#HTML" expanded="true" />
-            <element signature="e#5982#6003#0#HTML" expanded="true" />
-            <element signature="e#6200#6221#0#HTML" expanded="true" />
-            <element signature="e#7363#7397#0#HTML" expanded="false" />
-            <element signature="e#7999#8087#0#HTML" expanded="false" />
-            <element signature="e#8415#8495#0#HTML" expanded="false" />
-            <element signature="e#9084#9543#0#HTML" expanded="false" />
-            <element signature="e#9590#10081#0#HTML" expanded="false" />
-            <element signature="e#10126#10615#0#HTML" expanded="false" />
-            <element signature="e#11665#12066#0#HTML" expanded="false" />
-            <element signature="e#13736#14065#0#HTML" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1534,81 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="163" column="42" selection-start-line="133" selection-start-column="13" selection-end-line="163" selection-end-column="42" />
-          <folding>
-            <marker date="1479691000594" expanded="true" signature="2170:4850" placeholder="SELECT DECOD... ORGANIZATION_ID" />
-            <marker date="1479691000594" expanded="true" signature="2284:2907" placeholder="SELECT PRI.O... PSVCM_ACTG_RAW_IODOC_ALL" />
-            <marker date="1479691000594" expanded="true" signature="2940:3631" placeholder="SELECT PRI.O... PSVCM_ACTG_RAW_IODOC_ALL" />
-            <marker date="1479691000594" expanded="true" signature="3664:4287" placeholder="SELECT PRI.O... PSVCM_ACTG_RAW_IODOC_ALL" />
-            <marker date="1479691000594" expanded="true" signature="5014:5535" placeholder="SELECT ROUND... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="5219:5489" placeholder="SELECT 1 FRO... TB_M20_HEAT_COMM@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="5699:6785" placeholder="SELECT SUM(C... HEAT_NO" />
-            <marker date="1479691000594" expanded="true" signature="5752:5925" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="5950:6134" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="6159:6356" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="6427:6677" placeholder="SELECT PRD_L... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="6949:8037" placeholder="SELECT SUM(C... HEAT_NO" />
-            <marker date="1479691000594" expanded="true" signature="7003:7176" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="7201:7385" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="7410:7607" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="7678:7928" placeholder="SELECT PRD_L... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="8194:9282" placeholder="SELECT SUM(C... HEAT_NO" />
-            <marker date="1479691000594" expanded="true" signature="8248:8421" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="8446:8630" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="8655:8852" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="8923:9173" placeholder="SELECT PRD_L... TB_M20_SNDIF_STL_INOUT@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="9440:10386" placeholder="SELECT SUM(M... TB_M20_MTL_WHS_RSL@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="9580:10365" placeholder="SELECT HEAT_... TB_M20_HEAT_COMM@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="9828:10320" placeholder="SELECT PUR_P... TB_M10_RAW_MTL_PORD_INF@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="10718:14128" placeholder="SELECT DECOD... SUBINVENTORY_CODE" />
-            <marker date="1479691000594" expanded="true" signature="10971:13626" placeholder="SELECT B.SUB... PSVWIP_TXNSUM_IODOC_DTL" />
-            <marker date="1479691000594" expanded="true" signature="11424:12845" placeholder="SELECT TAB.I... TRX_ITEM_ID" />
-            <marker date="1479691000594" expanded="true" signature="11476:12429" placeholder="SELECT PTI.T... PSVWIP_TXNSUM_IODOC" />
-            <marker date="1479691000594" expanded="true" signature="12461:12756" placeholder="SELECT SEGME... PSVBOM_COM_LOOKUP_CODE_ALL" />
-            <marker date="1479691000594" expanded="true" signature="13123:13507" placeholder="SELECT SEGME... PSVWIP_COM_LOOKUP_CODE_ALL" />
-            <marker date="1479691000594" expanded="true" signature="13647:13771" placeholder="SELECT 'F110... DUAL" />
-            <marker date="1479691000594" expanded="true" signature="13792:13916" placeholder="SELECT 'F110... DUAL" />
-            <marker date="1479691000594" expanded="true" signature="13937:14061" placeholder="SELECT 'F110... DUAL" />
-            <marker date="1479691000594" expanded="true" signature="14280:17652" placeholder="SELECT PRD_G... PRD_GRP_CD" />
-            <marker date="1479691000594" expanded="true" signature="14439:17447" placeholder="SELECT WHS_W... PRD_GRP_CD" />
-            <marker date="1479691000594" expanded="true" signature="14695:15186" placeholder="SELECT A.PRD... TB_M60_RECEIPT@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="14920:14996" placeholder="SELECT MAX(W... TB_M60_RECEIPT@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="15226:15865" placeholder="SELECT B.PRD... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="15630:15725" placeholder="SELECT ISS_N... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="15905:16551" placeholder="SELECT B.PRD... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="16316:16411" placeholder="SELECT ISS_N... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="16598:17243" placeholder="SELECT B.PRD... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="17008:17103" placeholder="SELECT ISS_N... TB_M60_ISSUE_RSLTS@VINA_MESUSER" />
-            <marker date="1479691000594" expanded="true" signature="17468:17610" placeholder="SELECT 'S' a... DUAL" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="68" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/KpiController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-            <element signature="e#246#302#0#PHP" expanded="false" />
-            <element signature="e#304#1342#0#PHP" expanded="false" />
-            <element signature="e#1344#2813#0#PHP" expanded="false" />
-            <element signature="e#2815#3557#0#PHP" expanded="false" />
-            <marker date="1483001529046" expanded="false" signature="446:1161" placeholder="SELECT SUBST... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1483001529046" expanded="true" signature="840:1061" placeholder="SELECT 1 FRO... TB_M20_HEAT_COMM@VINA_MESUSER" />
-            <marker date="1483001529046" expanded="false" signature="1484:2632" placeholder="SELECT SUBST... HEAT_NO" />
-            <marker date="1483001529046" expanded="true" signature="1620:1817" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
-            <marker date="1483001529046" expanded="true" signature="1858:2066" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
-            <marker date="1483001529046" expanded="true" signature="2107:2328" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
-            <marker date="1483001529046" expanded="false" signature="2953:3376" placeholder="SELECT SUBST... TB_M20_MTL_MOD_RSL@VINA_MESUSER" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1616,7 +1079,93 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="68" column="145" selection-start-line="68" selection-start-column="145" selection-end-line="68" selection-end-column="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/master/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/master/page_master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/site.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/kpi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#showMaterialResult#0" expanded="false" />
+            <element signature="n#!!block;n#showReworkResult#0" expanded="false" />
+            <element signature="n#!!block;n#monNumtoCh#0" expanded="false" />
+            <marker date="1483081016510" expanded="true" signature="5989:5996" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/KpiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#246#302#0#PHP" expanded="false" />
+            <element signature="e#304#1342#0#PHP" expanded="false" />
+            <element signature="e#1344#2813#0#PHP" expanded="false" />
+            <element signature="e#2815#3557#0#PHP" expanded="false" />
+            <marker date="1483079508598" expanded="true" signature="446:1161" placeholder="SELECT SUBST... TB_M20_MTL_RSL@VINA_MESUSER" />
+            <marker date="1483079508598" expanded="true" signature="840:1061" placeholder="SELECT 1 FRO... TB_M20_HEAT_COMM@VINA_MESUSER" />
+            <marker date="1483079508598" expanded="false" signature="1484:2632" placeholder="SELECT SUBST... HEAT_NO" />
+            <marker date="1483079508598" expanded="true" signature="1620:1817" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
+            <marker date="1483079508598" expanded="true" signature="1858:2066" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
+            <marker date="1483079508598" expanded="true" signature="2107:2328" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
+            <marker date="1483079508598" expanded="false" signature="2953:3376" placeholder="SELECT SUBST... TB_M20_MTL_MOD_RSL@VINA_MESUSER" />
+            <marker date="1483079508598" expanded="true" signature="3638:3762" placeholder="SELECT COUNT... TB_M20_HEAT_COMM@VINA_MESUSER" />
+            <marker date="1483079508598" expanded="true" signature="4001:4206" placeholder="SELECT RSL_I... TB_M20_HEAT_COMM@VINA_MESUSER" />
+            <marker date="1483079508598" expanded="true" signature="4457:4738" placeholder="SELECT SUBST... TB_M20_HEAT_COMM@VINA_MESUSER" />
+            <marker date="1483079508598" expanded="true" signature="4989:5645" placeholder="SELECT SUBST... TB_M20_HEAT_COMM@VINA_MESUSER" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/kpi.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="212" column="47" selection-start-line="212" selection-start-column="47" selection-end-line="212" selection-end-column="47" />
+          <folding>
+            <element signature="e#6947#6972#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
