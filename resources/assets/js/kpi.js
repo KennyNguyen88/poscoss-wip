@@ -48,8 +48,8 @@ var posco_light_blue = "#00A7E5";
 
 function getProductionResult(chain,year){ // return [{"mon":"201601","good":"37559","bad":"233"},{"mon":"201602","good":"13689","bad":"111"}]
     var url = "/public/kpi/production";
-    chain = 'M20';
-    year = '2016';
+    // chain = 'M20';
+    // year = '2016';
     var result = null;
     $.ajax({
         url: url + '/' + chain + '/' + year,
@@ -63,8 +63,8 @@ function getProductionResult(chain,year){ // return [{"mon":"201601","good":"375
 }
 function getMaterialResult(chain,year){ // return [{"mon":"201601","total":"37559"},{"mon":"201602","total":"13689"}]
     var url = "/public/kpi/material";
-    chain = 'M20';
-    year = '2016';
+    // chain = 'M20';
+    // year = '2016';
     var result = null;
     $.ajax({
         url: url + '/' + chain + '/' + year,
@@ -78,11 +78,109 @@ function getMaterialResult(chain,year){ // return [{"mon":"201601","total":"3755
 }
 function getReworkResult(chain,year){ // return [{"mon":"201601","total":"37559"},{"mon":"201602","total":"13689"}]
     var url = "/public/kpi/rework";
-    chain = 'M20';
-    year = '2016';
+    // chain = 'M20';
+    // year = '2016';
     var result = null;
     $.ajax({
         url: url + '/' + chain + '/' + year,
+        async: false,
+        success: function(data) {
+            result = data;
+        },
+        type: 'GET'
+    });
+    return result;
+}
+function getSMPHeatComm01(year){
+    var url = "/public/kpi/smp/heat/comm/01";
+    // year = '2016';
+    var result = null;
+    $.ajax({
+        url: url + '/' + year,
+        async: false,
+        success: function(data) {
+            result = data;
+        },
+        type: 'GET'
+    });
+    return result;
+}
+function getSMPHeatComm02(year){
+    var url = "/public/kpi/smp/heat/comm/02";
+    // year = '2016';
+    var result = null;
+    $.ajax({
+        url: url + '/' + year,
+        async: false,
+        success: function(data) {
+            result = data;
+        },
+        type: 'GET'
+    });
+    return result;
+}
+function getSMPHeatComm03(year){
+    var url = "/public/kpi/smp/heat/comm/03";
+    // year = '2016';
+    var result = null;
+    $.ajax({
+        url: url + '/' + year,
+        async: false,
+        success: function(data) {
+            result = data;
+        },
+        type: 'GET'
+    });
+    return result;
+}
+function getSMPMtlRsl01(year){
+    var url = "/public/kpi/smp/mlt/rsl/01";
+    // year = '2016';
+    var result = null;
+    $.ajax({
+        url: url + '/' + year,
+        async: false,
+        success: function(data) {
+            result = data;
+        },
+        type: 'GET'
+    });
+    return result;
+}
+function getSMPMtlRsl02(year){
+    var url = "/public/kpi/smp/mlt/rsl/02";
+    // year = '2016';
+    var result = null;
+    $.ajax({
+        url: url + '/' + year,
+        async: false,
+        success: function(data) {
+            result = data;
+        },
+        type: 'GET'
+    });
+    return result;
+}
+function getSMPMtlRsl03(year){
+    var url = "/public/kpi/smp/mlt/rsl/03";
+    // year = '2016';
+    var result = null;
+    $.ajax({
+        url: url + '/' + year,
+        async: false,
+        success: function(data) {
+            result = data;
+        },
+        type: 'GET'
+    });
+    return result;
+}
+function getSMPMtlRsl04(year){
+    var url = "/public/kpi/smp/mlt/rsl/04";
+    // year = '2016';
+    var result = null;
+    $.ajax({
+        url: url + '/' + year,
         async: false,
         success: function(data) {
             result = data;
@@ -135,6 +233,304 @@ function showQuantity_pie(id_container, data){
         },
 //               colors: [ "#FFDC2E", "#E8023A", "#0F81FF", "#8EE832", "#FF6102" ]
     });
+}
+function showSMPResult(year){
+
+    var totalHeat, totalHeatStlGrd, totalHeatStlGrdInfo, totalHeatMonth, totalHeatMonthInfo;
+    var totalWeightMax, totalWeightMaxInfo, totalWeightMin, totalWeightMinInfo;
+    var totalQuantityMax, totalQuantityMaxInfo, totalQuantityMin, totalQuantityMinInfo;
+    var totalDimWgtMax, totalDimWgtMaxInfo, totalDimWgtMin, totalDimWgtMinInfo;
+    var totalDimQutMax, totalDimQutMaxInfo, totalDimQutMin, totalDimQutMinInfo;
+    //get result
+    var SMPHeatComm01_data = getSMPHeatComm01('2016');
+    totalHeat = SMPHeatComm01_data[0].total;
+
+    var SMPHeatComm02_data = getSMPHeatComm02('2016');
+    totalHeatStlGrd = SMPHeatComm02_data[0].total;
+    totalHeatStlGrdInfo = SMPHeatComm02_data[0].rsl_inco_stl_grd;
+
+    var SMPHeatComm03_data = getSMPHeatComm03('2016');
+    totalHeatMonth = SMPHeatComm03_data[0].total;
+    totalHeatMonthInfo = monNumtoCh(SMPHeatComm03_data[0].mon.substr(4));
+
+    var SMPMtlRsl01_data = getSMPMtlRsl01('2016');
+    totalWeightMax = SMPMtlRsl01_data[0].total;
+    totalWeightMaxInfo = SMPMtlRsl01_data[0].heat_no;
+    totalWeightMin = SMPMtlRsl01_data[1].total;
+    totalWeightMinInfo = SMPMtlRsl01_data[1].heat_no;
+
+    var SMPMtlRsl02_data = getSMPMtlRsl02('2016');
+    totalQuantityMax = SMPMtlRsl02_data[0].total;
+    totalQuantityMaxInfo = SMPMtlRsl02_data[0].heat_no;
+    totalQuantityMin = SMPMtlRsl02_data[1].total;
+    totalQuantityMinInfo = SMPMtlRsl02_data[1].heat_no;
+
+    var SMPMtlRsl03_data = getSMPMtlRsl03('2016');
+    totalDimWgtMax = SMPMtlRsl03_data[0].total_wgt;
+    totalDimWgtMaxInfo = SMPMtlRsl03_data[0].mtl_dims_cd;
+    totalDimWgtMin = SMPMtlRsl03_data[SMPMtlRsl03_data.length-1].total_wgt;
+    totalDimWgtMinInfo = SMPMtlRsl03_data[SMPMtlRsl03_data.length-1].mtl_dims_cd;
+
+    var SMPMtlRsl04_data = getSMPMtlRsl04('2016');
+    totalDimQutMax = SMPMtlRsl04_data[0].total_pcs;
+    totalDimQutMaxInfo = SMPMtlRsl04_data[0].mtl_dims_cd;
+    totalDimQutMin = SMPMtlRsl04_data[SMPMtlRsl04_data.length-1].total_pcs;
+    totalDimQutMinInfo = SMPMtlRsl04_data[SMPMtlRsl04_data.length-1].mtl_dims_cd;
+    
+    //prepare html
+    //
+    // var apphtml = '<div class="col m4"><div class="card light-blue accent-4"><div class="card-content white-text container-fluid">';
+    // apphtml += '<div class="row"><div class="col m6 center-align"><h1>H</h1><p>HEAT</p></div>';
+    // apphtml += '<div class="col m6"><p>'+totalHeat+'</p><p>Total</p><p>'+totalHeatStlGrd+'</p><p>'+totalHeatStlGrdInfo+'</p>';
+    // apphtml += '<p>'+totalHeatMonth+'</p><p>'+totalHeatMonthInfo+'</p></div></div></div></div></div>';
+    //
+    // apphtml += '<div class="col m4"><div class="card light-blue accent-4"><div class="card-content white-text container-fluid">';
+    // apphtml += '<div class="row"><div class="col m6 center-align"><h1>W</h1><p>WEIGHT</p></div>';
+    // apphtml += '<div class="col m6"><p>'+totalWeightMax+'</p><p>'+totalWeightMaxInfo+'</p><p>'+totalWeightMin+'</p><p>'+totalWeightMinInfo+'</p><p></p><p></p></div></div></div></div></div>'
+    //
+    // apphtml += '<div class="col m4"><div class="card light-blue accent-4"><div class="card-content white-text container-fluid">';
+    // apphtml += '<div class="row"><div class="col m6 center-align"><h1>Q</h1><p>QUANTITY</p></div>';
+    // apphtml += '<div class="col m6"><p>'+totalQuantityMax+'</p><p>'+totalQuantityMaxInfo+'</p><p>'+totalQuantityMin+'</p><p>'+totalQuantityMinInfo+'</p><p></p><p></p>';
+    // apphtml += '</div></div></div></div></div>';
+    //
+    // apphtml += '<div class="col m8 offset-m2"><div class="card light-blue accent-4"><div class="card-content white-text container-fluid">';
+    // apphtml += '<div class="row"><div class="col m4 center-align"><h1>D</h1><p>DIMENSION</p></div>';
+    // apphtml += '<div class="col m4"><p>'+totalDimWgtMax+'</p><p>'+totalDimWgtMaxInfo+'</p><p>'+totalDimWgtMin+'</p><p>'+totalDimWgtMinInfo+'</p></div>';
+    // apphtml += '<div class="col m4"><p>'+totalDimQutMax+'</p><p>'+totalDimQutMaxInfo+'</p><p>'+totalDimQutMin+'</p><p>'+totalDimQutMinInfo+'</p></div></div></div></div></div>';
+
+    var apphtml = '<div class="col s12">';
+    apphtml+= '<div class="row">';
+    apphtml+= '<div class="col s4">';
+    apphtml+= '<div class="card light-blue accent-4">';
+    apphtml+= '<div class="card-content white-text container-fluid">';
+    apphtml+= '<div class="row">';
+    apphtml+= '<div class="col s4 center-align">';
+    apphtml+= '<h2 class="border-right">H</h2>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s8">';
+    apphtml+= '<h4>'+totalHeat+'</h4>';
+    apphtml+= '<p>Total</p>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s4">';
+    apphtml+= '<div class="card light-blue accent-4">';
+    apphtml+= '<div class="card-content white-text container-fluid">';
+    apphtml+= '<div class="row">';
+    apphtml+= '<div class="col s4 center-align">';
+    apphtml+= '<h2 class="border-right">H</h2>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s8">';
+    apphtml+= '<h4>'+totalHeatStlGrd+'</h4>';
+    apphtml+= '<p>'+totalHeatStlGrdInfo+'</p>';
+    apphtml+= '<p>Steelgrade</p>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s4">';
+    apphtml+= '<div class="card light-blue accent-4">';
+    apphtml+= '<div class="card-content white-text container-fluid">';
+    apphtml+= '<div class="row">';
+    apphtml+= '<div class="col s4 center-align">';
+    apphtml+= '<h2 class="border-right">H</h2>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s8">';
+    apphtml+= '<h4>'+totalHeatMonth+'</h4>';
+    apphtml+= '<p>'+totalHeatMonthInfo+'</p>';
+    apphtml+= '<p>Month</p>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="row">';
+    apphtml+= '<div class="col s6">';
+    apphtml+= '<div class="card light-blue accent-4">';
+    apphtml+= '<div class="card-content white-text container-fluid">';
+    apphtml+= '<div class="row">';
+    apphtml+= '<div class="col s4 center-align">';
+    apphtml+= '<h2 class="border-right">W</h2>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s8">';
+    apphtml+= '<h4>'+totalWeightMax+'</h4>';
+    apphtml+= '<p>'+totalWeightMaxInfo+'</p>';
+    apphtml+= '<p>MAX</p>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s6">';
+    apphtml+= '<div class="card light-blue accent-4">';
+    apphtml+= '<div class="card-content white-text container-fluid">';
+    apphtml+= '<div class="row">';
+    apphtml+= '<div class="col s4 center-align">';
+    apphtml+= '<h2 class="border-right">W</h2>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s8">';
+    apphtml+= '<h4>'+totalWeightMin+'</h4>';
+    apphtml+= '<p>'+totalWeightMinInfo+'</p>';
+    apphtml+= '<p>MIN</p>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="row">';
+    apphtml+= '<div class="col s6">';
+    apphtml+= '<div class="card light-blue accent-4">';
+    apphtml+= '<div class="card-content white-text container-fluid">';
+    apphtml+= '<div class="row">';
+    apphtml+= '<div class="col s4 center-align">';
+    apphtml+= '<h2 class="border-right">Q</h2>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s8">';
+    apphtml+= '<h4>'+totalQuantityMax+'</h4>';
+    apphtml+= '<p>'+totalQuantityMaxInfo+'</p>';
+    apphtml+= '<p>MAX</p>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s6">';
+    apphtml+= '<div class="card light-blue accent-4">';
+    apphtml+= '<div class="card-content white-text container-fluid">';
+    apphtml+= '<div class="row">';
+    apphtml+= '<div class="col s4 center-align">';
+    apphtml+= '<h2 class="border-right">Q</h2>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s8">';
+    apphtml+= '<h4>'+totalQuantityMin+'</h4>';
+    apphtml+= '<p>'+totalQuantityMinInfo+'</p>';
+    apphtml+= '<p>MIN</p>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="row">';
+    apphtml+= '<div class="col s6">';
+    apphtml+= '<div class="card light-blue accent-4">';
+    apphtml+= '<div class="card-content white-text container-fluid">';
+    apphtml+= '<div class="row">';
+    apphtml+= '<div class="col s4 center-align">';
+    apphtml+= '<h2 class="border-right">D</h2>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s8">';
+    apphtml+= '<h4>'+totalDimWgtMax+'</h4>';
+    apphtml+= '<p>'+totalDimWgtMaxInfo+'</p>';
+    apphtml+= '<p>Max Weight</p>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s6">';
+    apphtml+= '<div class="card light-blue accent-4">';
+    apphtml+= '<div class="card-content white-text container-fluid">';
+    apphtml+= '<div class="row">';
+    apphtml+= '<div class="col s4 center-align">';
+    apphtml+= '<h2 class="border-right">D</h2>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s8">';
+    apphtml+= '<h4>'+totalDimWgtMin+'</h4>';
+    apphtml+= '<p>'+totalDimWgtMinInfo+'</p>';
+    apphtml+= '<p>Min Weight</p>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s6">';
+    apphtml+= '<div class="card light-blue accent-4">';
+    apphtml+= '<div class="card-content white-text container-fluid">';
+    apphtml+= '<div class="row">';
+    apphtml+= '<div class="col s4 center-align">';
+    apphtml+= '<h2 class="border-right">D</h2>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s8">';
+    apphtml+= '<h4>'+totalDimQutMax+'</h4>';
+    apphtml+= '<p>'+totalDimQutMaxInfo+'</p>';
+    apphtml+= '<p>Max Quantities</p>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s6">';
+    apphtml+= '<div class="card light-blue accent-4">';
+    apphtml+= '<div class="card-content white-text container-fluid">';
+    apphtml+= '<div class="row">';
+    apphtml+= '<div class="col s4 center-align">';
+    apphtml+= '<h2 class="border-right">D</h2>';
+    apphtml+= '</div>';
+    apphtml+= '<div class="col s8">';
+    apphtml+= '<h4>'+totalDimQutMin+'</h4>';
+    apphtml+= '<p>'+totalDimQutMinInfo+'</p>';
+    apphtml+= '<p>Min Quantities</p>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+    apphtml+= '</div>';
+
+    $('#chart_content').append(apphtml);
+}
+function showRollingRebarResult(year){
+    //prepare html
+    var apphtml = '<div class="col m4"><div class="card light-blue accent-4"><div class="card-content white-text container-fluid">';
+    apphtml += '<div class="row"><div class="col m6 center-align"><h1>H</h1><p>HEAT</p></div>';
+    apphtml += '<div class="col m6"><p>5399</p><p>Total</p><p>2736</p><p>DG300N</p>';
+    apphtml += '<p>648</p><p>DEC</p></div></div></div></div></div>';
+
+    apphtml += '<div class="col m4"><div class="card light-blue accent-4"><div class="card-content white-text container-fluid">';
+    apphtml += '<div class="row"><div class="col m6 center-align"><h1>W</h1><p>WEIGHT</p></div>';
+    apphtml += '<div class="col m6"><p>204081</p><p>V04830</p><p>1005</p><p>V05551</p><p></p><p></p></div></div></div></div></div>'
+
+    apphtml += '<div class="col m4"><div class="card light-blue accent-4"><div class="card-content white-text container-fluid">';
+    apphtml += '<div class="row"><div class="col m6 center-align"><h1>Q</h1><p>QUANTITY</p></div>';
+    apphtml += '<div class="col m6"><p>84</p><p>V02431</p><p>1</p><p>V05551</p><p></p><p></p>';
+    apphtml += '</div></div></div></div></div>';
+
+    apphtml += '<div class="col m8 offset-m2"><div class="card light-blue accent-4"><div class="card-content white-text container-fluid">';
+    apphtml += '<div class="row"><div class="col m4 center-align"><h1>D</h1><p>DIMENSION</p></div>';
+    apphtml += '<div class="col m4"><p>342768596</p><p>BT160</p><p>5123766</p><p>BT130</p></div>';
+    apphtml += '    <div class="col m4"><p>142247</p><p>BT160</p><p>3247</p><p>BT130</p></div></div></div></div></div>';
+
+    $('#chart_content').append(apphtml);
+}
+function showRollingSectionResult(year){
+    //prepare html
+    var apphtml = '<div class="col m4"><div class="card light-blue accent-4"><div class="card-content white-text container-fluid">';
+    apphtml += '<div class="row"><div class="col m6 center-align"><h1>H</h1><p>HEAT</p></div>';
+    apphtml += '<div class="col m6"><p>5399</p><p>Total</p><p>2736</p><p>DG300N</p>';
+    apphtml += '<p>648</p><p>DEC</p></div></div></div></div></div>';
+
+    apphtml += '<div class="col m4"><div class="card light-blue accent-4"><div class="card-content white-text container-fluid">';
+    apphtml += '<div class="row"><div class="col m6 center-align"><h1>W</h1><p>WEIGHT</p></div>';
+    apphtml += '<div class="col m6"><p>204081</p><p>V04830</p><p>1005</p><p>V05551</p><p></p><p></p></div></div></div></div></div>'
+
+    apphtml += '<div class="col m4"><div class="card light-blue accent-4"><div class="card-content white-text container-fluid">';
+    apphtml += '<div class="row"><div class="col m6 center-align"><h1>Q</h1><p>QUANTITY</p></div>';
+    apphtml += '<div class="col m6"><p>84</p><p>V02431</p><p>1</p><p>V05551</p><p></p><p></p>';
+    apphtml += '</div></div></div></div></div>';
+
+    apphtml += '<div class="col m8 offset-m2"><div class="card light-blue accent-4"><div class="card-content white-text container-fluid">';
+    apphtml += '<div class="row"><div class="col m4 center-align"><h1>D</h1><p>DIMENSION</p></div>';
+    apphtml += '<div class="col m4"><p>342768596</p><p>BT160</p><p>5123766</p><p>BT130</p></div>';
+    apphtml += '    <div class="col m4"><p>142247</p><p>BT160</p><p>3247</p><p>BT130</p></div></div></div></div></div>';
+
+    $('#chart_content').append(apphtml);
 }
 function showProductionResult(chain, year){
     //get data
@@ -196,7 +592,7 @@ function showReworkResult(chain, year){
     var bar_data= [];
     var rework_bar_data = getReworkResult(chain,year);
     rework_bar_data.forEach(function(element) {
-        bar_data.push([element.mon,element.total]);
+        bar_data.push([monNumtoCh(element.mon.substr(4)),element.total]);
     });
     //prepare html
     var apphtml = "<div class='col m8 offset-m2'><div id='bar_rework_plotplaceholder' class='diagram'></div>";
@@ -204,8 +600,7 @@ function showReworkResult(chain, year){
 
     showSingle_bar("#bar_rework_plotplaceholder",[ bar_data ],"Rework (Scrarfing)");
 }
-function clearContent()
-{
+function clearContent(){
     $("#chart_content").html("");
 }
 //Convert Mon number to string
@@ -226,36 +621,54 @@ function monNumtoCh(monNum){
         default: return '';
     }
 }
-
-
 $(document).ready(function () {
     $('#action_SMP_Result').click(function() {
         clearContent();
-        
-        // showProductionResult('M20', '2016');
-        // showMaterialResult('M20', '2016');
-        // showReworkResult('M20', '2016');
+        showSMPResult('2016');
     });
-    
     $('#action_SMP_productionResult').click(function() {
         clearContent();
         showProductionResult('M20', '2016');
-        // showMaterialResult('M20', '2016');
-        // showReworkResult('M20', '2016');
     });
-
     $('#action_SMP_materialResult').click(function() {
         clearContent();
-        // showProductionResult('M20', '2016');
         showMaterialResult('M20', '2016');
-        // showReworkResult('M20', '2016');
     });
-
     $('#action_SMP_reworkResult').click(function() {
         clearContent();
-        // showProductionResult('M20', '2016');
-        // showMaterialResult('M20', '2016');
         showReworkResult('M20', '2016');
+    });
+    $('#action_rol_re_Result').click(function() {
+        clearContent();
+        showRollingRebarResult('2016');
+    });
+    $('#action_rol_re_productionResult').click(function() {
+        clearContent();
+        showProductionResult('M30', '2016');
+    });
+    $('#action_rol_re_materialResult').click(function() {
+        clearContent();
+        showMaterialResult('M30', '2016');
+    });
+    $('#action_rol_re_reworkResult').click(function() {
+        clearContent();
+        showReworkResult('M30', '2016');
+    });
+    $('#action_rol_sec_Result').click(function() {
+        clearContent();
+        showRollingSectionResult('2016');
+    });
+    $('#action_rol_sec_productionResult').click(function() {
+        clearContent();
+        showProductionResult('M30', '2016');
+    });
+    $('#action_rol_sec_materialResult').click(function() {
+        clearContent();
+        showMaterialResult('M30', '2016');
+    });
+    $('#action_rol_sec_reworkResult').click(function() {
+        clearContent();
+        showReworkResult('M30', '2016');
     });
 
 });

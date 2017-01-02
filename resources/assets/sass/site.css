@@ -35,8 +35,11 @@ a {
   cursor: pointer; }
 
 .diagram {
-  height: 300px; }
+  height: 300px !important; }
   .diagram.pie {
-    height: 400px; }
+    height: 400px !important; }
+
+.border-right {
+  border-right: solid 2px whitesmoke; }
 
 /*# sourceMappingURL=site.css.map */

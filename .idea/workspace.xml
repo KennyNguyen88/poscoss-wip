@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81c9dd69-1910-474b-863c-d2b947e6615f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/imgs/shutterstock_149459636.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/kpi.js" />
+    <list default="true" id="81c9dd69-1910-474b-863c-d2b947e6615f" name="Default" comment="KPI - SMP General - Layout">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/KpiController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/KpiController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/kpi.js" afterPath="$PROJECT_DIR$/resources/assets/js/kpi.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/site.css" afterPath="$PROJECT_DIR$/resources/assets/sass/site.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/site.css.map" afterPath="$PROJECT_DIR$/resources/assets/sass/site.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/site.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/site.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/kpi.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/kpi.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/site/master/header.blade.php" afterPath="$PROJECT_DIR$/resources/views/site/master/header.blade.php" />
     </list>
     <ignored path="poscoss-wip.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,13 +35,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="kpi.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kpi.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/site/kpi.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="212" column="47" selection-start-line="212" selection-start-column="47" selection-end-line="212" selection-end-column="47" />
+            <state relative-caret-position="125">
+              <caret line="134" column="113" selection-start-line="134" selection-start-column="113" selection-end-line="134" selection-end-column="113" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="site.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/sass/site.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="584">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kpi.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/kpi.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="419" column="33" selection-start-line="419" selection-start-column="33" selection-end-line="419" selection-end-column="33" />
               <folding>
-                <element signature="e#6947#6972#0#HTML" expanded="true" />
+                <element signature="n#!!block;n#getProductionResult#0" expanded="false" />
+                <element signature="n#!!block;n#getMaterialResult#0" expanded="false" />
+                <element signature="n#!!block;n#getReworkResult#0" expanded="false" />
+                <element signature="n#!!block;n#getSMPHeatComm01#0" expanded="false" />
+                <element signature="n#!!block;n#getSMPHeatComm02#0" expanded="false" />
+                <element signature="n#!!block;n#getSMPHeatComm03#0" expanded="false" />
+                <element signature="n#!!block;n#getSMPMtlRsl01#0" expanded="false" />
+                <element signature="n#!!block;n#getSMPMtlRsl02#0" expanded="false" />
+                <element signature="n#!!block;n#getSMPMtlRsl03#0" expanded="false" />
+                <element signature="n#!!block;n#getSMPMtlRsl04#0" expanded="false" />
+                <element signature="n#!!block;n#showSingle_bar#0" expanded="false" />
+                <element signature="n#!!block;n#showStack_bar#0" expanded="false" />
+                <element signature="n#!!block;n#showQuantity_pie#0" expanded="false" />
+                <element signature="n#!!block;n#showRollingRebarResult#0" expanded="false" />
+                <element signature="n#!!block;n#showRollingSectionResult#0" expanded="false" />
+                <element signature="n#!!block;n#showMaterialResult#0" expanded="false" />
+                <element signature="n#!!block;n#showReworkResult#0" expanded="false" />
+                <element signature="n#!!block;n#clearContent#0" expanded="false" />
+                <element signature="n#!!block;n#monNumtoCh#0" expanded="false" />
+                <element signature="e#24085#24147#0" expanded="false" />
+                <element signature="e#24205#24281#0" expanded="false" />
+                <element signature="e#24337#24411#0" expanded="false" />
+                <element signature="e#24465#24537#0" expanded="false" />
+                <element signature="e#24588#24659#0" expanded="false" />
+                <element signature="e#24720#24796#0" expanded="false" />
+                <element signature="e#24855#24929#0" expanded="false" />
+                <element signature="e#24986#25058#0" expanded="false" />
+                <element signature="e#25110#25183#0" expanded="false" />
+                <element signature="e#25245#25321#0" expanded="false" />
+                <element signature="e#25381#25455#0" expanded="false" />
+                <element signature="e#25513#25585#0" expanded="false" />
+                <marker date="1483345370945" expanded="true" signature="22590:22597" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -52,50 +101,30 @@
       <file leaf-file-name="KpiController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/KpiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+            <state relative-caret-position="295">
+              <caret line="322" column="31" selection-start-line="322" selection-start-column="31" selection-end-line="322" selection-end-column="31" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
                 <element signature="e#246#302#0#PHP" expanded="false" />
                 <element signature="e#304#1342#0#PHP" expanded="false" />
-                <element signature="e#1344#2813#0#PHP" expanded="false" />
-                <element signature="e#2815#3557#0#PHP" expanded="false" />
-                <marker date="1483079508598" expanded="true" signature="446:1161" placeholder="SELECT SUBST... TB_M20_MTL_RSL@VINA_MESUSER" />
-                <marker date="1483079508598" expanded="true" signature="840:1061" placeholder="SELECT 1 FRO... TB_M20_HEAT_COMM@VINA_MESUSER" />
-                <marker date="1483079508598" expanded="false" signature="1484:2632" placeholder="SELECT SUBST... HEAT_NO" />
-                <marker date="1483079508598" expanded="true" signature="1620:1817" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
-                <marker date="1483079508598" expanded="true" signature="1858:2066" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
-                <marker date="1483079508598" expanded="true" signature="2107:2328" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
-                <marker date="1483079508598" expanded="false" signature="2953:3376" placeholder="SELECT SUBST... TB_M20_MTL_MOD_RSL@VINA_MESUSER" />
-                <marker date="1483079508598" expanded="true" signature="3638:3762" placeholder="SELECT COUNT... TB_M20_HEAT_COMM@VINA_MESUSER" />
-                <marker date="1483079508598" expanded="true" signature="4001:4206" placeholder="SELECT RSL_I... TB_M20_HEAT_COMM@VINA_MESUSER" />
-                <marker date="1483079508598" expanded="true" signature="4457:4738" placeholder="SELECT SUBST... TB_M20_HEAT_COMM@VINA_MESUSER" />
-                <marker date="1483079508598" expanded="true" signature="4989:5645" placeholder="SELECT SUBST... TB_M20_HEAT_COMM@VINA_MESUSER" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kpi.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/js/kpi.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!block;n#showMaterialResult#0" expanded="false" />
-                <element signature="n#!!block;n#showReworkResult#0" expanded="false" />
-                <element signature="n#!!block;n#monNumtoCh#0" expanded="false" />
-                <marker date="1483081016510" expanded="true" signature="5989:5996" placeholder="..." />
+                <element signature="e#1344#2589#0#PHP" expanded="false" />
+                <element signature="e#2591#3333#0#PHP" expanded="false" />
+                <element signature="e#3355#3684#0#PHP" expanded="false" />
+                <element signature="e#3717#4132#0#PHP" expanded="false" />
+                <element signature="e#4165#4591#0#PHP" expanded="false" />
+                <element signature="e#4638#5497#0#PHP" expanded="false" />
+                <element signature="e#5546#6401#0#PHP" expanded="false" />
+                <marker date="1483341504130" expanded="true" signature="446:1161" placeholder="SELECT SUBST... TB_M20_MTL_RSL@VINA_MESUSER" />
+                <marker date="1483341504130" expanded="true" signature="840:1061" placeholder="SELECT 1 FRO... TB_M20_HEAT_COMM@VINA_MESUSER" />
+                <marker date="1483341504130" expanded="true" signature="1484:2408" placeholder="SELECT SUBST... HEAT_NO" />
+                <marker date="1483341504130" expanded="true" signature="1589:1765" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
+                <marker date="1483341504130" expanded="true" signature="1792:1979" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
+                <marker date="1483341504130" expanded="true" signature="2006:2206" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
+                <marker date="1483341504130" expanded="false" signature="2729:3152" placeholder="SELECT SUBST... TB_M20_MTL_MOD_RSL@VINA_MESUSER" />
+                <marker date="1483341504130" expanded="true" signature="3414:3538" placeholder="SELECT COUNT... TB_M20_HEAT_COMM@VINA_MESUSER" />
+                <marker date="1483341504130" expanded="true" signature="3776:3986" placeholder="SELECT RSL_I... TB_M20_HEAT_COMM@VINA_MESUSER" />
+                <marker date="1483341504130" expanded="true" signature="4224:4445" placeholder="SELECT SUBST... TB_M20_HEAT_COMM@VINA_MESUSER" />
+                <marker date="1483341504130" expanded="true" signature="4695:5351" placeholder="SELECT SUBST... TB_M20_HEAT_COMM@VINA_MESUSER" />
               </folding>
             </state>
           </provider>
@@ -140,11 +169,11 @@
         <option value="$PROJECT_DIR$/resources/views/site/wip-close.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/site/productionResult.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/site/master/header.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/site.scss" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/KpiController.php" />
-        <option value="$PROJECT_DIR$/resources/assets/js/kpi.js" />
         <option value="$PROJECT_DIR$/resources/views/site/kpi.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/site.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/js/kpi.js" />
       </list>
     </option>
   </component>
@@ -221,8 +250,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1380" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -532,21 +561,21 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="js-jscs-nodeInterpreter" value="D:\soft\Installed\Node\node.exe" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="293" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="206" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="293" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="207" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="293" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="206" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="967" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="671" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="293" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="206" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="292" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="206" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="293" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="207" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="968" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="671" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
@@ -622,7 +651,9 @@
       <workItem from="1482388983485" duration="29000" />
       <workItem from="1482889593461" duration="14901000" />
       <workItem from="1482974279618" duration="24512000" />
-      <workItem from="1483060964081" duration="13135000" />
+      <workItem from="1483060964081" duration="13227000" />
+      <workItem from="1483320005395" duration="7849000" />
+      <workItem from="1483331648246" duration="6481000" />
     </task>
     <task id="LOCAL-00001" summary="query update&#10;- M30 Production Result&#10;- Closing Transaction don't need to check input">
       <created>1476071303748</created>
@@ -666,27 +697,33 @@
       <option name="project" value="LOCAL" />
       <updated>1483003591002</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="KPI - SMP General - Layout">
+      <created>1483082038129</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1483082038129</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70948000" />
+    <option name="totallyTimeSpent" value="85370000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1380" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25227273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36971048" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24466951" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3686007" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2553305" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -696,6 +733,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -742,7 +780,8 @@
     <MESSAGE value="Sync" />
     <MESSAGE value="update sql 5,9,10" />
     <MESSAGE value="KPI - SMP Production Result" />
-    <option name="LAST_COMMIT_MESSAGE" value="KPI - SMP Production Result" />
+    <MESSAGE value="KPI - SMP General - Layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="KPI - SMP General - Layout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1093,7 +1132,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1105,66 +1143,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/site.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="396">
+          <caret line="48" column="106" selection-start-line="48" selection-start-column="106" selection-end-line="48" selection-end-column="106" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/kpi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#showMaterialResult#0" expanded="false" />
-            <element signature="n#!!block;n#showReworkResult#0" expanded="false" />
-            <element signature="n#!!block;n#monNumtoCh#0" expanded="false" />
-            <marker date="1483081016510" expanded="true" signature="5989:5996" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/KpiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        <state relative-caret-position="295">
+          <caret line="322" column="31" selection-start-line="322" selection-start-column="31" selection-end-line="322" selection-end-column="31" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
             <element signature="e#246#302#0#PHP" expanded="false" />
             <element signature="e#304#1342#0#PHP" expanded="false" />
-            <element signature="e#1344#2813#0#PHP" expanded="false" />
-            <element signature="e#2815#3557#0#PHP" expanded="false" />
-            <marker date="1483079508598" expanded="true" signature="446:1161" placeholder="SELECT SUBST... TB_M20_MTL_RSL@VINA_MESUSER" />
-            <marker date="1483079508598" expanded="true" signature="840:1061" placeholder="SELECT 1 FRO... TB_M20_HEAT_COMM@VINA_MESUSER" />
-            <marker date="1483079508598" expanded="false" signature="1484:2632" placeholder="SELECT SUBST... HEAT_NO" />
-            <marker date="1483079508598" expanded="true" signature="1620:1817" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
-            <marker date="1483079508598" expanded="true" signature="1858:2066" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
-            <marker date="1483079508598" expanded="true" signature="2107:2328" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
-            <marker date="1483079508598" expanded="false" signature="2953:3376" placeholder="SELECT SUBST... TB_M20_MTL_MOD_RSL@VINA_MESUSER" />
-            <marker date="1483079508598" expanded="true" signature="3638:3762" placeholder="SELECT COUNT... TB_M20_HEAT_COMM@VINA_MESUSER" />
-            <marker date="1483079508598" expanded="true" signature="4001:4206" placeholder="SELECT RSL_I... TB_M20_HEAT_COMM@VINA_MESUSER" />
-            <marker date="1483079508598" expanded="true" signature="4457:4738" placeholder="SELECT SUBST... TB_M20_HEAT_COMM@VINA_MESUSER" />
-            <marker date="1483079508598" expanded="true" signature="4989:5645" placeholder="SELECT SUBST... TB_M20_HEAT_COMM@VINA_MESUSER" />
+            <element signature="e#1344#2589#0#PHP" expanded="false" />
+            <element signature="e#2591#3333#0#PHP" expanded="false" />
+            <element signature="e#3355#3684#0#PHP" expanded="false" />
+            <element signature="e#3717#4132#0#PHP" expanded="false" />
+            <element signature="e#4165#4591#0#PHP" expanded="false" />
+            <element signature="e#4638#5497#0#PHP" expanded="false" />
+            <element signature="e#5546#6401#0#PHP" expanded="false" />
+            <marker date="1483341504130" expanded="true" signature="446:1161" placeholder="SELECT SUBST... TB_M20_MTL_RSL@VINA_MESUSER" />
+            <marker date="1483341504130" expanded="true" signature="840:1061" placeholder="SELECT 1 FRO... TB_M20_HEAT_COMM@VINA_MESUSER" />
+            <marker date="1483341504130" expanded="true" signature="1484:2408" placeholder="SELECT SUBST... HEAT_NO" />
+            <marker date="1483341504130" expanded="true" signature="1589:1765" placeholder="SELECT HEAT_... TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER" />
+            <marker date="1483341504130" expanded="true" signature="1792:1979" placeholder="SELECT HEAT_... TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER" />
+            <marker date="1483341504130" expanded="true" signature="2006:2206" placeholder="SELECT A.HEA... TB_M20_WIRE_USE_RSL@VINA_MESUSER" />
+            <marker date="1483341504130" expanded="false" signature="2729:3152" placeholder="SELECT SUBST... TB_M20_MTL_MOD_RSL@VINA_MESUSER" />
+            <marker date="1483341504130" expanded="true" signature="3414:3538" placeholder="SELECT COUNT... TB_M20_HEAT_COMM@VINA_MESUSER" />
+            <marker date="1483341504130" expanded="true" signature="3776:3986" placeholder="SELECT RSL_I... TB_M20_HEAT_COMM@VINA_MESUSER" />
+            <marker date="1483341504130" expanded="true" signature="4224:4445" placeholder="SELECT SUBST... TB_M20_HEAT_COMM@VINA_MESUSER" />
+            <marker date="1483341504130" expanded="true" signature="4695:5351" placeholder="SELECT SUBST... TB_M20_HEAT_COMM@VINA_MESUSER" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/site/kpi.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="212" column="47" selection-start-line="212" selection-start-column="47" selection-end-line="212" selection-end-column="47" />
+        <state relative-caret-position="125">
+          <caret line="134" column="113" selection-start-line="134" selection-start-column="113" selection-end-line="134" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/site.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/kpi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="419" column="33" selection-start-line="419" selection-start-column="33" selection-end-line="419" selection-end-column="33" />
           <folding>
-            <element signature="e#6947#6972#0#HTML" expanded="true" />
+            <element signature="n#!!block;n#getProductionResult#0" expanded="false" />
+            <element signature="n#!!block;n#getMaterialResult#0" expanded="false" />
+            <element signature="n#!!block;n#getReworkResult#0" expanded="false" />
+            <element signature="n#!!block;n#getSMPHeatComm01#0" expanded="false" />
+            <element signature="n#!!block;n#getSMPHeatComm02#0" expanded="false" />
+            <element signature="n#!!block;n#getSMPHeatComm03#0" expanded="false" />
+            <element signature="n#!!block;n#getSMPMtlRsl01#0" expanded="false" />
+            <element signature="n#!!block;n#getSMPMtlRsl02#0" expanded="false" />
+            <element signature="n#!!block;n#getSMPMtlRsl03#0" expanded="false" />
+            <element signature="n#!!block;n#getSMPMtlRsl04#0" expanded="false" />
+            <element signature="n#!!block;n#showSingle_bar#0" expanded="false" />
+            <element signature="n#!!block;n#showStack_bar#0" expanded="false" />
+            <element signature="n#!!block;n#showQuantity_pie#0" expanded="false" />
+            <element signature="n#!!block;n#showRollingRebarResult#0" expanded="false" />
+            <element signature="n#!!block;n#showRollingSectionResult#0" expanded="false" />
+            <element signature="n#!!block;n#showMaterialResult#0" expanded="false" />
+            <element signature="n#!!block;n#showReworkResult#0" expanded="false" />
+            <element signature="n#!!block;n#clearContent#0" expanded="false" />
+            <element signature="n#!!block;n#monNumtoCh#0" expanded="false" />
+            <element signature="e#24085#24147#0" expanded="false" />
+            <element signature="e#24205#24281#0" expanded="false" />
+            <element signature="e#24337#24411#0" expanded="false" />
+            <element signature="e#24465#24537#0" expanded="false" />
+            <element signature="e#24588#24659#0" expanded="false" />
+            <element signature="e#24720#24796#0" expanded="false" />
+            <element signature="e#24855#24929#0" expanded="false" />
+            <element signature="e#24986#25058#0" expanded="false" />
+            <element signature="e#25110#25183#0" expanded="false" />
+            <element signature="e#25245#25321#0" expanded="false" />
+            <element signature="e#25381#25455#0" expanded="false" />
+            <element signature="e#25513#25585#0" expanded="false" />
+            <marker date="1483345370945" expanded="true" signature="22590:22597" placeholder="..." />
           </folding>
         </state>
       </provider>

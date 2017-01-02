@@ -69,7 +69,7 @@
             </ul>
         </div>
         <div class="row">
-            <div class="col m2 card-panel">
+            <div class="col s3 card-panel">
                 <div class="right-title">
                     <span>Control Box</span>
                 </div>
@@ -90,6 +90,7 @@
                             <div class="collapsible-header"><i class="material-icons">settings</i>Rolling Rebar</div>
                             <div class="collapsible-body">
                                 <div class="collection">
+                                    <a href="#!" class="collection-item" id="action_rol_re_Result">General</a>
                                     <a href="#!" class="collection-item" id="action_rol_re_productionResult">Production</a>
                                     <a href="#!" class="collection-item" id="action_rol_re_materialResult">Material</a>
                                     <a href="#!" class="collection-item" id="action_rol_re_reworkResult">Rework</a>
@@ -100,6 +101,7 @@
                             <div class="collapsible-header"><i class="material-icons">settings</i>Rolling Section</div>
                             <div class="collapsible-body">
                                 <div class="collection">
+                                    <a href="#!" class="collection-item" id="action_rol_sec_Result">General</a>
                                     <a href="#!" class="collection-item" id="action_rol_sec_productionResult">Production</a>
                                     <a href="#!" class="collection-item" id="action_rol_sec_materialResult">Material</a>
                                     <a href="#!" class="collection-item" id="action_rol_sec_reworkResult">Rework</a>
@@ -125,97 +127,14 @@
                     </ul>
                 </div>
             </div>
-            <div class="col m9 card-panel" style="margin-left: 20px">
+            <div class="col s8 card-panel" style="margin-left: 20px">
                 <div class="right-title">
                     <span id="kpi_content">KPI</span>
                 </div>
                 <div class="row" id="chart_content">
+                        <img src="/resources/assets/imgs/shutterstock_149459636.jpg" alt="" class="responsive-img">
 
-                        {{--<img src="/resources/assets/imgs/shutterstock_149459636.jpg" alt="" class="img-responsive">--}}
 
-                    <div class="col m4">
-                        <div class="card light-blue accent-4">
-                            <div class="card-content white-text container-fluid">
-                                <div class="row">
-                                    <div class="col m6 center-align">
-                                        <h1>H</h1><p>HEAT</p>
-                                    </div>
-                                    <div class="col m6">
-                                        <p>5399</p>
-                                        <p>Total</p>
-                                        <p>2736</p>
-                                        <p>DG300N</p>
-                                        <p>648</p>
-                                        <p>DEC</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col m4">
-                        <div class="card light-blue accent-4">
-                            <div class="card-content white-text container-fluid">
-                                <div class="row">
-                                    <div class="col m6 center-align">
-                                        <h1>W</h1><p>WEIGHT</p>
-                                    </div>
-                                    <div class="col m6">
-                                        <p>204081</p>
-                                        <p>V04830</p>
-                                        <p>1005</p>
-                                        <p>V05551</p>
-                                        <p></p>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col m4">
-                        <div class="card light-blue accent-4">
-                            <div class="card-content white-text container-fluid">
-                                <div class="row">
-                                    <div class="col m6 center-align">
-                                        <h1>Q</h1><p>QUANTITY</p>
-                                    </div>
-                                    <div class="col m6">
-                                        <p>84</p>
-                                        <p>V02431</p>
-                                        <p>1</p>
-                                        <p>V05551</p>
-                                        <p></p>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col m6 offset-m2">
-                        <div class="card light-blue accent-4">
-                            <div class="card-content white-text container-fluid">
-                                <div class="row">
-                                    <div class="col m4 center-align">
-                                        <h1>D</h1><p>DIMENSION</p>
-                                    </div>
-                                    <div class="col m4">
-                                        <p>342768596</p>
-                                        <p>BT160</p>
-                                        <p>5123766</p>
-                                        <p>BT130</p>
-                                    </div>
-                                    <div class="col m4">
-                                        <p>142247</p>
-                                        <p>BT160</p>
-                                        <p>3247</p>
-                                        <p>BT130</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
 
                 </div>

@@ -45,6 +45,8 @@ Route::get('/kpi/smp/mlt/rsl/01/{year}', ['as' => 'kpi-mlt-rsl-01','uses' => 'Kp
 Route::get('/kpi/smp/mlt/rsl/02/{year}', ['as' => 'kpi-mlt-rsl-02','uses' => 'KpiController@smp_mtl_rsl_02']);
 
 Route::get('/kpi/smp/mlt/rsl/03/{year}', ['as' => 'kpi-mlt-rsl-03','uses' => 'KpiController@smp_mtl_rsl_03']);
+
+Route::get('/kpi/smp/mlt/rsl/04/{year}', ['as' => 'kpi-mlt-rsl-03','uses' => 'KpiController@smp_mtl_rsl_04']);
 //ext id detail
 
 Route::get('/test', ['as' => 'test','uses' => 'PageController@test']);
