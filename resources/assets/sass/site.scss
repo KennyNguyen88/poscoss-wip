@@ -1,3 +1,4 @@
+@import "./materialize/materialize";
 $posco_color: #005789;
 header{
   padding: 10px 0 0 0;
@@ -51,4 +52,30 @@ a{
 .border-right{
   border-right: solid 2px whitesmoke;
 
+}
+
+
+#control-box{
+  .select-wrapper{
+    margin-top: 7px;
+  }
+  .switch{
+    margin-top:10px;
+  }
+}
+
+#lotno{
+  margin-bottom: 5px;
+}
+
+@media #{$small-and-down} {
+  // styles for small screens and down
+  h4{
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  .btn{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

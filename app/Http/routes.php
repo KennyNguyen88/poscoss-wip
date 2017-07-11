@@ -61,5 +61,9 @@ Route::get('/mobile/cycleCnt/detail/{subInventory}', ['as' => 'mobile-cycleCnt-d
 
 Route::get('/mobile/transaction/detail/{inventoryItemId}', ['as' => 'mobile-transaction-detail','uses' => 'MobileController@getTransactionDetail']);
 
+//M20 crosscheck
 
+Route::get('/crosscheck', ['as' => 'crosscheck-index','uses' => 'CrossCheckController@index']);
+
+Route::get('/crosscheck/result', ['as' => 'crosscheck-result','uses' => 'CrossCheckController@getResult']);
 

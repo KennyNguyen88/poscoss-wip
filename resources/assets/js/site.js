@@ -357,7 +357,7 @@ $(document).ready(function () {
                 var x;
                 for (x in data)
                 {
-                    result += '<div class="col m2 s6">';
+                    result += '<div class="col s12 m3 l3 xl2 ">';
 
                     switch (data[x]["process_status_code"]){
                         case 'WIP_READY':
@@ -449,6 +449,18 @@ $(document).ready(function () {
         $('#btnSearchOnHandM60').click(function(){
             onhand('M60');
         });
+
+    var lineDrawing = anime({
+        targets: '#lineTest02 path',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 1000,
+        delay: function (el, i) {
+            return i * 200
+        },
+        direction: 'alternate',
+        loop: true
+    });
     
 });
 

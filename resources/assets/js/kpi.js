@@ -621,6 +621,26 @@ function monNumtoCh(monNum){
         default: return '';
     }
 }
+
+function showTest()
+{
+    var url = "http://172.27.120.212:7777/M20/handle.do?ServiceName=M2030_2001Q-service&find=1";
+    var result = null;
+    $.ajax({
+        url: url,
+        async: false,
+        //headers: 'X-Foo',
+        success: function(data) {
+            // result = data;
+            console.log(data);
+        },
+        error: function(xhr){
+            console.log(data);
+        },
+        type: 'GET'
+    });
+    return result;
+}
 $(document).ready(function () {
     $('#action_SMP_Result').click(function() {
         clearContent();
@@ -628,7 +648,7 @@ $(document).ready(function () {
     });
     $('#action_SMP_productionResult').click(function() {
         clearContent();
-        showProductionResult('M20', '2016');
+        showProductionResult('M20', '2017');
     });
     $('#action_SMP_materialResult').click(function() {
         clearContent();
@@ -670,5 +690,9 @@ $(document).ready(function () {
         clearContent();
         showReworkResult('M30', '2016');
     });
-
+    $('#action_test').click(function() {
+        showTest();
+        // clearContent();
+        // showReworkResult('M30', '2016');
+    });
 });

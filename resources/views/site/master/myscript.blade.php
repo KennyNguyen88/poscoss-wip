@@ -33,4 +33,5 @@
 {{--<script type="text/javascript" src="/resources/assets/js/jquery.flot.min.js"></script>--}}
 {{--<script type="text/javascript" src="/resources/assets/js/jquery.flot.categories.min.js"></script>--}}
 {{--<script type="text/javascript" src="/resources/assets/js/jquery.flot.pie.min.js"></script>--}}
+
 <script type="text/javascript" src="/resources/assets/js/site.js"></script>
