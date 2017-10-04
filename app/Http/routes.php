@@ -24,10 +24,29 @@ Route::get('/prdRsl', ['as' => 'wip-close-prdRsl-index','uses' => 'ProductionRes
 
 Route::get('/prdRsl/search/', ['as' => 'wip-close-prdRsl-search','uses' => 'ProductionResultController@search']);
 
-Route::get('/onhand', ['as' => 'onhand','uses' => 'OnhandController@index']);
+//KPI
 
-Route::get('/onhand/search/{chain}/{dateCheck}/{lotno}', ['as' => 'onhand-search','uses' => 'OnhandController@search']);
+Route::get('/kpi', ['as' => 'kpi','uses' => 'KpiController@index']);
 
+Route::get('/kpi/production/{chain}/{year}', ['as' => 'kpi-production','uses' => 'KpiController@production_result']);
+
+Route::get('/kpi/material/{chain}/{year}', ['as' => 'kpi-material','uses' => 'KpiController@material_result']);
+
+Route::get('/kpi/rework/{chain}/{year}', ['as' => 'kpi-rework','uses' => 'KpiController@rework_result']);
+
+Route::get('/kpi/smp/heat/comm/01/{year}', ['as' => 'kpi-heat-comm-01','uses' => 'KpiController@smp_heat_comm_01']);
+
+Route::get('/kpi/smp/heat/comm/02/{year}', ['as' => 'kpi-heat-comm-02','uses' => 'KpiController@smp_heat_comm_02']);
+
+Route::get('/kpi/smp/heat/comm/03/{year}', ['as' => 'kpi-heat-comm-03','uses' => 'KpiController@smp_heat_comm_03']);
+
+Route::get('/kpi/smp/mlt/rsl/01/{year}', ['as' => 'kpi-mlt-rsl-01','uses' => 'KpiController@smp_mtl_rsl_01']);
+
+Route::get('/kpi/smp/mlt/rsl/02/{year}', ['as' => 'kpi-mlt-rsl-02','uses' => 'KpiController@smp_mtl_rsl_02']);
+
+Route::get('/kpi/smp/mlt/rsl/03/{year}', ['as' => 'kpi-mlt-rsl-03','uses' => 'KpiController@smp_mtl_rsl_03']);
+
+Route::get('/kpi/smp/mlt/rsl/04/{year}', ['as' => 'kpi-mlt-rsl-03','uses' => 'KpiController@smp_mtl_rsl_04']);
 //ext id detail
 
 Route::get('/test', ['as' => 'test','uses' => 'PageController@test']);
@@ -42,5 +61,9 @@ Route::get('/mobile/cycleCnt/detail/{subInventory}', ['as' => 'mobile-cycleCnt-d
 
 Route::get('/mobile/transaction/detail/{inventoryItemId}', ['as' => 'mobile-transaction-detail','uses' => 'MobileController@getTransactionDetail']);
 
+//M20 crosscheck
 
+Route::get('/crosscheck', ['as' => 'crosscheck-index','uses' => 'CrossCheckController@index']);
+
+Route::get('/crosscheck/result', ['as' => 'crosscheck-result','uses' => 'CrossCheckController@getResult']);
 

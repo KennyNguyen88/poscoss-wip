@@ -111,7 +111,7 @@ class ProductionResultController extends Controller
 	public function get_SMP_Normal_Semi_MES_ProdQty($fromDate){
 		$sql =
 			"
-			SELECT ROUND(SUM(CASE WHEN MTL.INSP_RSL_TP <> 'B' OR MTL.SCR_OCC_CAU_CD <> 'B' THEN MTL.MTL_WGT END)/1000) AS TOTAL
+			SELECT ROUND(NVL(SUM(CASE WHEN MTL.INSP_RSL_TP <> 'B' OR MTL.SCR_OCC_CAU_CD NOT IN ( 'A','B') THEN MTL.MTL_WGT END),0)/1000,0) AS TOTAL
 			FROM TB_M20_MTL_RSL@VINA_MESUSER MTL
 			WHERE 1=1 
     		AND EXISTS (

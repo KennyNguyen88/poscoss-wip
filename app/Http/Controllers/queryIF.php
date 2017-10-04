@@ -122,160 +122,200 @@ class queryIF {
 	;
 
 	public static $sql_step =
-		"Select
-    '0' as step
-    , 'To WIP_READY' as step_description
-    , count(*) as total
-from PSVWIP_MES_RESULT_TB_ALL
-where 1=1
-and transaction_date like substr(:fromDate,1,6)||'%'
-and TRANSACTION_TYPE_CODE <> 91
-and (
-        process_status_code like 'NEW'
-        or
-        process_status_code like 'PSV_WIP%'
+		"WITH V_STEP AS
+(
+    SELECT
+        '1' AS STEP
+        , 'SMP SEMI' AS STEP_DESCRIPTION
+        , COUNT(*) AS TOTAL
+    FROM PSVWIP_MES_RESULT_TB_ALL
+    WHERE 1=1
+    AND TRANSACTION_DATE     LIKE SUBSTR(:fromDate,1,6)||'%'
+    AND DEPARTMENT_CODE      LIKE '11130'
+    AND PROCESS_STATUS_CODE = 'WIP_READY'
+    UNION ALL
+    SELECT
+        '2' AS STEP
+        , 'SMP FINISH PRODUCT' AS STEP_DESCRIPTION
+        , COUNT(*) AS TOTAL
+    FROM PSVWIP_MES_RESULT_TB_ALL
+    WHERE 1=1
+       AND TRANSACTION_DATE     LIKE SUBSTR(:fromDate,1,6)||'%'
+       AND DEPARTMENT_CODE      LIKE '11190'
+       AND ASSEMBLY_ITEM_CODE   LIKE 'F_S%'
+       AND (PROCESS_STATUS_CODE = 'WIP_READY')
+    UNION ALL
+    SELECT
+        '4' AS STEP
+        , 'SMP SHIPPING' AS STEP_DESCRIPTION
+        , COUNT(*) AS TOTAL
+    FROM PSVWIP_MES_RESULT_TB_ALL
+    WHERE 1=1
+    AND TRANSACTION_DATE LIKE SUBSTR(:fromDate,1,6)||'%'
+    AND COMPONENT_ITEM_CODE1 LIKE 'FBS%'
+    AND PROCESS_STATUS_CODE = 'WIP_READY'
+    UNION ALL
+    SELECT 
+        '5' AS STEP
+        , 'REBAR SEMI' AS STEP_DESCRIPTION
+        , COUNT(*) AS TOTAL
+    FROM PSVWIP_MES_RESULT_TB_ALL 
+    WHERE 1=1
+    AND TRANSACTION_DATE     BETWEEN :fromDate
+                                AND :toDate
+    AND DEPARTMENT_CODE      LIKE    '13120'
+    AND ASSEMBLY_ITEM_CODE   LIKE    'E_D%'
+    AND PROCESS_STATUS_CODE  =       'WIP_READY'    
+    UNION ALL
+    SELECT
+        '6' AS STEP
+        , 'REBAR FINISH' AS STEP_DESCRIPTION
+        , COUNT(*) AS TOTAL
+    FROM PSVWIP_MES_RESULT_TB_ALL
+    WHERE 1=1
+               AND TRANSACTION_DATE  BETWEEN :fromDate
+                                         AND :toDate
+               AND DEPARTMENT_CODE      LIKE '13190'
+               AND ASSEMBLY_ITEM_CODE   LIKE 'F_D%'
+               AND PROCESS_STATUS_CODE  =    'WIP_READY'   
+               AND NVL(COMPONENT_LOT_NUMBER1, '0')  NOT IN (   SELECT DISTINCT ASSEMBLY_LOT_NUMBER
+                                                     FROM PSVWIP_MES_RESULT_TB_ALL
+                                                    WHERE TRANSACTION_DATE      LIKE SUBSTR(:fromDate,1,6)||'%'
+                                                      AND ASSEMBLY_ITEM_CODE    LIKE 'EDD%'
+                                                      AND (    PROCESS_STATUS_CODE =    'NEW'
+                                                           OR  PROCESS_STATUS_CODE LIKE 'WIP_READY%'
+                                                           OR  PROCESS_STATUS_CODE LIKE 'PSV%'
+                                                           )
+                                                   )   
+               AND NVL(COMPONENT_LOT_NUMBER2, '0')  NOT IN (SELECT DISTINCT ASSEMBLY_LOT_NUMBER
+                                                      FROM PSVWIP_MES_RESULT_TB_ALL
+                                                     WHERE TRANSACTION_DATE      LIKE SUBSTR(:fromDate,1,6)||'%'
+                                                       AND ASSEMBLY_ITEM_CODE    LIKE 'EDD%'
+                                                       AND (    PROCESS_STATUS_CODE =    'NEW'
+                                                           OR  PROCESS_STATUS_CODE LIKE 'WIP_READY%'
+                                                           OR  PROCESS_STATUS_CODE LIKE 'PSV%'
+                                                           )
+                                                   )
+    UNION ALL
+    SELECT
+        '7' AS STEP
+        , 'REBAR REWORK' AS STEP_DESCRIPTION
+        , COUNT(*) AS TOTAL
+    FROM PSVWIP_MES_RESULT_TB_ALL
+    WHERE 1=1
+    AND TRANSACTION_DATE BETWEEN :fromDate
+                            AND :toDate
+    AND ASSEMBLY_ITEM_CODE LIKE 'EDD%'
+    AND PROCESS_STATUS_CODE = 'WIP_READY'
+    AND TRANSACTION_TYPE_CODE = '62'
+    UNION ALL
+    SELECT
+        '8' AS STEP
+        , 'REBAR SHIPPING' AS STEP_DESCRIPTION
+        , COUNT(*) AS TOTAL
+    FROM PSVWIP_MES_RESULT_TB_ALL
+    WHERE 1=1
+    AND TRANSACTION_DATE BETWEEN :fromDate
+                            AND :toDate
+    AND COMPONENT_ITEM_CODE1 LIKE 'FDD%'
+    AND PROCESS_STATUS_CODE = 'WIP_READY'
+    UNION ALL
+    SELECT 
+        '9' AS STEP
+        , 'SECTION SEMI' AS STEP_DESCRIPTION
+        , COUNT(*) AS TOTAL
+    FROM PSVWIP_MES_RESULT_TB_ALL
+    WHERE 1=1
+    AND TRANSACTION_DATE      BETWEEN :fromDate
+                                 AND :toDate    
+    AND ASSEMBLY_ITEM_CODE   LIKE 'E_E%'
+    AND PROCESS_STATUS_CODE  =    'WIP_READY'
+    AND TRANSACTION_TYPE_CODE IN ('02', '04', '21', '13')    
+    UNION ALL
+    SELECT 
+    '10' AS STEP
+    , 'SECTION FINISH' AS STEP_DESCRIPTION
+    , COUNT(*) AS TOTAL
+	FROM PSVWIP_MES_RESULT_TB_ALL
+	WHERE 1=1
+	   AND TRANSACTION_DATE  BETWEEN :fromDate
+	                             AND :toDate
+	   AND DEPARTMENT_CODE      LIKE '12190'
+	   AND ASSEMBLY_ITEM_CODE   LIKE 'F_E%'
+	   AND PROCESS_STATUS_CODE  =    'WIP_READY'       
+	   AND NVL(COMPONENT_LOT_NUMBER1, '0')  NOT IN (   SELECT DISTINCT ASSEMBLY_LOT_NUMBER
+	                                         FROM PSVWIP_MES_RESULT_TB_ALL
+	                                        WHERE TRANSACTION_DATE      LIKE SUBSTR(:fromDate,1,6)||'%'
+	                                          AND ASSEMBLY_ITEM_CODE    LIKE 'E_E%'
+	                                          AND (    PROCESS_STATUS_CODE =    'NEW'
+	                                               OR  PROCESS_STATUS_CODE LIKE 'WIP_READY%'
+	                                               OR  PROCESS_STATUS_CODE LIKE 'PSV%'
+	                                               )
+	                                       )       
+	   AND NVL(COMPONENT_LOT_NUMBER2, '0')  NOT IN (SELECT DISTINCT ASSEMBLY_LOT_NUMBER
+	                                          FROM PSVWIP_MES_RESULT_TB_ALL
+	                                         WHERE TRANSACTION_DATE      LIKE SUBSTR(:fromDate,1,6)||'%'
+	                                           AND ASSEMBLY_ITEM_CODE    LIKE 'E_E%'
+	                                           AND (    PROCESS_STATUS_CODE =    'NEW'
+	                                               OR  PROCESS_STATUS_CODE LIKE 'WIP_READY%'
+	                                               OR  PROCESS_STATUS_CODE LIKE 'PSV%'
+	                                               )
+	                                       )
+    UNION ALL
+    SELECT
+        '11' AS STEP
+        , 'SECTION REWORK' AS STEP_DESCRIPTION
+        , COUNT(*) AS TOTAL
+    FROM PSVWIP_MES_RESULT_TB_ALL
+    WHERE 1=1
+    AND TRANSACTION_DATE BETWEEN :fromDate AND :toDate
+    AND ASSEMBLY_ITEM_CODE LIKE 'E_E%'
+    AND PROCESS_STATUS_CODE = 'WIP_READY'
+    AND TRANSACTION_TYPE_CODE = '62'
+    UNION ALL
+    SELECT
+        '12' AS STEP
+        , 'SECTION SHIPPING' AS STEP_DESCRIPTION
+        , COUNT(*) AS TOTAL
+        FROM PSVWIP_MES_RESULT_TB_ALL
+    WHERE 1=1
+        AND TRANSACTION_DATE  BETWEEN :fromDate
+                            AND :toDate
+        AND COMPONENT_ITEM_CODE1  LIKE 'F_E%'
+        AND PROCESS_STATUS_CODE    =    'WIP_READY'
+)
+
+SELECT
+    '0' AS STEP
+    , 'TO WIP_READY' AS STEP_DESCRIPTION
+    , COUNT(*) AS TOTAL
+FROM PSVWIP_MES_RESULT_TB_ALL
+WHERE 1=1
+AND TRANSACTION_DATE LIKE SUBSTR(:fromDate,1,6)||'%'
+AND TRANSACTION_TYPE_CODE <> 91
+AND (
+        PROCESS_STATUS_CODE LIKE 'NEW'
+        OR
+        PROCESS_STATUS_CODE LIKE 'PSV_WIP%'
     )
-union all
-Select
-    '1' as step
-    , 'SMP Semi' as step_description
-    , count(*) as total
-from PSVWIP_MES_RESULT_TB_ALL
-where 1=1
-and transaction_date     like substr(:fromDate,1,6)||'%'
-and department_code      like '11130'
-and process_status_code = 'WIP_READY'
-union all
-Select
-    '2' as step
-    , 'SMP Finish Product' as step_description
-    , count(*) as total
-from PSVWIP_MES_RESULT_TB_ALL
-where 1=1
-   and transaction_date     like substr(:fromDate,1,6)||'%'
-   and department_code      like '11190'
-   and assembly_item_code   like 'F_S%'
-   and (process_status_code = 'WIP_READY')
-union all
-Select
-    '4' as step
-    , 'SMP Shipping' as step_description
-    , count(*) as total
-from PSVWIP_MES_RESULT_TB_ALL
-where 1=1
-and TRANSACTION_DATE like substr(:fromDate,1,6)||'%'
-and COMPONENT_ITEM_CODE1 like 'FBS%'
-and PROCESS_STATUS_CODE = 'WIP_READY'
-union all
-Select
-    '5' as step
-    , 'Rebar Semi' as step_description
-    , count(*) as total
-from PSVWIP_MES_RESULT_TB_ALL
-where 1=1
-and transaction_date     between :fromDate
-                            and :toDate
-and department_code     like '13120'
-and assembly_item_code  like 'EDD%'
-and process_status_code = 'WIP_READY'
-union all
-Select
-    '6' as step
-    , 'Rebar finish' as step_description
-    , count(*) as total
-from PSVWIP_MES_RESULT_TB_ALL
-where 1=1
-		   and transaction_date  between :fromDate
-		                             and :toDate
-		   and department_code      like '13190'
-		   and assembly_item_code   like 'F_D%'
-		   and process_status_code  =    'WIP_READY'   
-		   and nvl(component_lot_number1, '0')  not in (   select distinct assembly_lot_number
-		                                         from PSVWIP_MES_RESULT_TB_ALL
-		                                        where transaction_date      like substr(:fromDate,1,6)||'%'
-		                                          and assembly_item_code    like 'EDD%'
-		                                          and (    process_status_code =    'NEW'
-		                                               or  process_status_code like 'WIP_READY%'
-		                                               or  process_status_code like 'PSV%'
-		                                               )
-		                                       )   
-		   and nvl(component_lot_number2, '0')  not in (select distinct assembly_lot_number
-		                                          from PSVWIP_MES_RESULT_TB_ALL
-		                                         where transaction_date      like substr(:fromDate,1,6)||'%'
-		                                           and assembly_item_code    like 'EDD%'
-		                                           and (    process_status_code =    'NEW'
-		                                               or  process_status_code like 'WIP_READY%'
-		                                               or  process_status_code like 'PSV%'
-		                                               )
-		                                       )
-union all
-Select
-    '7' as step
-    , 'Rebar Rework' as step_description
-    , count(*) as total
-from PSVWIP_MES_RESULT_TB_ALL
-where 1=1
-and transaction_date between :fromDate
-                        and :toDate
-and assembly_item_code like 'EDD%'
-and process_status_code = 'WIP_READY'
-and TRANSACTION_TYPE_CODE = '62'
-union all
-Select
-    '8' as step
-    , 'Rebar Shipping' as step_description
-    , count(*) as total
-from PSVWIP_MES_RESULT_TB_ALL
-where 1=1
-and transaction_date between :fromDate
-                        and :toDate
-and component_item_code1 like 'FDD%'
-and process_status_code = 'WIP_READY'
-union all
-Select
-    '9' as step
-    , 'Section Semi' as step_description
-    , count(*) as total
-from PSVWIP_MES_RESULT_TB_ALL
-where 1=1
-and transaction_date     between :fromDate and :toDate
-and department_code      like '12120'
-and assembly_item_code   like 'E_E%'
-and process_status_code  =    'WIP_READY'
-union all
-Select
-    '10' as step
-    , 'Section Finish' as step_description
-    , count(*) as total
-from PSVWIP_MES_RESULT_TB_ALL
-where 1=1
-   and transaction_date  between :fromDate
-                             and :toDate
-   and department_code      like '12190'
-   and assembly_item_code   like 'F_E%'
-   and process_status_code  =    'WIP_READY'
-union all
-Select
-    '11' as step
-    , 'Section Rework' as step_description
-    , count(*) as total
-from PSVWIP_MES_RESULT_TB_ALL
-where 1=1
-and transaction_date between :fromDate and :toDate
-and assembly_item_code like 'E_E%'
-and process_status_code = 'WIP_READY'
-and TRANSACTION_TYPE_CODE = '62'
-union all
-Select
-    '12' as step
-    , 'Section Shipping' as step_description
-    , count(*) as total
-    from PSVWIP_MES_RESULT_TB_ALL
-where 1=1
-    and transaction_date  between :fromDate
-                        and :toDate
-    and component_item_code1  like 'F_E%'
-    and process_status_code    =    'WIP_READY'"
+UNION ALL
+SELECT *
+FROM V_STEP
+UNION ALL
+SELECT 
+    '13' AS STEP
+    , 'TOTAL AVAILABLE' AS STEP_DESCRIPTION
+    , SUM(TOTAL) AS TOTAL
+FROM V_STEP
+UNION ALL
+SELECT 
+    '14' AS STEP
+    , 'TOTAL READY' AS STEP_DESCRIPTION
+    , COUNT(*) AS TOTAL
+FROM PSVWIP_MES_RESULT_TB_ALL
+WHERE 1=1
+    AND TRANSACTION_DATE  BETWEEN :fromDate AND :toDate        
+    AND PROCESS_STATUS_CODE    =    'WIP_READY'"
 	;
 
 	public static $sql_oit_check =
@@ -390,15 +430,16 @@ where 1=1
 		";
 
 	public static $sql_step_5_search =
-		"Select
-		    IF_EXT_ID
-		from PSVWIP_MES_RESULT_TB_ALL
-		where 1=1
-		and transaction_date     between :fromDate
-		                            and :toDate
-		and department_code     like '13120'
-		and assembly_item_code  like 'EDD%'
-		and process_status_code = 'WIP_READY'
+		"
+	SELECT 
+	    IF_EXT_ID
+	FROM PSVWIP_MES_RESULT_TB_ALL
+	WHERE 1=1
+	AND TRANSACTION_DATE     BETWEEN :fromDate
+                                AND :toDate
+    AND DEPARTMENT_CODE      LIKE    '13120'
+    AND ASSEMBLY_ITEM_CODE   LIKE    'E_D%'
+    AND PROCESS_STATUS_CODE  =       'WIP_READY'
 		";
 
 //	public static $sql_step_6_search =
@@ -466,26 +507,47 @@ where 1=1
 		";
 
 	public static $sql_step_9_search =
-		"Select
-		    IF_EXT_ID
-		from PSVWIP_MES_RESULT_TB_ALL
-		where 1=1
-		and transaction_date     between :fromDate and :toDate
-		and department_code      like '12120'
-		and assembly_item_code   like 'E_E%'
-		and process_status_code  =    'WIP_READY'
+		"
+	SELECT 
+        IF_EXT_ID
+    FROM PSVWIP_MES_RESULT_TB_ALL
+    WHERE 1=1
+    AND TRANSACTION_DATE      BETWEEN :fromDate
+                                 AND :toDate    
+    AND ASSEMBLY_ITEM_CODE   LIKE 'E_E%'
+    AND PROCESS_STATUS_CODE  =    'WIP_READY'
+    AND TRANSACTION_TYPE_CODE IN ('02', '04', '21', '13')
 		";
 
 	public static $sql_step_10_search =
-		"Select
-		    IF_EXT_ID
-		from PSVWIP_MES_RESULT_TB_ALL
-		where 1=1
-		   and transaction_date  between :fromDate
-		                             and :toDate
-		   and department_code      like '12190'
-		   and assembly_item_code   like 'F_E%'
-		   and process_status_code  =    'WIP_READY'
+		"
+	SELECT 
+    	IF_EXT_ID
+	FROM PSVWIP_MES_RESULT_TB_ALL
+	WHERE 1=1
+	   AND TRANSACTION_DATE  BETWEEN :fromDate
+	                             AND :toDate
+	   AND DEPARTMENT_CODE      LIKE '12190'
+	   AND ASSEMBLY_ITEM_CODE   LIKE 'F_E%'
+	   AND PROCESS_STATUS_CODE  =    'WIP_READY'       
+	   AND NVL(COMPONENT_LOT_NUMBER1, '0')  NOT IN (   SELECT DISTINCT ASSEMBLY_LOT_NUMBER
+	                                         FROM PSVWIP_MES_RESULT_TB_ALL
+	                                        WHERE TRANSACTION_DATE      LIKE SUBSTR(:fromDate,1,6)||'%'
+	                                          AND ASSEMBLY_ITEM_CODE    LIKE 'E_E%'
+	                                          AND (    PROCESS_STATUS_CODE =    'NEW'
+	                                               OR  PROCESS_STATUS_CODE LIKE 'WIP_READY%'
+	                                               OR  PROCESS_STATUS_CODE LIKE 'PSV%'
+	                                               )
+	                                       )       
+	   AND NVL(COMPONENT_LOT_NUMBER2, '0')  NOT IN (SELECT DISTINCT ASSEMBLY_LOT_NUMBER
+	                                          FROM PSVWIP_MES_RESULT_TB_ALL
+	                                         WHERE TRANSACTION_DATE      LIKE SUBSTR(:fromDate,1,6)||'%'
+	                                           AND ASSEMBLY_ITEM_CODE    LIKE 'E_E%'
+	                                           AND (    PROCESS_STATUS_CODE =    'NEW'
+	                                               OR  PROCESS_STATUS_CODE LIKE 'WIP_READY%'
+	                                               OR  PROCESS_STATUS_CODE LIKE 'PSV%'
+	                                               )
+	                                       )
 		";
 
 	public static $sql_step_11_search =
@@ -606,11 +668,11 @@ where 1=1
 		update PSVWIP_MES_RESULT_TB_ALL
 		set process_status_code = 'NEW'
 		where 1=1
-		and transaction_date    between :fromDate
-		                        and :toDate
-		and department_code     like '13120'
-		and assembly_item_code  like 'EDD%'
-		and process_status_code = 'WIP_READY'
+		AND TRANSACTION_DATE     BETWEEN :fromDate
+                                AND :toDate
+    	AND DEPARTMENT_CODE      LIKE    '13120'
+    	AND ASSEMBLY_ITEM_CODE   LIKE    'E_D%'
+    	AND PROCESS_STATUS_CODE  =       'WIP_READY'
 		";
 
 	public static $sql_step_6_update =
@@ -671,10 +733,11 @@ where 1=1
     PSVWIP_MES_RESULT_TB_ALL
 	set process_status_code = 'NEW'
 	where 1=1
-	and transaction_date     between :fromDate and :toDate
-	and department_code      like '12120'
-	and assembly_item_code   like 'E_E%'
-	and process_status_code  =    'WIP_READY'
+	AND TRANSACTION_DATE      BETWEEN :fromDate
+                             AND :toDate
+	AND ASSEMBLY_ITEM_CODE   LIKE 'E_E%'
+	AND PROCESS_STATUS_CODE  =    'WIP_READY'
+	AND TRANSACTION_TYPE_CODE IN ('02', '04', '21', '13')
 		";
 
 	public static $sql_step_10_update =
@@ -682,11 +745,28 @@ where 1=1
 		update PSVWIP_MES_RESULT_TB_ALL
 		set process_status_code = 'NEW'
 		where 1=1
-		   and transaction_date  between :fromDate
-		                             and :toDate
+		   and transaction_date  between :fromDate and :toDate
 		   and department_code      like '12190'
 		   and assembly_item_code   like 'F_E%'
-		   and process_status_code  =    'WIP_READY'
+		   and process_status_code  =    'WIP_READY'   
+		   and nvl(component_lot_number1, '0')  not in (   select distinct assembly_lot_number
+		                                         from PSVWIP_MES_RESULT_TB_ALL
+		                                        where transaction_date      like substr(:fromDate,1,6)||'%'
+		                                          and assembly_item_code    like 'E_E%'
+		                                          and (    process_status_code =    'NEW'
+		                                               or  process_status_code like 'WIP_READY%'
+		                                               or  process_status_code like 'PSV%'
+		                                               )
+		                                       )   
+		   and nvl(component_lot_number2, '0')  not in (select distinct assembly_lot_number
+		                                          from PSVWIP_MES_RESULT_TB_ALL
+		                                         where transaction_date      like substr(:fromDate,1,6)||'%'
+		                                           and assembly_item_code    like 'E_E%'
+		                                           and (    process_status_code =    'NEW'
+		                                               or  process_status_code like 'WIP_READY%'
+		                                               or  process_status_code like 'PSV%'
+		                                               )
+		                                       )
 		";
 
 	public static $sql_step_11_update =
@@ -1309,5 +1389,362 @@ WHERE  a.INSP_PSV_DT > :dateCheck
 		        AND A.TRANSACTION_DATE >= SYSDATE - 600
 		        AND A.TRANSACTION_DATE < SYSDATE 
 		    )
+		";
+
+	public static $sql_crosscheck_m20_detail_heat_info =
+		"
+		SELECT
+            HEAT_NO
+            , INCO_STL_GRD
+            , STL_MAK_SPC_NO
+            , RSL_INCO_STL_GRD
+            , RSL_STL_MAK_SPC_NO
+            , MTL_PRD_DT
+            , CHEMI_JDG_RSL_CD
+            , INSP_PSV_DT
+            , PSV_DT
+        FROM TB_M20_HEAT_COMM@VINA_MESUSER
+        WHERE HEAT_NO = :lotNum
+		";
+
+	public static $sql_crosscheck_m20_detail_main_material =
+		"
+		SELECT 
+	          HEAT_NO
+	          , RAW_MTL_PRD_CD
+	          , CRG_WGT
+	      FROM TB_M20_EAF_MAIN_MTL_USE_RSL@VINA_MESUSER
+	      WHERE HEAT_NO = :lotNum
+		";
+
+	public static $sql_crosscheck_m20_detail_sub_material =
+		"
+		SELECT 
+              HEAT_NO
+              , RAW_MTL_PRD_CD
+              , SUB_MTL_INP_WGT CRG_WGT
+          FROM TB_M20_SUB_MTL_INP_RSL@VINA_MESUSER
+          WHERE HEAT_NO = :lotNum
+		";
+
+	public static $sql_crosscheck_m20_detail_wire_material =
+		"
+		SELECT 
+                  HEAT_NO
+                  , WIRE_CD_1 RAW_MTL_PRD_CD
+                  , WIRE_USE_WGT_1 CRG_WGT
+              FROM TB_M20_WIRE_USE_RSL@VINA_MESUSER
+              WHERE HEAT_NO = :lotNum
+		";
+	public static $sql_crosscheck_m20_detail_erp_material =
+		"
+		SELECT 
+                  HEAT_NO
+                  , RAW_MTL_PRD_CD
+                  , ISS_WGT CRG_WGT 
+                  , CFM_YN
+              FROM TB_M20_RAW_MTL_ISS_RSL@VINA_MESUSER
+              WHERE HEAT_NO = :lotNum
+		";
+
+	public static $sql_crosscheck_m20_detail_warehouse =
+		"
+			SELECT 
+                  HEAT_NO
+                  , MTL_DIMS_CD    
+                  , MTL_WHS_DT
+                  , MTL_WHS_WGT
+              FROM TB_M20_MTL_WHS_RSL@VINA_MESUSER
+              WHERE HEAT_NO = :lotNum
+		";
+
+	public static $sql_crosscheck_m20_detail_material_result =
+		"
+		SELECT 
+                  MTL_NO
+                  , MTL_DIMS_CD
+                  , MTL_WGT
+                  , INSP_RSL_TP
+                  , MTL_USG_TP
+                  , MTL_PRD_TP
+                  , SCR_YN
+                  , SCR_OCC_CAU_CD
+                  , ROL_LOT_NO
+                  , CFM_YN
+                  , ORD_SURPL_TP
+                  , TAKE_IN_PROC_YN
+                  , TAKE_OUT_PROC_YN
+              FROM TB_M20_MTL_RSL@VINA_MESUSER
+              WHERE HEAT_NO = :lotNum
+              AND CFM_YN = 'Y' 
+		";
+
+	public static $sql_crosscheck_m20_detail_transfer_order =
+		"
+		SELECT 
+                DECODE(TRN_WK_TP,'I','Take in','Take out') TRN_WK_TP
+                , ROL_LOT_NO
+                , MTL_DIMS_CD
+                , TRN_WGT
+                , PSV_DT
+                , TRN_END_YN
+              FROM TB_M20_MTL_TRN@VINA_MESUSER
+              WHERE HEAT_NO = :lotNum
+		";
+
+	public static $sql_crosscheck_m20_detail_transfer_result =
+		"
+			SELECT SUM(MOV_TRN_WGT) AS TRN_WGT_DETAIL
+              FROM TB_M20_MTL_MOV_TRN_RSL@VINA_MESUSER
+              WHERE HEAT_NO = :lotNum
+              AND MOV_TRN_TP = 'B'
+              AND ROL_LOT_NO = :rolLotNo
+              AND MTL_DIMS_CD = :mtlDimsCd
+		";
+
+	public static $sql_crosscheck_m20_detail_transfer_rollinguse =
+		"
+			SELECT SUM(MTL_WGT) AS ROLLING_USE_NUM
+              FROM TB_M30_CRG_ETR_RSL@VINA_MESUSER
+              WHERE ROL_LOT_NO LIKE :rolLotNo||'%' 
+              AND CRG_SEQ NOT IN (
+                                    SELECT CRG_SEQ
+                                    FROM TB_M30_MTL_ABML_MTL_RSL@VINA_MESUSER
+                                    WHERE ROL_LOT_NO LIKE :rolLotNo||'%'
+                                      AND ABML_OCC_LOC IN (1,2))
+              AND HEAT_NO = :lotNum
+		";
+
+	public static $sql_crosscheck_m20_detail_move_order =
+		"
+		SELECT
+                  MOV_REQ_DT
+                  , MTL_DIMS_CD
+                  , FROM_LOD_LOC
+                  , MOV_WGT 
+                  , DECODE(MTL_USG_TP,'A','Rolling','B','Sale','Others') MTL_USG_TP
+                  , MOV_END_YN
+              FROM TB_M20_MTL_MOV@VINA_MESUSER
+              WHERE HEAT_NO = :lotNum
+		";
+
+	public static $sql_crosscheck_m20_detail_move_result =
+		"
+		SELECT SUM(MOV_TRN_WGT) AS TRN_WGT_DETAIL
+              FROM TB_M20_MTL_MOV_TRN_RSL@VINA_MESUSER
+              WHERE HEAT_NO = :lotNum
+              AND MOV_TRN_TP = 'A'
+              AND FROM_LOD_LOC = :fromLodLoc
+              AND MTL_DIMS_CD = :mtlDimsCd
+		";
+
+	public static $sql_crosscheck_m20_detail_stock =
+		"
+		SELECT 
+                  MTL_DIMS_CD
+                  , STK_WGT
+                  , STK_DT
+              FROM TB_M20_MTL_STK@VINA_MESUSER
+              WHERE HEAT_NO = :lotNum
+              AND STK_DT = (SELECT MAX(STK_DT) FROM TB_M20_MTL_STK@VINA_MESUSER WHERE HEAT_NO = :lotNum)  
+		";
+
+	public static $sql_crosscheck_m20_detail_itemcode =
+		"
+			SELECT 
+			    MTL_DIMS_CD, ACTL_ITM_CD
+			FROM TB_M20_MTL_RSL@VINA_MESUSER
+			WHERE HEAT_NO = :lotNum
+			AND CFM_YN = 'Y' 
+			group by MTL_DIMS_CD, ACTL_ITM_CD
+		";
+
+	public static $sql_crosscheck_m20_detail_scrapswitch =
+		"
+		SELECT 
+		    SWT_DT,
+		    SCR_SWT_TP, 
+		    SUM(MTL.MTL_WGT) AS WGT
+		FROM 
+		    TB_M20_MTL_RSL@VINA_MESUSER MTL, 
+		    TB_M20_MTL_SCR_SWT@VINA_MESUSER SCR
+		    
+		WHERE 
+		    SCR.MTL_NO = MTL.MTL_NO
+		    AND MTL.MTL_NO like :lotNum||'%'    
+		GROUP BY SWT_DT,SCR_SWT_TP
+		";
+
+
+	public static $sql_crosscheck_m20_crosscheck_01 =
+		"
+		SELECT
+			 MTL_DIMS_CD  
+			 , (SELECT  MAX(ACTL_ITM_CD)          
+				   FROM  TB_M20_MTL_RSL@VINA_MESUSER          
+				   WHERE  HEAT_NO     = L.HEAT_NO          
+				   AND  MTL_DIMS_CD = L.MTL_DIMS_CD ) AS ACT_ITEM          
+			 , STK_WGT AS WGT          
+		FROM TB_M20_MTL_STK@VINA_MESUSER L          
+		WHERE 
+		   STK_DT = (SELECT MAX(STK_DT) FROM TB_M20_MTL_STK@VINA_MESUSER)
+		   AND HEAT_NO = :lotNum
+		";
+
+	public static $sql_crosscheck_m20_crosscheck_02 =
+		"
+			SELECT  
+				COUNT(*) AS MTL_NO
+				, AA.MTL_DIMS_CD
+				, AA.ACTL_ITM_CD AS ACT_ITEM                                                    
+				, SUM(AA.MTL_WGT) AS WGT                                                          
+			FROM    TB_M20_MTL_RSL@VINA_MESUSER AA         
+			,    TB_M20_HEAT_COMM@VINA_MESUSER BB               
+			WHERE   AA.HEAT_NO = :lotNum
+			AND   AA.HEAT_NO                   =   BB.HEAT_NO        
+			AND   BB.PSV_DT                   <=  :checkDate        
+			AND   NVL(AA.MTL_WHS_DT, SYSDATE)  >  :checkDate
+			GROUP BY AA.MTL_DIMS_CD, AA.ACTL_ITM_CD
+		";
+
+	public static $sql_crosscheck_m20_crosscheck_03 =
+		"
+			SELECT 
+				MTL_DIMS_CD, 
+				ACT_ITEM,
+				SUM(WGT) AS WGT
+			FROM
+			(             
+				SELECT
+					M.MTL_DIMS_CD           
+					,     (SELECT  MAX(ACTL_ITM_CD)                                      
+					  FROM  TB_M20_MTL_RSL@VINA_MESUSER          
+					  WHERE  HEAT_NO     = M.HEAT_NO          
+					  AND  MTL_DIMS_CD = M.MTL_DIMS_CD ) AS ACT_ITEM                 
+					, NVL(MTL_WHS_WGT, 0)*-1 AS WGT    
+				FROM TB_M20_MTL_WHS_RSL@VINA_MESUSER M          
+				WHERE MTL_WHS_DT > :checkDate
+				AND HEAT_NO = :lotNum        
+			)
+			GROUP BY MTL_DIMS_CD, ACT_ITEM
+		";
+
+	public static $sql_crosscheck_m20_crosscheck_04 =
+		"
+			SELECT 
+				 MTL_DIMS_CD          
+				 , (SELECT  MAX(ACTL_ITM_CD)          
+					  FROM  TB_M20_MTL_RSL@VINA_MESUSER          
+					 WHERE  HEAT_NO     = K.HEAT_NO          
+					   AND  MTL_DIMS_CD = K.MTL_DIMS_CD ) AS ACT_ITEM                  
+				 , DECODE(TRN_WK_TP, 'I', 1, -1)*NVL(TRN_WGT, 0) AS WGT    
+				 , DECODE(TRN_WK_TP, 'I', 'IN', 'OUT') TP      
+			FROM TB_M20_MTL_TRN@VINA_MESUSER  K          
+			WHERE   
+				HEAT_NO = :lotNum 
+				AND TRN_END_YN = 'Y'          
+				AND PSV_DT > :checkDate
+		";
+
+	public static $sql_crosscheck_m20_crosscheck_05 =
+		"
+			SELECT 
+				MTL_DIMS_CD
+				, (SELECT  MAX(ACTL_ITM_CD)          
+					FROM  TB_M20_MTL_RSL@VINA_MESUSER          
+				   WHERE  HEAT_NO     = T.HEAT_NO          
+					 AND  MTL_DIMS_CD = T.MTL_DIMS_CD ) AS ACT_ITEM                   
+				, (DECODE(TRN_WK_TP, 'I', 1, -1)*NVL(TRN_WGT, 0)) AS WGT
+				, DECODE(TRN_WK_TP, 'I', 'IN', 'OUT') TP          
+			FROM   TB_M20_MTL_TRN@VINA_MESUSER T          
+			WHERE   HEAT_NO = :lotNum
+			AND TRN_END_YN = 'Y'          
+			AND   TRN_REQ_DTM >= TO_DATE(:checkDate, 'YYYYMMDD') - (365*3)          
+			AND   PSV_DT <= :checkDate
+		";
+
+	public static $sql_crosscheck_m20_crosscheck_06_01 =
+		"
+			SELECT 
+				' ' AS MTL_DIMS_CD 
+				, INP_ITM_CD_1 AS ACT_ITEM                
+				, (DECODE(TCT_TP_CD, '43', -1, 1) * INP_WGT_1)*-1 AS WGT          
+				, TCT_TP_CD AS TP
+			FROM   TB_M30_E50M30_04@VINA_MESUSER          
+			WHERE   PRD_DT >= TO_CHAR(TO_DATE(:checkDate, 'YYYYMMDD') - (365*3), 'YYYYMMDD')          
+			AND   PRD_DT <= :checkDate          
+			AND   TRANRET IN ('A', 'B', 'C')          
+			AND   (INP_MTL_NO_1, INP_ITM_CD_1) IN (SELECT   HEAT_NO, (SELECT  MAX(ACTL_ITM_CD)          
+										FROM  TB_M20_MTL_RSL@VINA_MESUSER          
+										 WHERE  HEAT_NO = :lotNum
+										 AND HEAT_NO     = XX.HEAT_NO          
+										 AND  MTL_DIMS_CD = XX.MTL_DIMS_CD )          
+							   FROM   TB_M20_MTL_TRN@VINA_MESUSER XX          
+							  WHERE   TRN_END_YN  = 'Y'          
+								AND   TRN_REQ_DTM >= TO_DATE(:checkDate, 'YYYYMMDD') - (365*3)          
+								AND PSV_DT <= :checkDate)
+		";
+
+	public static $sql_crosscheck_m20_crosscheck_06_02 =
+		"
+			SELECT 
+				' ' AS MTL_DIMS_CD 
+				, INP_ITM_CD_2 AS ACT_ITEM                
+				, (DECODE(TCT_TP_CD, '43', -1, 1) * INP_WGT_2)*-1 AS WGT          
+				, TCT_TP_CD AS TP
+			FROM   TB_M30_E50M30_04@VINA_MESUSER          
+			WHERE   PRD_DT >= TO_CHAR(TO_DATE(:checkDate, 'YYYYMMDD') - (365*3), 'YYYYMMDD')          
+			AND   PRD_DT <= :checkDate          
+			AND   TRANRET IN ('A', 'B', 'C')          
+			AND   (INP_MTL_NO_1, INP_ITM_CD_2) IN (SELECT   HEAT_NO, (SELECT  MAX(ACTL_ITM_CD)          
+										FROM  TB_M20_MTL_RSL@VINA_MESUSER          
+										 WHERE  HEAT_NO = :lotNum
+										 AND HEAT_NO     = XX.HEAT_NO          
+										 AND  MTL_DIMS_CD = XX.MTL_DIMS_CD )          
+							   FROM   TB_M20_MTL_TRN@VINA_MESUSER XX          
+							  WHERE   TRN_END_YN  = 'Y'          
+								AND   TRN_REQ_DTM >= TO_DATE(:checkDate, 'YYYYMMDD') - (365*3)          
+								AND PSV_DT <= :checkDate)
+		";
+
+	public static $sql_crosscheck_m20_crosscheck_07 =
+		"
+			SELECT
+				' ' AS MTL_DIMS_CD          
+				, DECODE(ISS_ITM_CD_1, 'E8A10', PRD_LOT_NO, ISS_MTL_NO_1)                               AS HEAT_NO        
+				, DECODE(ISS_ITM_CD_1, 'E8A10', INP_ITM_CD, ISS_ITM_CD_1)                               AS ACT_ITEM               
+				, SUM(ISS_WGT_1 * DECODE(ISS_ITM_CD_1, 'E8A10', -1, 1))*-1                              AS WGT          
+				, TCT_TP_CD AS TP
+			FROM  TB_M20_SNDIF_STL_INOUT@VINA_MESUSER          
+			WHERE  ( PRD_LOT_NO = :lotNum OR ISS_MTL_NO_1 = :lotNum )
+			AND PRD_DT    >=  TO_CHAR(TO_DATE(:checkDate, 'YYYYMMDD') - (365*3), 'YYYYMMDD')          
+			AND  PRD_DT    <=  :checkDate          
+			AND  TCT_TP_CD IN ('50','54')          
+			AND  TRANRET   IN ('A', 'B', 'C')          
+			GROUP BY DECODE(ISS_ITM_CD_1, 'E8A10', PRD_LOT_NO, ISS_MTL_NO_1)     
+			  , DECODE(ISS_ITM_CD_1, 'E8A10', INP_ITM_CD, ISS_ITM_CD_1)        
+			  , TCT_TP_CD
+		";
+
+	public static $sql_crosscheck_m20_crosscheck_08 =
+		"
+			SELECT 
+			   ' ' AS MTL_DIMS_CD
+			   , MTL.ACTL_ITM_CD          AS ACT_ITEM
+			   , MTL.MTL_WGT       AS WGT       
+			   , MSS.SCR_SWT_TP AS TP    
+			FROM TB_M20_MTL_SCR_SWT@VINA_MESUSER MSS        
+			   , TB_M20_MTL_RSL@VINA_MESUSER     MTL       
+			WHERE SUBSTR(MSS.MTL_NO, 0, 6) = :lotNum
+			  AND MSS.SCR_SWT_TP  IN ('A','D','C')       
+			  AND MSS.ERP_TRM_YN  =   'Y'       
+			  AND MSS.MTL_NO      =   MTL.MTL_NO       
+			  AND (     
+				  (      TO_DATE(MSS.SWT_DT,'YYYYMMDD') >= TO_DATE(:checkDate, 'YYYYMMDD') - (365*3)      
+				   AND TO_DATE(MSS.SWT_DT,'YYYYMMDD') <= TO_DATE(:checkDate, 'YYYYMMDD') + 0.99999   
+				   )     
+				 OR (TO_DATE(MSS.SWT_DT,'YYYYMMDD') >= TO_DATE(:checkDate, 'YYYYMMDD'))     
+			   )
+		
 		";
 }

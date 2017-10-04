@@ -246,7 +246,10 @@ function ifDetail(chain)
 }
 $(document).ready(function () {
     //materialize init
-    $('select').material_select();
+    if ($('select')){
+        $('select').material_select();
+    }
+
     //site
         $('#refresh').change(function(){
             if($(this).is(":checked")) {
@@ -289,7 +292,7 @@ $(document).ready(function () {
                             result += '<td>';
                             break;
                         default :
-                            result += '<td> <a onclick="ifDetail(' + "'" +  data[x]["chain"] + "'" +  ')">';
+                            result += '<td> <a style="cursor: pointer" onclick="ifDetail(' + "'" +  data[x]["chain"] + "'" +  ')">';
                             break;
                     }
                     result += data[x]["total"];
@@ -354,7 +357,7 @@ $(document).ready(function () {
                 var x;
                 for (x in data)
                 {
-                    result += '<div class="col m2 s6">';
+                    result += '<div class="col s12 m3 l3 xl2 ">';
 
                     switch (data[x]["process_status_code"]){
                         case 'WIP_READY':
@@ -413,11 +416,22 @@ $(document).ready(function () {
                 var x;
                 for (x in data)
                 {
-                    result += '<tr>';
-                    result += '<td><a class="hand" id="step_'+data[x]['step']+'" onclick="updateStep('+data[x]['step']+')">' + data[x]['step'] + '</a></td>';
-                    result += '<td><a class="hand" id="step_'+data[x]['step']+'" onclick="updateStep('+data[x]['step']+')">' + data[x]['step_description'] + '</a></td>';
-                    result += '<td><a class="hand" id="step_'+data[x]['step']+'" onclick="updateStep('+data[x]['step']+')">' + data[x]['total'] + '</a></td>';
-                    result += '/<tr>';
+
+                    if (data[x]['step'] < 13)
+                    {
+                        result += '<tr>';
+                        result += '<td><a class="hand" id="step_'+data[x]['step']+'" onclick="updateStep('+data[x]['step']+')">' + data[x]['step'] + '</a></td>';
+                        result += '<td><a class="hand" id="step_'+data[x]['step']+'" onclick="updateStep('+data[x]['step']+')">' + data[x]['step_description'] + '</a></td>';
+                        result += '<td><a class="hand" id="step_'+data[x]['step']+'" onclick="updateStep('+data[x]['step']+')">' + data[x]['total'] + '</a></td>';
+                        result += '/<tr>';
+                    }
+                    else{
+                        result += '<tr>';
+                        result += '<td>' + data[x]['step'] + '</td>';
+                        result += '<td>' + data[x]['step_description'] + '</td>';
+                        result += '<td>' + data[x]['total'] + '</td>';
+                        result += '/<tr>';
+                    }
                 }
                 $('#stepResult').empty();
                 $('#stepResult').html(result);
@@ -435,6 +449,19 @@ $(document).ready(function () {
         $('#btnSearchOnHandM60').click(function(){
             onhand('M60');
         });
+
+    var lineDrawing = anime({
+        targets: '#lineTest02 path',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 1000,
+        delay: function (el, i) {
+            return i * 200
+        },
+        direction: 'alternate',
+        loop: true
+    });
+    
 });
 
 

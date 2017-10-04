@@ -22,10 +22,16 @@
 {{--<script src="../../../assets/js/about/aboutService.js"></script>--}}
 {{--<!-- load our application -->--}}
 {{--<script src="/assets/js/app.js"></script>--}}
+
+
 <script>
     //passing pageID to Angular Controller
     {{--var pageID = '<?php echo $data['pageID'] ; ?>';--}}
 
 </script>
-{{--TLCB--}}
+{{--<script type="text/javascript" src="/resources/assets/js/jquery-2.2.1.min.js"></script>--}}
+{{--<script type="text/javascript" src="/resources/assets/js/jquery.flot.min.js"></script>--}}
+{{--<script type="text/javascript" src="/resources/assets/js/jquery.flot.categories.min.js"></script>--}}
+{{--<script type="text/javascript" src="/resources/assets/js/jquery.flot.pie.min.js"></script>--}}
+
 <script type="text/javascript" src="/resources/assets/js/site.js"></script>

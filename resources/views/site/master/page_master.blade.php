@@ -8,7 +8,7 @@
     {{--STYLE--}}
     @section('style')
         {{--MATERIALIZE--}}
-        <link href="/resources/assets/sass/materialize/materialize.css" rel="stylesheet" type="text/css">
+        {{--<link href="/resources/assets/sass/materialize/materialize.css" rel="stylesheet" type="text/css">--}}
         {{--<link href="/assets/sass/materialize/materialize.css" rel="stylesheet" type="text/css">--}}
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Angular Material style sheet -->
@@ -27,11 +27,11 @@
 @section('script')
     {{--JQUERY--}}
     <script type="text/javascript" src="/resources/assets/js/jquery-2.2.1.min.js"></script>
+    {{--MATERIALIZE--}}
     <script type="text/javascript" src="/resources/assets/js/shared/materialize/bin/materialize.min.js"></script>
-    <script type="text/javascript" src="/resources/assets/js/site.js"></script>
-    {{--@include('site.master.myscript')--}}
-
+    <script type="text/javascript" src="/resources/assets/js/anime.min.js"></script>
 @show
+    <script type="text/javascript" src="/resources/assets/js/site.js"></script>
 </body>
 </html>
 
